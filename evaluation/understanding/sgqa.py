@@ -9,6 +9,18 @@ from langchain_core.prompts import PromptTemplate
 from models.models import (
     GPT4o,
     GPT4oMini,
+    GPT41,
+    GPT41Mini,
+    GPT41Nano,
+    GPT5,
+    GPT5Mini,
+    GPT5Nano,
+    GPT5Pro,
+    O1,
+    O1Pro,
+    O3,
+    O3Mini,
+    O4Mini,
     Claude35Sonnet,
     Claude35Haiku,
     MetaLlama,
@@ -50,7 +62,7 @@ class QADataLoader:
             Path(get_project_path())
             / "resource"
             / "dataset"
-            / "understaing"
+            / "understanding"
             / "sgqa.jsonl"
         )
         self.qa_data = self._load_jsonl(self.qa_path)
@@ -155,10 +167,28 @@ def evaluate_qa(model: GPT4o):
 
 if __name__ == "__main__":
     model_classes = [
+        # GPT-4o series
         GPT4o,
         GPT4oMini,
+        # GPT-4.1 series
+        GPT41,
+        GPT41Mini,
+        GPT41Nano,
+        # GPT-5 series
+        GPT5,
+        GPT5Mini,
+        GPT5Nano,
+        GPT5Pro,
+        # OpenAI Reasoning models (o-series)
+        O1,
+        O1Pro,
+        O3,
+        O3Mini,
+        O4Mini,
+        # Anthropic
         Claude35Sonnet,
         Claude35Haiku,
+        # Other providers
         MetaLlama,
         Qwen,
         DeepSeek,

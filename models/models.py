@@ -1,6 +1,5 @@
 from abc import abstractmethod
 
-from langchain.callbacks import get_openai_callback
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from openai import OpenAI
@@ -42,6 +41,186 @@ class GPT4oMini(LLM):
         )
 
         self.price = 0
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+# =============================================================================
+# GPT-4.1 Family (Released April 2025)
+# =============================================================================
+
+class GPT41(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-4.1",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class GPT41Mini(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-4.1-mini",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class GPT41Nano(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-4.1-nano",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+# =============================================================================
+# GPT-5 Family
+# =============================================================================
+
+class GPT5(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-5",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class GPT5Mini(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-5-mini",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class GPT5Nano(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-5-nano",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class GPT5Pro(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="gpt-5-pro",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+# =============================================================================
+# OpenAI Reasoning Models (o-series)
+# =============================================================================
+
+class O1(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="o1",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class O1Pro(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="o1-pro",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class O3(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="o3",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class O3Mini(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="o3-mini",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
+class O4Mini(LLM):
+    def __init__(self, temperature=0.1):
+        super().__init__()
+        self.openai = ChatOpenAI(
+            api_key=self.config["openai"]["key"],
+            model_name="o4-mini",
+            temperature=temperature,
+        )
 
     def invoke(self, message):
         response = self.openai.invoke(message)
