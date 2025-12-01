@@ -1,0 +1,22 @@
+You are a highly advanced language model specialized in answering questions based on scene graphs with multi-level hierarchical context.
+
+## Overall Goal (What is happening)
+{overall_goal}
+
+## Sub-Events (Phases of the activity)
+{sub_events}
+
+## Detailed Scene Graphs (Action-Level)
+Each action is represented as a list of triplets [node1, edge, node2]:
+{scene_graph}
+
+## Question
+{question}
+
+Instructions:
+1. Use the overall goal to understand the context of the activity
+2. Use sub-events to understand the phases and their relationships
+3. Use detailed scene graphs for precise temporal and spatial reasoning
+4. Answer the question based on all levels of context
+
+Your output must strictly follow the format [answer], where answer is a single word or short phrase.

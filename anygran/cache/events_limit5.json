@@ -1,0 +1,273 @@
+{
+  "19cc4e42-39bb-41f9-b9de-9f2940eed6a2": {
+    "overall_goal": "Clean the car interior using a mop and cloth, then store and rearrange cleaning tools.",
+    "sub_events": [
+      {
+        "name": "Retrieve mop and clean car",
+        "description": "Pick up the mop and use it to sweep the car floor.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Finish cleaning and place items in car",
+        "description": "Close the car, set the mop down, open the door, and place a cloth inside the car.",
+        "action_indices": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Access storage to get cloth",
+        "description": "Move to the cabinet, open it, pick up a cloth, and move toward the wall while holding the cloth.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Re-grab mop from wall",
+        "description": "Pick the mop stick from the wall to prepare or continue use.",
+        "action_indices": [
+          10
+        ]
+      }
+    ]
+  },
+  "fbf4150a-27d2-48a4-956f-b4f85ecde465": {
+    "overall_goal": "Relocate and set up a laptop at a workspace by powering it down, moving it, reconnecting power, and arranging/using the keyboard and mouse.",
+    "sub_events": [
+      {
+        "name": "Wrap up and power down",
+        "description": "Finish interacting with the laptop (typing) and press the laptop button, then close it to power/shut down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Move laptop to workspace",
+        "description": "Disconnect and temporarily stow the laptop, then pick it up, place it on a table and open it at the new location.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Reconnect power",
+        "description": "Retrieve the charger and plug it into the laptop and the wall socket.",
+        "action_indices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Set up keyboard",
+        "description": "Bring the keyboard to the table, place it, and use it (press keys).",
+        "action_indices": [
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Set up and use mouse",
+        "description": "Pick up and place the mouse, hold and move it, and press its button to interact.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "954c2f61-64ad-4c89-a26f-ec4547a65fab": {
+    "overall_goal": "Prepare onions and start cooking them (wash, cut, add to a pot with water, and turn on the cooker).",
+    "sub_events": [
+      {
+        "name": "Wash onion",
+        "description": "Turn on the tap to wash the onion under running water, then turn the tap off.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare and fill pot",
+        "description": "Pick up the pot, transfer the onion into it, place the pot under the tap, turn the tap on to fill the pot with water, then turn the tap off.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Cut onion on board",
+        "description": "Place the onion on the cutting board, hold and slice it with a knife, put the knife down and release the onion.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Start cooking and final onion prep",
+        "description": "Place the filled pot on the cooker and turn the cooker on to begin cooking; pick up the knife again to hold and peel/finish prepping the onion.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "277b18de-4ad9-4c09-970b-91fcea05097d": {
+    "overall_goal": "Perform maintenance on a wheel assembly: organize and store tools, tighten fasteners, remove the wheel, and complete final fastening.",
+    "sub_events": [
+      {
+        "name": "Tool staging",
+        "description": "Pick up individual tools (wrench, plier, spanner) and place them on the workspace to prepare for work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Tool packing and box closure",
+        "description": "Hold and put tools into a box, set them down, and cover the box with its lid (store/organize tools).",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Bolt tightening with wrench and spanner",
+        "description": "Use a wrench and then a spanner to position and tighten a nut/bolt, then set tools down.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "name": "Wheel handling and final fastening",
+        "description": "Bring, adjust, and remove (take off) the wheel, followed by applying the wrench to perform final tightening.",
+        "action_indices": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    ]
+  },
+  "e9be1118-a5cf-4431-b2e8-e3edcfa9f949": {
+    "overall_goal": "Assemble and fasten a wood piece to a wooden base by aligning and clamping the parts, drilling holes, and securing them with screws.",
+    "sub_events": [
+      {
+        "name": "Initial screw fastening",
+        "description": "Pick up a screwdriver and screw to insert a screw into the wood, then set tool down and release the screw.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Temporary clamping on base",
+        "description": "Pick up a clamp, position and tighten it on the wood, then later loosen and remove the clamp.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Position and secure parts for drilling",
+        "description": "Place the wood on the workbench, pick up and align the wood-piece, then pick and position a clamp to hold the assembly and tighten it.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Drill pilot holes through the assembly",
+        "description": "Pick up the drill, hold the workpieces and drill holes (with tool withdrawals and tool set-downs) for the aligned parts.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "name": "Release and prepare final screws",
+        "description": "Release the held wood-piece, then pick up screwdriver and screws and position screws on the wood-piece for final fastening.",
+        "action_indices": [
+          28,
+          29,
+          30,
+          31
+        ]
+      }
+    ]
+  }
+}

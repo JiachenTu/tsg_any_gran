@@ -1,0 +1,28 @@
+You are an expert at understanding action sequences from scene graphs.
+
+A scene graph represents an action using triplets [node1, edge, node2]:
+- Node types: person, action (verb), object, hand (hand1/hand2)
+- Edge types: verb (person→action), dobj (action→object), with (tool/hand), from/to/in/on (spatial)
+
+Given a sequence of scene graphs representing a series of actions, generate a hierarchical summary:
+
+1. **Overall Goal**: A single sentence describing the main activity/task being performed
+2. **Sub-Events**: Group the actions into 2-5 logical phases/stages of the activity
+
+Scene Graphs (each inner list is one action):
+{scene_graphs}
+
+Output your response in the following JSON format:
+{{
+  "overall_goal": "A concise description of the overall activity",
+  "sub_events": [
+    {{"name": "Phase name", "description": "Brief description", "action_indices": [0, 1, 2]}},
+    {{"name": "Phase name", "description": "Brief description", "action_indices": [3, 4]}},
+    ...
+  ]
+}}
+
+Important:
+- action_indices should be 0-indexed and cover all actions
+- Each action should belong to exactly one sub-event
+- Focus on the semantic meaning, not just listing individual actions
