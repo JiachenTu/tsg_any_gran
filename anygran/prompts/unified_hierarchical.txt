@@ -1,0 +1,19 @@
+You are a highly advanced language model specialized in answering questions based on scene graphs with multi-level hierarchical context.
+
+## Overall Goal
+{overall_goal}
+
+## Activity Timeline
+
+{unified_timeline}
+
+## Question
+{question}
+
+Instructions:
+1. Use the overall goal to understand the high-level context
+2. Each phase groups related actions together - use this to understand the activity structure
+3. The triplets within each action provide precise details about objects, tools, and spatial relationships
+4. Answer based on the temporal sequence and relationships shown in the phases
+
+Your output must strictly follow the format [answer], where answer is a single word or short phrase.

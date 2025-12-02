@@ -189,6 +189,196 @@ class HierarchicalSGQAEvaluator:
         }
 
 
+class UnifiedHierarchicalEvaluator:
+    """
+    SGQA Evaluator with unified/interleaved hierarchical context (v1).
+
+    Key difference from HierarchicalSGQAEvaluator (v0):
+    - v0: Separates overall goal, sub-events, and scene graphs into different sections
+    - v1: Interleaves sub-events with their corresponding actions directly
+    """
+
+    def __init__(self, model=None, events_cache: Optional[Dict[str, Dict]] = None):
+        """
+        Initialize the unified hierarchical SGQA evaluator.
+
+        Args:
+            model: LLM model to use. Defaults to GPT5Mini.
+            events_cache: Dict mapping data_id to event hierarchy.
+        """
+        self.model = model or GPT5Mini()
+        self.model_name = self.model.__class__.__name__
+        self.events_cache = events_cache or {}
+
+        # Load unified prompt template
+        prompt = load_prompt("unified_hierarchical.txt")
+        self.prompt_template = PromptTemplate(
+            input_variables=["overall_goal", "unified_timeline", "question"],
+            template=prompt,
+        )
+
+    def _extract_action_verb(self, action_graph: List) -> str:
+        """Extract the main action verb from an action graph."""
+        for triplet in action_graph:
+            if len(triplet) >= 3 and triplet[1] in ["verb", "verbs"]:
+                return triplet[2]  # The action verb
+        return "unknown"
+
+    def _format_unified_timeline(
+        self,
+        sub_events: List[Dict],
+        context_graphs: List
+    ) -> str:
+        """
+        Format sub-events with their corresponding actions interleaved.
+
+        Instead of:
+            Sub-Events: [Phase 1 (Actions: [0,1,2])]
+            Scene Graphs: [Action 0: ..., Action 1: ..., Action 2: ...]
+
+        We produce:
+            ### Phase 1: Description
+            Actions in this phase:
+            - Action 0 (pick-up): [triplets...]
+            - Action 1 (sweep): [triplets...]
+        """
+        if not sub_events:
+            # Fallback: just list all actions without phases
+            lines = ["### All Actions"]
+            for i, action_graph in enumerate(context_graphs):
+                verb = self._extract_action_verb(action_graph)
+                triplets_str = " ".join(str(t) for t in action_graph)
+                lines.append(f"- Action {i} ({verb}): {triplets_str}")
+            return "\n".join(lines)
+
+        lines = []
+        for phase_idx, event in enumerate(sub_events):
+            name = event.get("name", f"Phase {phase_idx+1}")
+            desc = event.get("description", "")
+            action_indices = event.get("action_indices", [])
+
+            lines.append(f"### Phase {phase_idx+1}: {name}")
+            lines.append(f"{desc}")
+            lines.append("")
+            lines.append("Actions in this phase:")
+
+            for action_idx in action_indices:
+                if action_idx < len(context_graphs):
+                    action_graph = context_graphs[action_idx]
+                    verb = self._extract_action_verb(action_graph)
+                    triplets_str = " ".join(str(t) for t in action_graph)
+                    lines.append(f"- Action {action_idx} ({verb}): {triplets_str}")
+
+            lines.append("")  # Blank line between phases
+
+        return "\n".join(lines)
+
+    def invoke(self, data_id: str, context_graphs: List, question: str) -> str:
+        """
+        Invoke model with unified hierarchical context and extract answer.
+
+        Args:
+            data_id: Unique identifier for the sample.
+            context_graphs: List of action graphs (not string).
+            question: The question to answer.
+
+        Returns:
+            Extracted answer string.
+        """
+        # Get event hierarchy from cache
+        event_data = self.events_cache.get(data_id, {})
+        overall_goal = event_data.get("overall_goal", "Activity sequence")
+        sub_events = event_data.get("sub_events", [])
+
+        # Format unified timeline (interleaved)
+        unified_timeline = self._format_unified_timeline(sub_events, context_graphs)
+
+        prompt = self.prompt_template.format(
+            overall_goal=overall_goal,
+            unified_timeline=unified_timeline,
+            question=question,
+        )
+
+        response = self.model.invoke(prompt)
+
+        # Extract answer from [brackets]
+        answer = re.findall(r"\[(.*?)\]", response)
+        return answer[0] if answer else response.strip()
+
+    def process_single_question(self, data: Dict) -> Dict:
+        """Process a single QA pair and return result."""
+        prediction = self.invoke(
+            data_id=data["data_id"],
+            context_graphs=data["context_graphs"],  # Pass list, not string
+            question=data["question"]
+        )
+
+        # Exact Match (EM): case-insensitive comparison
+        is_correct = prediction.lower().strip() == data["answer"].lower().strip()
+
+        return {
+            "data_id": data["data_id"],
+            "question": data["question"],
+            "ground_truth": data["answer"],
+            "prediction": prediction,
+            "exact_match": is_correct,
+        }
+
+    def evaluate(self, data: List[Dict], max_workers: int = 5) -> Dict:
+        """
+        Run evaluation on all data and return metrics.
+
+        Args:
+            data: List of QA items with data_id, context_graphs, question, answer.
+            max_workers: Number of parallel workers.
+
+        Returns:
+            Dict with evaluation results and metrics.
+        """
+        results = []
+        total_correct = 0
+        total_questions = len(data)
+
+        print(f"\n{'='*60}")
+        print(f"Running Unified Hierarchical SGQA Evaluation (v1) with {self.model_name}")
+        print(f"Total questions: {total_questions}")
+        print(f"Event cache size: {len(self.events_cache)} samples")
+        print(f"{'='*60}\n")
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(self.process_single_question, item): idx
+                for idx, item in enumerate(data)
+            }
+
+            for future in concurrent.futures.as_completed(futures):
+                idx = futures[future]
+                result = future.result()
+                results.append(result)
+
+                if result["exact_match"]:
+                    total_correct += 1
+
+                # Progress update
+                processed = len(results)
+                current_em = (total_correct / processed) * 100
+                print(f"\r[Unified-{self.model_name}] {processed}/{total_questions} | "
+                      f"EM: {current_em:.1f}%", end="", flush=True)
+
+        print()  # New line after progress
+
+        # Calculate final Exact Match
+        em_score = (total_correct / total_questions) * 100 if total_questions > 0 else 0
+
+        return {
+            "model": f"Unified-{self.model_name}",
+            "total_questions": total_questions,
+            "correct": total_correct,
+            "exact_match_percent": round(em_score, 2),
+            "results": results,
+        }
+
+
 class BaselineSGQAEvaluator:
     """Standard SGQA Evaluator without hierarchical context (for comparison)."""
 

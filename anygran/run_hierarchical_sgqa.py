@@ -28,7 +28,7 @@ from typing import Dict, List
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from anygran.event_generator import EventGenerator, load_events_cache
-from anygran.hierarchical_sgqa import HierarchicalSGQAEvaluator, BaselineSGQAEvaluator
+from anygran.hierarchical_sgqa import HierarchicalSGQAEvaluator, BaselineSGQAEvaluator, UnifiedHierarchicalEvaluator
 
 # Import GPT5Mini directly to avoid loading all models
 from langchain_openai import ChatOpenAI
@@ -200,6 +200,11 @@ def main():
         default="gpt5-mini",
         help="Model to use for QA evaluation (default: gpt5-mini)"
     )
+    parser.add_argument(
+        "--unified",
+        action="store_true",
+        help="Use unified/interleaved hierarchical format (v1) instead of separated format (v0)"
+    )
 
     args = parser.parse_args()
 
@@ -249,19 +254,27 @@ def main():
             save_results(baseline_results, f"baseline_{args.model}_limit{args.limit or 'all'}_{timestamp}.json")
 
     # Step 3: Run hierarchical evaluation
-    hier_evaluator = HierarchicalSGQAEvaluator(model=model, events_cache=events_cache)
+    if args.unified:
+        # Use unified/interleaved format (v1)
+        hier_evaluator = UnifiedHierarchicalEvaluator(model=model, events_cache=events_cache)
+        result_prefix = "unified"
+    else:
+        # Use separated format (v0)
+        hier_evaluator = HierarchicalSGQAEvaluator(model=model, events_cache=events_cache)
+        result_prefix = "hierarchical"
+
     hier_results = hier_evaluator.evaluate(data, max_workers=args.workers)
 
     if not args.no_save:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        save_results(hier_results, f"hierarchical_{args.model}_limit{args.limit or 'all'}_{timestamp}.json")
+        save_results(hier_results, f"{result_prefix}_{args.model}_limit{args.limit or 'all'}_{timestamp}.json")
 
     # Step 4: Print comparison
     if baseline_results:
         print_comparison(baseline_results, hier_results)
     else:
         print(f"\n{'='*60}")
-        print("HIERARCHICAL SGQA RESULTS")
+        print(f"{'UNIFIED' if args.unified else 'HIERARCHICAL'} SGQA RESULTS")
         print(f"{'='*60}")
         print(f"Model:            {hier_results['model']}")
         print(f"Total Questions:  {hier_results['total_questions']}")

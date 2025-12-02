@@ -1,0 +1,5628 @@
+{
+  "19cc4e42-39bb-41f9-b9de-9f2940eed6a2": {
+    "overall_goal": "Clean the car interior floor by sweeping with a mop and managing/organizing the mop and cloth supplies.",
+    "sub_events": [
+      {
+        "name": "Prepare and start sweeping",
+        "description": "Pick up the mop and sweep the car floor to clean the interior; includes closing the door to contain the area while sweeping.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Stow mop and place cloth in car",
+        "description": "Temporarily place the mop, open the door, and put a cloth inside the car (preparing or leaving cleaning materials).",
+        "action_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Retrieve supplies from storage",
+        "description": "Move to the cabinet, open it, pick up a cloth, go to the wall, and retrieve the mop stick from its wall mount to reassemble or restock supplies.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  "fbf4150a-27d2-48a4-956f-b4f85ecde465": {
+    "overall_goal": "Set up and use a laptop workstation: initially interact with the laptop, shut it down and store it, then retrieve and reconnect it, and finally set up peripherals and resume using it.",
+    "sub_events": [
+      {
+        "name": "Initial keyboard interaction",
+        "description": "Person repeatedly presses keys on the laptop—likely typing or interacting with the keyboard.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Shutdown and stow laptop",
+        "description": "Person presses the laptop's button, closes it, unplugs the charger, and puts the laptop away.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Retrieve and reconnect laptop",
+        "description": "Person picks the laptop up, places and opens it on a table, then picks up and inserts the charger and plugs it into the socket to power it.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Set up peripherals and resume use",
+        "description": "Person picks up and places the keyboard and mouse, presses keys, holds and moves the mouse, and clicks the mouse button to resume interaction.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "954c2f61-64ad-4c89-a26f-ec4547a65fab": {
+    "overall_goal": "Prepare an onion and start cooking it (wash, prepare, add to a pot, and begin heating).",
+    "sub_events": [
+      {
+        "name": "Wash onion",
+        "description": "Turn on tap to rinse the onion, then turn the water off after washing.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare pot and add onion",
+        "description": "Pick up the pot, transfer the washed onion into it, position the pot under the tap, fill it with water, and stop the water.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Prepare and slice onion",
+        "description": "Place the onion on the board, hold and slice it with a knife, then put the knife down and release the onion.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Start cooking and additional prep",
+        "description": "Place the pot on the cooker and turn the cooker on; then pick up the knife, hold the onion, and perform peeling.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "277b18de-4ad9-4c09-970b-91fcea05097d": {
+    "overall_goal": "Prepare and manage hand tools, use a wrench and spanner to tighten fasteners, and remove a wheel as part of a maintenance task.",
+    "sub_events": [
+      {
+        "name": "Gather and arrange tools",
+        "description": "Pick up individual tools (wrench, plier, spanner) and place them in the workspace to prepare for work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Store tools in box and close",
+        "description": "Hold tools and place them into a box, put them down, and cover the box with a lid (tool storage/organization).",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Tighten nuts and bolts with wrench/spanner",
+        "description": "Use the wrench and spanner to hold, position, rotate, and tighten nuts and bolts, then set tools down.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "name": "Wheel handling and final fastening",
+        "description": "Bring, adjust, and take off a wheel, then use the wrench to hold and tighten a nut as a final fastening step.",
+        "action_indices": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    ]
+  },
+  "e9be1118-a5cf-4431-b2e8-e3edcfa9f949": {
+    "overall_goal": "Assemble and fasten a wood piece to a wood base by drilling holes and securing with screws and clamps.",
+    "sub_events": [
+      {
+        "name": "Initial screw fastening",
+        "description": "Pick up a screwdriver and screw, position the screw on the wood, drive it in, then set the screwdriver down and release the screw.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Clamp the wood (temporary)",
+        "description": "Pick up a clamp, position and tighten it on the wood, adjust (loosen) and remove the clamp.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Prepare and align parts",
+        "description": "Move the wood to the workbench, pick up and align the wood-piece for assembly.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Clamp assembly and drill holes",
+        "description": "Clamp the wood-piece to the wood, tighten the clamp, pick up the drill, hold the pieces and drill corresponding holes (drill, withdraw, set drill down), then release the workpiece.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "name": "Final fastening (start)",
+        "description": "Pick up the screwdriver and screws and position a screw on the wood-piece in preparation for final fastening.",
+        "action_indices": [
+          29,
+          30,
+          31
+        ]
+      }
+    ]
+  },
+  "f5c27b88-a3eb-4290-9102-0307c2809241": {
+    "overall_goal": "Arrange and clean a bookshelf by organizing books, removing dust from the shelf, and re-shelving the books.",
+    "sub_events": [
+      {
+        "name": "Arrange and prepare books",
+        "description": "Position and align books on the shelf and remove a book to prepare for cleaning.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Clean the bookshelf",
+        "description": "Use a brush and rag to remove dust and wipe the shelf surface, then put the cleaning tools down.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Handle and re-shelve books",
+        "description": "Handle individual books (take, hold, put on floor or shelf), re-shelve them, and check their placement.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "97ad4e58-c64f-47e3-8d84-6aad38bdfbc8": {
+    "overall_goal": "Secure bolts onto a machine by positioning them and tightening with a screwdriver (after preparing the machine with a hammer).",
+    "sub_events": [
+      {
+        "name": "Prepare and stabilize machine",
+        "description": "Person holds the machine and taps it with a hammer to prepare or adjust it, then places the hammer down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Install and tighten first bolt",
+        "description": "Pick up a bolt, position it on the machine and release it, then pick up a screwdriver, hold the bolt with the other hand and tighten the bolt with the screwdriver; finally release the bolt and set the screwdriver down.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Install and tighten second bolt",
+        "description": "Repeat the bolt installation: pick up and position the bolt, release it, pick up the screwdriver, hold the bolt and tighten it with the screwdriver, then release the bolt.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "a20c2c22-cc2c-487e-8041-f0b33f4845ca": {
+    "overall_goal": "Affix and finish a piece of fabric onto furniture (upholstering) by cutting it to size, gluing, nailing it in place, and trimming the edges.",
+    "sub_events": [
+      {
+        "name": "Cut fabric to size",
+        "description": "Pick up scissors and hold the fabric to make initial cuts to shape the material.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Position and glue fabric",
+        "description": "Set tools aside, position the fabric, pick up and apply glue to secure the fabric, smooth it down, then put the glue away.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Mechanically fasten fabric with nails",
+        "description": "Use a hammer and nails to drive the fabric onto the furniture, adjusting the fabric between nails, then put the hammer down.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Final trimming",
+        "description": "Re-grasp the scissors to trim excess fabric and finish the edge, then set the scissors down.",
+        "action_indices": [
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "860980fb-f992-4bb1-8a46-b644f58090e2": {
+    "overall_goal": "Prepare and assemble a folded paper piece by aligning a metal board, folding the paper, attaching cardboard, and applying glue.",
+    "sub_events": [
+      {
+        "name": "Position template/metal board",
+        "description": "Pick up a metal board and place it onto the paper, then adjust its position to serve as an alignment or guide.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Fold and prepare paper",
+        "description": "Pick up the paper from the desk, perform folding and adjustments (including interim placements) to form the required shape.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Attach cardboard to paper",
+        "description": "Pick up a piece of cardboard, place and attach it onto the prepared paper, and press to secure the attachment.",
+        "action_indices": [
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Apply adhesive",
+        "description": "Pick up a brush, dip it into glue, hold the paper, and apply glue onto the paper to finalize the assembly.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "15d4a2c1-1cb8-4b76-a66a-adb20b7e96cb": {
+    "overall_goal": "Examine/inspect a card by repeatedly picking it up, checking it, and putting it back on the table.",
+    "sub_events": [
+      {
+        "name": "Initial probing/selection",
+        "description": "Person touches and taps the card while it lies on the table to orient, probe, or select it before picking it up.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Repeated pick-up, inspect, and put-down cycles",
+        "description": "Repeatedly pick the card up with one hand, check or inspect it, then put it back on the table; includes occasional taps/repositioning between cycles.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  "5533ab65-7463-47a6-b040-c0c6d65b8cf5": {
+    "overall_goal": "Assemble and secure a pipe and associated wheel/bracket components on a motorcycle by positioning parts and fastening them with screws/bolts/nuts.",
+    "sub_events": [
+      {
+        "name": "Preparation",
+        "description": "Fold and move aside tags/covers to prepare the workspace.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Adjust wheel and attach arm/bracket",
+        "description": "Adjust and rotate the tyre/wheel into position, pick up a screwdriver, hold the arm/bracket, tighten a screw to secure it, then release the arm.",
+        "action_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Position pipe and fasten with bolt",
+        "description": "Pick up and position the pipe on the motorcycle, pick a bolt and insert it, use a wrench to tighten the bolt while stabilizing the pipe, then put the wrench down.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Install and tighten wheel nut",
+        "description": "Pick up a nut, insert it into the wheel, pick up the wrench, hold the nut in place and tighten it, then put the wrench down.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      }
+    ]
+  },
+  "5293587a-e6c4-4760-8277-cf284588aac3": {
+    "overall_goal": "Wash, rinse, dry and put away dishes and utensils using a sponge and detergent.",
+    "sub_events": [
+      {
+        "name": "Prepare sink and tools",
+        "description": "Set down the sponge and adjust the tap to ready the sink for washing.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Pre-rinse cup",
+        "description": "Retrieve a cup from the sink, rinse it briefly and return it to the sink area.",
+        "action_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Wash and dry spoon",
+        "description": "Take a spoon from the sink, rinse, scrub with the sponge, rinse again, then place it on the drying rack.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Wash and dry saucer",
+        "description": "Pick up a saucer, rinse, scrub with the sponge, rinse again, and put it on the drying rack.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Soap and thoroughly wash cup",
+        "description": "Re-soap the sponge, apply detergent, hold the cup while scrubbing with the sponge, rinse it, and place the cup on the drying rack.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "name": "Move dried dishes to storage",
+        "description": "Take dried items (cup, mug, saucer) from the drying rack and place them on the shelf.",
+        "action_indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      {
+        "name": "Store utensils in drawer",
+        "description": "Open the drawer, pick up the spoon from the drying rack and place it in the drawer, then close the drawer.",
+        "action_indices": [
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      {
+        "name": "Wash mug",
+        "description": "Pick up the mug from the sink, rinse, scrub with the sponge, and rinse again.",
+        "action_indices": [
+          34,
+          35,
+          36,
+          37
+        ]
+      }
+    ]
+  },
+  "ab5f1a57-29b3-4c07-bc82-bed0b1c3d42f": {
+    "overall_goal": "Clean dishes: wash and rinse a mug and a bowl, then dry and put them away.",
+    "sub_events": [
+      {
+        "name": "Wash first bowl",
+        "description": "Turn on the tap and wash then rinse the bowl at the sink.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Bring and wash mug",
+        "description": "Pick up the mug, carry it to the sink, place it there, open the tap, wash and rinse the mug, then close the tap.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Bring bowl to sink for final cleaning/handling",
+        "description": "Pick up the bowl from the table, carry it to the sink and place it in the sink.",
+        "action_indices": [
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Dry and return bowl",
+        "description": "Pick up a towel, hold and dry the bowl with the towel, put the towel down and place the bowl back on the table.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Dry and return mug",
+        "description": "Pick up the towel again, hold and dry the mug with it, then put the towel down.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "d4fc1fd7-c725-454e-9d2b-0fbc774e81d6": {
+    "overall_goal": "Install and secure a bolt on an engine (including preparing and applying adhesive), then prepare and move a ring toward the machine.",
+    "sub_events": [
+      {
+        "name": "Prepare adhesive tool",
+        "description": "Pick up the brush and container and load the brush (dip into container), then set the container aside.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Position and fasten bolt",
+        "description": "Pick up the wrench, place and hold the bolt on the engine, tighten the bolt with the wrench, then release and put the wrench down.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Clean and apply adhesive to bolt",
+        "description": "Pick up a tissue to clean, set it down, pick up the bolt again and apply glue with the prepared brush, then put the brush down.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Prepare and move ring",
+        "description": "Pick up the ring and move toward the machine carrying it.",
+        "action_indices": [
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "efa59c4e-71de-4184-9c82-f78efd4d4702": {
+    "overall_goal": "Assemble and equip a bicycle by installing pedals, mounting and adjusting brakes and cables, placing the frame on a workbench, and attaching wheels.",
+    "sub_events": [
+      {
+        "name": "Install and secure pedal",
+        "description": "Pick up the pedal, attach it to the bicycle frame and tighten the fastening bolt.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Mount brake assembly",
+        "description": "Pick up and attach the brake to the frame and fasten it with a screw.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Connect and adjust brake cable",
+        "description": "Pick up the cable, connect it to the brake, then use a wrench to adjust the brake tension.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Prepare frame on workbench",
+        "description": "Pick up the bicycle frame and place it on the workbench for assembly.",
+        "action_indices": [
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Align and attach wheels",
+        "description": "Pick up each wheel, align it with the frame, and tighten the bolts to secure the wheels.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      }
+    ]
+  },
+  "a5a0a366-8721-413f-8412-66cf69b23b18": {
+    "overall_goal": "Clean dishes and utensils and return them to their storage (cupboard/drawer).",
+    "sub_events": [
+      {
+        "name": "Stow cleaning cloth",
+        "description": "Open the cupboard and place the cloth inside, then close the cupboard.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Retrieve dishes from cupboard",
+        "description": "Open the cupboard, take out plates and bowls and set them on the countertop, then close the cupboard.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Retrieve cutlery from drawer",
+        "description": "Open the drawer and place spoon(s) and fork(s) on the countertop, then close the drawer.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Clean items and put them away",
+        "description": "Pick up the cloth, clean the plate, bowl, spoon, and fork on the countertop, and return each cleaned item to the cupboard or drawer.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      }
+    ]
+  },
+  "2ae97f2a-b16d-467b-b73a-721cb00996f1": {
+    "overall_goal": "Prepare dough from ingredients, shape and cut it into pieces, place the pieces in a pan, and finish by brushing them with oil.",
+    "sub_events": [
+      {
+        "name": "Mix ingredients",
+        "description": "Pick up a spatula and mix the bowl contents to combine ingredients, then set the spatula down.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Knead dough",
+        "description": "Use both hands to knead the mixed dough until it reaches the desired consistency.",
+        "action_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Shape and cut dough",
+        "description": "Pick up a rolling pin to roll the dough flat, then pick up a cutter and cut the rolled dough into pieces; put tools down when finished.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Place pieces in pan",
+        "description": "Pick up the cut dough pieces and place them into the pan in preparation for baking or cooking.",
+        "action_indices": [
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Brush with oil",
+        "description": "Pick up a brush, dip it into oil, apply the oil to the dough pieces, and put the brush down.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "3ea57fa2-fd76-48c1-923e-e90b14373c7e": {
+    "overall_goal": "Prepare dough for baking by combining ingredients, mixing, kneading, shaping, and cutting the dough.",
+    "sub_events": [
+      {
+        "name": "Gather and add ingredients",
+        "description": "Pick up flour, sugar, and water and add them into the mixer.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Mix ingredients",
+        "description": "Operate the mixer to combine the added ingredients into dough.",
+        "action_indices": [
+          11
+        ]
+      },
+      {
+        "name": "Remove and knead dough",
+        "description": "Take the dough out of the mixer, place it on the table, and knead/adjust it repeatedly until ready.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "name": "Prepare pan and shape dough",
+        "description": "Retrieve a pan, place it on the table, and roll the dough to shape it.",
+        "action_indices": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "name": "Cut dough and put away tools",
+        "description": "Pick up a knife, cut the rolled dough into pieces, and place the knife back on the table.",
+        "action_indices": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      }
+    ]
+  },
+  "203ee455-6f60-4e08-bd89-28e2ca3927da": {
+    "overall_goal": "Prepare a dough mixture, shape portions onto a baking tray, and bake them.",
+    "sub_events": [
+      {
+        "name": "Preheat oven and position tray",
+        "description": "Open the oven, put a baking tray inside, close the oven and set the timer to preheat.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Clean and set up mixing area",
+        "description": "Wipe the countertop clean and place the mixing bowl on the workspace.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Measure and add dry ingredients",
+        "description": "Open bags of flour and sugar, scoop and pour measured amounts into the bowl, using a scoop and returning it when done.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Cover bowl and prepare tray for dough",
+        "description": "Cover the mixed bowl with a cloth, retrieve the warmed tray from the oven and place it on the countertop, then take dough from the bowl and place portions on the tray.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "name": "Finalize mixture and tidy up",
+        "description": "Handle liquids and utensils: pour water into the bowl, stir the mixture with a spoon, put the spoon down and release the bowl.",
+        "action_indices": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      }
+    ]
+  },
+  "8be918b2-c819-4a84-98dc-5fe24835a4ac": {
+    "overall_goal": "Paint a door frame and then protect the floor and secure the paint can (finish/cleanup).",
+    "sub_events": [
+      {
+        "name": "Apply paint to the door frame",
+        "description": "Dip the brush into the paint and paint the door frame (multiple dips and strokes while holding the frame).",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Prepare workspace and position the paint can",
+        "description": "Release the door, spread plastic wrap as a protective drop cloth, pick up and place the paint can on the plastic, and remove the lid to access paint.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Continue/finish painting and reseal/move the can",
+        "description": "Pick up and dip the brush again, adjust/spread the plastic protection, set the brush down on the sheet, then replace and press the lid on the can and place the can on the plastic wrap (securing and moving the can as part of cleanup).",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "44ae604b-2e16-497d-a018-03495d8d5654": {
+    "overall_goal": "Wash and clean a car, including rinsing, drying, and cleaning the windshield and wipers.",
+    "sub_events": [
+      {
+        "name": "Preparation and tool setup",
+        "description": "Gather and position the bucket, hose, and sponge to prepare for washing.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Rinse the car",
+        "description": "Use the water hose to rinse the car exterior.",
+        "action_indices": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Dry and initial windshield cleaning",
+        "description": "Dry the car surfaces with a towel and begin cleaning the windshield with a sponge.",
+        "action_indices": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Windshield and wiper cleaning",
+        "description": "Operate the wipers and use the bucket and sponge (dip and squeeze) to thoroughly clean the windshield and wipers.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Reposition and refill water",
+        "description": "Move the bucket as needed, pick up the hose and refill the bucket with water to continue or finish washing.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "a0d6bd8e-c477-442b-bab3-731775b44b43": {
+    "overall_goal": "Wash and clean a car (prepare water, rinse, and scrub the vehicle).",
+    "sub_events": [
+      {
+        "name": "Initial wiping",
+        "description": "Pick up a towel and wipe the car surface to remove loose dirt or dry spots, then set the towel down.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare water supply",
+        "description": "Access and prepare water by opening the tap, getting a bucket, filling it under the tap, carrying the filled bucket to the car, placing it down, and closing the tap.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Rinse the car",
+        "description": "Pick up the hose and spray the car with water to rinse or wet the surface, then put the hose down.",
+        "action_indices": [
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Soap and scrub",
+        "description": "Use a sponge (set aside then pick up), dip it into the bucket, lift/hold parts as needed (raise wiper, hold car), scrub the car surface, move and flip the sponge, re-dip and continue washing, then lower the wiper.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "3c80ddb5-5046-4d97-9162-5e5a87ccb2fd": {
+    "overall_goal": "Remove and reinstall a bolt on a car by preparing and organizing tools, positioning the toolbox, and then loosening, removing, and tightening the bolt.",
+    "sub_events": [
+      {
+        "name": "Prepare workspace and position toolbox",
+        "description": "Open the toolbox, take an initial wrench, hold the bolt on the car, and bring/place the toolbox near the car/workbench to prepare for work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Gather and organize tools",
+        "description": "Open the cabinet, retrieve additional tools (wrench, screwdriver), place them into the toolbox, put a wrench on the workbench, and close the cabinet and toolbox.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Store toolbox",
+        "description": "Pick up the toolbox, move it back to the cabinet, place it inside, and close the cabinet.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Remove and reinstall the bolt",
+        "description": "Loosen the bolt with the wrench, remove it from the car and place it on the workbench, retrieve the bolt, hold it on the car, and tighten it back with the wrench.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      }
+    ]
+  },
+  "05c937ff-816b-46b8-8ae2-864eae85e987": {
+    "overall_goal": "Prepare, sand (smooth) and finalize a stand by positioning, smoothing its surface with sandpaper, and making final adjustments.",
+    "sub_events": [
+      {
+        "name": "Positioning and inspection",
+        "description": "Securely hold, rotate and align the stand on the table, remove any removable part and inspect the stand.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Sanding / surface smoothing",
+        "description": "Hold the stand, pick up sandpaper and smoothen the stand's surfaces repeatedly, then put the sandpaper and the stand down.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Final positioning and adjustment",
+        "description": "Re-hold the stand and make final adjustments/alignments to finish.",
+        "action_indices": [
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  "4f68183f-610a-44de-b102-e7f300b49dcd": {
+    "overall_goal": "Preparing and kneading dough (making a dough/bread mixture).",
+    "sub_events": [
+      {
+        "name": "Prep and initial mixing",
+        "description": "Retrieve a cloth, cover the bowl, and mix initial ingredients together in the bowl.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Remove and knead dough",
+        "description": "Take the dough out of the bowl, place it on the countertop, and knead it by hand to develop the dough.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Return and secure dough",
+        "description": "Pick the kneaded dough up, put it back into the bowl and hold/secure the bowl (preparing for further additions or resting).",
+        "action_indices": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Add dry and wet ingredients",
+        "description": "Handle packages and a jug to pour flour, sugar, yeast and water into the bowl, then set the packages/jug back down.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "3c18ec5c-7e6b-400d-9260-70598e04a373": {
+    "overall_goal": "Repot a plant by placing it into a pot, filling and leveling soil around it, and tidying the workspace.",
+    "sub_events": [
+      {
+        "name": "Prepare pot and workspace",
+        "description": "Bring the pot and set it on the work surface to prepare for planting.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Place and position plant",
+        "description": "Pick up the plant, put it into the pot, and adjust its position and orientation.",
+        "action_indices": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Add bulk soil to pot",
+        "description": "Retrieve the soil bag, pour soil into the pot, and use a trowel to add/scoop soil for initial filling.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Store materials and clean",
+        "description": "Close and set aside the soil bag and clean the table/work area.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Final soil placement and finishing",
+        "description": "Use the trowel to add and arrange soil around the plant for final adjustment, then put the tool down.",
+        "action_indices": [
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "d851b431-8551-492b-8332-bd46c3bfdaba": {
+    "overall_goal": "Transplant a plant into a planter and fill/pack soil around it.",
+    "sub_events": [
+      {
+        "name": "Place and position plant",
+        "description": "Pick up the plant, place it into the planter and adjust its position.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Initial soil filling with trowel",
+        "description": "Pick up the trowel, hold the soil bag, repeatedly scoop soil and pour it into the planter around the plant to begin filling.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Continue filling and set things down",
+        "description": "Perform additional cycles of dipping, scooping and pouring soil into the planter, then release the planter and put the trowel down.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "name": "Final scoops and finish",
+        "description": "Repick the trowel, do final scoops from the bag, release the bag and hold the planter (final check/finish).",
+        "action_indices": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    ]
+  },
+  "dabf199a-bf55-440d-8aeb-77ead18097ae": {
+    "overall_goal": "Attach fabric to a door and securely fasten it using bolts, nuts, and hand tools.",
+    "sub_events": [
+      {
+        "name": "Position and attach fabric",
+        "description": "Pick up the fabric and attach it onto the door to position the material for fastening.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Prepare bolt and initial adjustment",
+        "description": "Pick up a screwdriver, hold and adjust a bolt on the door, then set the screwdriver down and release the bolt.",
+        "action_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Remove/clear fastener and store parts",
+        "description": "Use a wrench to loosen an existing fastener on the car door, then put the wrench down and place collected nut(s) into the toolbox.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Re-seat and tighten bolt",
+        "description": "Pick up a spanner and tighten the bolt on the door, then put the spanner away.",
+        "action_indices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Final assembly and fastening",
+        "description": "Retrieve a wrench and a nut, insert the nut and tighten it to complete the secure fastening.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "1560b9ee-e2da-4dda-a875-52e5bae8d88a": {
+    "overall_goal": "Disassemble and manipulate a plug to adjust and ultimately remove a wire by loosening its retaining nut with a screwdriver.",
+    "sub_events": [
+      {
+        "name": "Prepare and preliminarily loosen",
+        "description": "Pick up the plug and screwdriver and loosen the plug's retaining nut to begin accessing the wire.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Handle and adjust the wire",
+        "description": "Grab and reposition the wire (using both hands) to align or prepare it for connection or further work.",
+        "action_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Re-seat/connect and set aside",
+        "description": "Pick up the plug, connect the wire into the plug, then place the wire and plug on the table.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Final disassembly prep: loosen fasteners",
+        "description": "Pick up the screwdriver and nut again and repeatedly loosen the nut (finalizing disassembly), then set the screwdriver down.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Remove the wire",
+        "description": "Grab the wire from the plug and pull it out, completing the wire removal.",
+        "action_indices": [
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "5bc29170-aa13-4dd7-bb48-2790f676463c": {
+    "overall_goal": "Repair and reconnect a damaged electrical wire/cable by removing the damaged section, testing and splicing the conductors, insulating the connection, and restoring power.",
+    "sub_events": [
+      {
+        "name": "Prepare and isolate wiring",
+        "description": "Locate and handle the target wire and make the circuit safe (isolate power) before further work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Remove and inspect damaged section",
+        "description": "Cut out the damaged cable segment and inspect the exposed cable to assess the condition.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Test and reconnect conductors",
+        "description": "Use a multimeter to test the cable, then grip and twist the wire ends together (splice) to re-establish electrical continuity.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Insulate and secure, then restore power",
+        "description": "Wrap the repaired connection with tape, restore power, and tighten the terminal to finalize the repair.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "c4d332b2-7fcc-4993-b9ea-26d6f794984f": {
+    "overall_goal": "Cut leaves from a plant with pruning shears and collect the cut leaves into a basket.",
+    "sub_events": [
+      {
+        "name": "Prepare collection basket",
+        "description": "Retrieve the basket and place it on the ground where harvested leaves will be collected.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Harvest leaves (first batch)",
+        "description": "Pick up pruning shears, hold individual leaves, cut them with the shears, and place the cut leaves into the basket; finish by setting the shears down.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Reposition basket and harvest more",
+        "description": "Pick up and move the basket, set it down again, then resume cutting additional leaves with the pruning shears and depositing them into the basket.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "df0fa70d-600e-477b-aaea-275f86ff7010": {
+    "overall_goal": "Assemble, install, and adjust a gauge on a motorcycle wheel and perform final checks and positioning of the motorcycle.",
+    "sub_events": [
+      {
+        "name": "Unpack and prepare gauge",
+        "description": "Open the package, retrieve the gauge, perform initial fastening, cleaning and inspections to prepare the gauge for assembly.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Gather tools and parts / prep components",
+        "description": "Collect tools (pliers, hammer) and parts (screws) and perform preliminary shaping or prep of parts as needed.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "name": "Insert screws and fine adjustments to gauge",
+        "description": "Insert screws into the gauge, hold and examine the assembly, and make fine adjustments with pliers.",
+        "action_indices": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      {
+        "name": "Mount and secure gauge to wheel",
+        "description": "Pick up the wrench, position the gauge on the wheel, tighten and seat the gauge (including light hammering to set it).",
+        "action_indices": [
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "name": "Final adjustments, cleaning and system-level checks",
+        "description": "Adjust and clean the wheel/gauge, perform checks on the motorcycle, reposition/move the motorcycle, and do final examination of the installed gauge.",
+        "action_indices": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53
+        ]
+      }
+    ]
+  },
+  "32e25924-9d92-4030-a328-11e2c4c7ac56": {
+    "overall_goal": "Prepare, season, and bake dough pieces into bread (rolls).",
+    "sub_events": [
+      {
+        "name": "Prepare and shape dough pieces",
+        "description": "Handle individual dough portions: pick up, wet/dip, twist, roll and shape them into bread forms and set them down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Assemble on tray and finish",
+        "description": "Place shaped dough on a tray, apply egg wash with a brush and sprinkle salt to finish before baking.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Load oven and start baking",
+        "description": "Carry the prepared tray to the oven, place it inside, close the oven door and set the timer.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "c1ef9d03-1278-4216-b1e4-b1a298a892d9": {
+    "overall_goal": "Cut dough into strips and place the strips into a tray (the tray is positioned on a rack).",
+    "sub_events": [
+      {
+        "name": "Approach and gather dough",
+        "description": "Move to the table, pick up a scraper and scrape dough from the table to prepare it for cutting.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Position tray on rack",
+        "description": "Pick up the tray, carry it to the rack, and place it on the rack to receive finished pieces.",
+        "action_indices": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Prepare cutting and cut dough into strips",
+        "description": "Retrieve the scraper, hold the dough, cut the dough into strips with the scraper, then put the tool down and release the dough.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Transfer strips to tray",
+        "description": "Pick up the cut dough strips, carry them to the tray and drop them into the tray.",
+        "action_indices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Tool stow",
+        "description": "Put down the scraper after initial scraping (tool stowed between tasks).",
+        "action_indices": [
+          3
+        ]
+      }
+    ]
+  },
+  "950f70a4-f90b-4a15-97a0-c14ad6960285": {
+    "overall_goal": "Clean, rinse, dry, and store kitchen dishes and utensils, then tidy the sink and counter.",
+    "sub_events": [
+      {
+        "name": "Wash sieve",
+        "description": "Prepare water and sponge, wash and rinse the sieve, then dry and set it aside.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Wash plate",
+        "description": "Pick up sponge, turn on tap, wash and rinse a plate, then dry and place it down.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "Load sink and wash pan",
+        "description": "Bring larger dirty items (pizza tray, plates, sieve) to the sink and wash/clean the pan.",
+        "action_indices": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "name": "Store cleaned items and wipe surfaces",
+        "description": "Put cleaned plates, tray, pan and sieve into the cupboard and wipe the counter.",
+        "action_indices": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ]
+      },
+      {
+        "name": "Clean sink and finish remaining washing/drying",
+        "description": "Wash and dry the sink, move remaining cookware to the sink as needed, wash/rinse/dry the pizza tray and finish up.",
+        "action_indices": [
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73
+        ]
+      }
+    ]
+  },
+  "583ff0cb-4697-4f63-b525-bf5bc2318117": {
+    "overall_goal": "Prepare and bake bread: flour and knead dough, manage oven baking and cooling, shape/roll dough, and operate a dough machine.",
+    "sub_events": [
+      {
+        "name": "Dough preparation (flouring & kneading)",
+        "description": "Apply flour to the work surface/dough and knead the dough to develop it for baking.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Oven management and baking",
+        "description": "Handle the oven cycle: open oven, remove cooled loaves, load dough into the oven, close, set timer and start baking.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Shaping and rolling dough",
+        "description": "Retrieve dough, place it on the table, pick up and use the rolling pin to roll out the dough, then set the rolling pin aside.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Equipment placement and machine operation",
+        "description": "Carry and position a tray at the dough machine and operate the machine to process the dough/tray.",
+        "action_indices": [
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "f35817ce-c97c-4795-b92d-bfd71aa3c7de": {
+    "overall_goal": "Install a cover on a motorbike and secure it by placing and tightening bolts and screws.",
+    "sub_events": [
+      {
+        "name": "Position bike and preliminarily fasten bolt",
+        "description": "Move the motorbike into place, pick up a bolt and screwdriver, hold the bike steady, and tighten the bolt to secure initial assembly.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Remove existing screw",
+        "description": "Use the screwdriver to untighten and remove a screw from the bike, then set the removed parts and tool aside.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Place cover and fasten its screws",
+        "description": "Pick up the cover, place it onto the motorbike, hold it, then pick up the screwdriver and tighten the screws that secure the cover.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "Retrieve hardware and complete final fastening",
+        "description": "Get a bolt from a box, place it on the motorbike, hold the bike steady, pick up the screwdriver, tighten the bolt, and finish by releasing the bike.",
+        "action_indices": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    ]
+  },
+  "fefb0892-7e1a-4a34-9418-ea1c96705edc": {
+    "overall_goal": "Care for a potted plant by cleaning the pot and leaves, placing and positioning the plant, then fertilizing, watering, and trimming it.",
+    "sub_events": [
+      {
+        "name": "Clean the pot",
+        "description": "Wipe the pot clean using a cloth (pick up cloth, hold pot, wipe, then put cloth down and release pot).",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Brush the plant",
+        "description": "Brush the plant's foliage to remove dust and debris (pick up brush, hold plant, brush, put brush down).",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Place and adjust the plant",
+        "description": "Pick up the plant, place it on the table, make adjustments to its position, and inspect it.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Fertilize and water",
+        "description": "Apply fertilizer to the soil and then water the plant (pick up fertilizer, sprinkle, put it down, pick up watering can, water, put can down, release hold).",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Trim/prune leaves",
+        "description": "Prune the plant by holding it and trimming leaves with scissors, then put the scissors down.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "56ddd3b9-5598-4f87-8a90-3f7c810d3e74": {
+    "overall_goal": "Remove a motorcycle wheel, service and resecure it, reinstall the wheel on the motorbike, and verify proper alignment and rotation.",
+    "sub_events": [
+      {
+        "name": "Remove fasteners and loosen wheel",
+        "description": "Use wrench, screwdriver, and hammer to remove bolts/screws and loosen the wheel while it's on the motorbike.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Remove wheel and secure in vice",
+        "description": "Lift the wheel off the motorbike and place it securely in a vice for service.",
+        "action_indices": [
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Reassemble and reinstall wheel",
+        "description": "Refit bolts on the wheel in the vice, lift the wheel off the vice, attach it back onto the motorbike, and tighten the fasteners.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "Final inspection and adjustment",
+        "description": "Inspect wheel alignment and rotation, make any necessary adjustments, and perform a final check.",
+        "action_indices": [
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "c9a6233c-7a8b-488c-b0ab-bce963c643bd": {
+    "overall_goal": "Assemble and secure a chair by aligning its joints and fastening screws and bolts.",
+    "sub_events": [
+      {
+        "name": "Prepare workspace and get tools",
+        "description": "Bring parts/tools and pick up the spanner and hammer needed for assembly.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Align joint and set pieces",
+        "description": "Hold the chair joint in place and tap it with the hammer to fit components, then release.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Insert and tighten screws",
+        "description": "Use the screwdriver to tighten existing screws, pick and insert additional screws, then tighten them.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Position chair and final bolt tightening",
+        "description": "Release/hold and reposition the chair as needed, then pull and tighten the final bolt with the spanner.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "a61ec2b9-bc21-4e55-ac3f-9f52407633cc": {
+    "overall_goal": "Prepare, shape and bake dough (cutting, kneading/rolling, placing in a pan and putting it into the oven), while also preparing a flour–water mixture.",
+    "sub_events": [
+      {
+        "name": "Tool preparation and portioning",
+        "description": "Pick up the scrapper, hold and cut the dough into portions, then set the tool down and release the dough.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Kneading and rolling",
+        "description": "Use both hands to roll and stretch the dough repeatedly to develop its shape/texture.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Prepare work surface with flour",
+        "description": "Pick up flour and spread/pour it onto the table and arrange it for use.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Assemble and start baking",
+        "description": "Pick up the dough, place it into a pan, put the pan into the oven, close the oven door and set the timer.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Hydrate and mix flour",
+        "description": "Pick up a jug, pour water onto the prepared flour, set the jug down, and mix the flour and water together.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    ]
+  },
+  "a1f09ebf-619d-41fd-841d-56629d803003": {
+    "overall_goal": "Clean and organize the workspace by collecting debris, storing items, performing localized scraping on wood, and then scrubbing and sweeping the floor.",
+    "sub_events": [
+      {
+        "name": "Gather debris and clear small items",
+        "description": "Set out a bucket and collect small trash/items (paper, tape, sellotape) into or onto the bucket; remove/relocate small loose items like the carpet.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Put on protective gloves and scrape wood",
+        "description": "Don gloves, pick up a scraper and scrape the wood surface to remove material/damage, then put the tool down and release the wood.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Stow or reposition larger equipment",
+        "description": "Place long items out of the way (rod on shelf) and position the ladder on the floor to organize the area.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Scrub and sweep the floor, collect dust",
+        "description": "Use the scraper to scrub the floor where needed, then use broom and dustpan to sweep and collect dust/debris.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    ]
+  },
+  "26b635ab-134a-477c-a22e-e805eed07a9d": {
+    "overall_goal": "Wash and clean dishes and utensils (plate and spoon) using a soapy sponge.",
+    "sub_events": [
+      {
+        "name": "Prepare cleaning tools",
+        "description": "Put on a glove and pick up the sponge to prepare for washing.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare sponge with water and soap",
+        "description": "Wet the sponge at the tap, apply soap to it, then set the soap and sponge down on the slab.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Wash and rinse plate",
+        "description": "Remove the glove, set it aside, pick up the plate, scrub it with the sponge, rinse under the tap, turn the tap off, and place the plate on the drying rack.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Wash and rinse spoon",
+        "description": "Pick up the spoon, scrub it with the sponge, rinse under the tap, and place the spoon on the drying rack.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "8cf5a53b-fa9c-4fe7-b767-697133d4d5b8": {
+    "overall_goal": "Set up a canvas on an easel and paint a book/object using a brush and palette, then clean and put away the painting tools.",
+    "sub_events": [
+      {
+        "name": "Canvas setup",
+        "description": "Pick up the canvas and place it on the easel to prepare the workspace.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Tool preparation",
+        "description": "Pick up the paintbrush and palette to ready painting tools.",
+        "action_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Painting session",
+        "description": "Load and mix paint on the palette and repeatedly apply paint to the book/object; finish by setting the palette down.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Cleanup and put-away",
+        "description": "Rinse and swirl the brush in water, put the cup down, wipe/dry the brush with a cloth, and put the brush away.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "4988de48-c77e-406d-8367-68fe2266a8aa": {
+    "overall_goal": "Carve and finish a wooden sculpture: using a chisel to shape the wood, adjust/setup tools and clamps, measure and mark for precision work, then smooth and clean the finished piece.",
+    "sub_events": [
+      {
+        "name": "Initial tool use and rough carving",
+        "description": "Pick up the chisel and perform the first rough carving passes on the wood, then inspect the result and set the tool down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Adjust work and refine shaping",
+        "description": "Adjust machine/lever settings, pick up the chisel again to refine the sculpture, then place the chisel and inspect the refined form.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Further material removal and cleaning",
+        "description": "Resume cutting (shaving) to remove material, wipe off dust and examine the piece, then place the chisel aside.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Tool transfer, precision setup, final carving and finishing",
+        "description": "Handle and transfer the chisel as needed, set up and tighten clamps on the workpiece, position and measure/mark the wood for precise cuts, perform final carving passes, then smooth the surface and brush off dust for cleanup.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    ]
+  },
+  "aa8fcce0-75d1-485f-aede-5d9e6997ad41": {
+    "overall_goal": "Clean and reinstall a car floor mat and clean the car interior (remove trash, unlock/open the car, clean the seat and mat, and apply cleaning solution).",
+    "sub_events": [
+      {
+        "name": "Collect trash",
+        "description": "Remove trash from pockets and place it into a bag to clear the workspace.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Access the car",
+        "description": "Grab the bag, open and unlock the car door using the key to gain access to the interior.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Clean the seat",
+        "description": "Hold and clean the car seat with a cloth, then release it when finished.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Remove and clean the mat",
+        "description": "Take the mat out, brush and remove debris, then carry and place the cleaned mat back into the car.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "Prepare and apply cleaning solution",
+        "description": "Retrieve cloth and bottle from the bag, position them, and pour liquid onto the cloth for cleaning.",
+        "action_indices": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    ]
+  },
+  "6cfe67ef-f0cc-47f0-8808-31efcf876095": {
+    "overall_goal": "Assemble and secure a furniture piece by inserting and tightening screws, aligning the parts, and putting tools away.",
+    "sub_events": [
+      {
+        "name": "Gather parts and position screws",
+        "description": "Pick up the screwdriver and screws and place screws onto the furniture piece ready for insertion.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Insert and tighten screws",
+        "description": "Use the screwdriver to insert each positioned screw into its hole and tighten them, switching hands as needed.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Align and set the furniture piece",
+        "description": "Inspect the screw alignment, adjust the furniture piece position, and set it down in place.",
+        "action_indices": [
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final tightening, inspection and cleanup",
+        "description": "Perform final tightening of any loose screws, put the screwdriver down, examine the assembled furniture for stability, and store tools.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      }
+    ]
+  },
+  "41b8254c-ca1e-464c-9323-55301fb5f0e8": {
+    "overall_goal": "Prepare and sweeten a cold drink by gathering ingredients and utensils, adding ice, pouring the beverage, stirring, and adding sugar.",
+    "sub_events": [
+      {
+        "name": "Retrieve beverage",
+        "description": "Open the fridge, take out the bottle, close the fridge and place the bottle on the counter.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Gather cup and spoon",
+        "description": "Open the drawer to get a spoon, pick up a cup (taste), and set these on the counter.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Clean and use spoon to stir",
+        "description": "Run the spoon under the tap to rinse it, pick it up and stir the drink in the cup, then place the spoon back.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Add ice",
+        "description": "Open the freezer, take out the ice tray, place it on the counter, close the freezer, remove ice cubes from the tray and add them into the cup.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "name": "Pour beverage and sweeten",
+        "description": "Retrieve and open the bottle, pour liquid into the cup and set the bottle down; then open the sugar jar, scoop sugar with the spoon into the cup and place the spoon back.",
+        "action_indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      }
+    ]
+  },
+  "d04f8465-d11f-40d1-8315-302380ec0af4": {
+    "overall_goal": "Modify and evaluate a pen by cutting its cap and/or body, attaching and testing the cap, and inspecting the final result.",
+    "sub_events": [
+      {
+        "name": "Prepare and cut cap",
+        "description": "Pick up the cutter and the cap, use the cutter to cut/trim the cap, then set the cutter down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Attach and test cap fit",
+        "description": "Pick up the pen, attach the cap to the pen, hold and remove the cap to test fit/function, then place the cap and pen down.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Trim pen and inspect",
+        "description": "Retrieve the cutter, hold the pen, cut/trim the pen as needed, put the cutter down, and inspect the pen.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  "577f3941-c9f6-45d3-893e-3fd12cffcad1": {
+    "overall_goal": "Safely remove a rope tied to a plant—inspect and prepare the plant, untie and free the rope, then collect and store it and clean up.",
+    "sub_events": [
+      {
+        "name": "Inspect and clear",
+        "description": "Check the plant for damage and remove any debris to prepare the work area.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Position and prepare the rope/plant",
+        "description": "Bring the plant closer, examine how the rope is attached, steady the plant and grip the rope to set up for untying.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Initial untying and loosening",
+        "description": "Untie the rope from the stem and gently pull/loosen it to begin freeing it from the plant.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Freeing and removing knots",
+        "description": "Untangle and pull the rope away from the plant, inspect for remaining knots and untie them completely.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Remove, store and clean up",
+        "description": "Remove the rope from the plant, place and collect it, store it in a container, and wipe hands.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "352f1eea-606d-4cd7-906f-733affaf6823": {
+    "overall_goal": "Remove a fence board and disassemble its fasteners, collect and pack the tools, and untie a rope knot.",
+    "sub_events": [
+      {
+        "name": "Remove fence board",
+        "description": "Lift, carry and place a fence board aside to access the attachment points.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Disassemble fasteners",
+        "description": "Use the appropriate tools (screwdriver, hammer, wrench) to remove screws, nails, and bolts from the fence and place the fasteners into a box.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Inspect and pack tools",
+        "description": "Inspect the separated fence piece, collect all tools, place them in a box and close it.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Handle and untie rope",
+        "description": "Pick up and manipulate the rope (pull, switch hands) and untie the knot.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "5ec85bbd-e6c4-46e3-8da5-28576730b35f": {
+    "overall_goal": "Arrange and organize tableware, then collect the cups and plates onto a tray.",
+    "sub_events": [
+      {
+        "name": "Set tableware",
+        "description": "Place and arrange cups, plates and a dish on the dining table and refine their positions.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Position and check tray",
+        "description": "Handle the tray to the table area, place it, inspect the arrangement, and temporarily relocate the tray as needed.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Load tray with dishes",
+        "description": "Pick up individual cups and plates and place them onto the tray.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "e8e54409-495b-49e5-b325-556c812d6ff4": {
+    "overall_goal": "Wash, rinse, dry, and place dishes and utensils (plates, bowls, fork) using a sponge, soap, towel, and tap.",
+    "sub_events": [
+      {
+        "name": "Prepare cleaning tools and water",
+        "description": "Turn on the tap, pick up sponge and soap, apply soap to the sponge, and set aside the soap.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Wash, rinse, and dry a plate",
+        "description": "Pick up the plate, scrub it with the soapy sponge, rinse under the tap, put sponge down, dry with a towel, and place the plate on the rack.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Wash, rinse, and dry a bowl",
+        "description": "Reapply the sponge, scrub the bowl, pick up and rinse the bowl under the tap, put the sponge down, dry the bowl with a towel, and place it on the rack.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Wash, rinse, and dry utensils",
+        "description": "Pick up the sponge and utensil (fork), scrub and rinse the fork under the tap, put the sponge down, dry the fork with a towel, and put the towel away.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    ]
+  },
+  "f646012d-baca-46a6-bc03-32047c83f5dc": {
+    "overall_goal": "Clean and service a camera: wipe interior and exterior, attach the cover with a screwdriver, then perform a final clean and later remove the cover.",
+    "sub_events": [
+      {
+        "name": "Initial interior cleaning",
+        "description": "Pick up a wipe and clean the inside of the camera, then set the wipe down.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Exterior cleaning and handling",
+        "description": "Prepare and handle the camera (pick it up) and use the wipe to clean its exterior/surface, then put both camera and wipe back.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Attach cover with screwdriver",
+        "description": "Pick up the cover, place it onto the camera, pick up a screwdriver and screw the cover onto the camera, then put the screwdriver down.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Final hold and cleaning",
+        "description": "Hold the camera, perform a final wipe/clean of the camera surface, and put the wipe down.",
+        "action_indices": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Remove cover (unscrew)",
+        "description": "Pick up the screwdriver, unscrew/remove the cover from the camera, and put the screwdriver down.",
+        "action_indices": [
+          17,
+          18,
+          19
+        ]
+      }
+    ]
+  },
+  "831a2da3-bf97-4a79-aa47-16bcdca9e3cd": {
+    "overall_goal": "Bring laundry to the washing machine, load the clothes, and add detergent to prepare for a wash.",
+    "sub_events": [
+      {
+        "name": "Bring laundry to washer",
+        "description": "Pick up the laundry basket and carry it to the washing machine, then set it down next to the machine.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare laundry and open machine",
+        "description": "Adjust items in the basket as needed and open the washing machine door to prepare for loading.",
+        "action_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Load clothes into washing machine",
+        "description": "Take individual pieces (cloths, socks) from the basket and put them into the washing machine, then close the machine door.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Add detergent",
+        "description": "Pick up the detergent container, open the detergent dispenser on the machine, pour in detergent, and close the dispenser.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    ]
+  },
+  "1db339f1-f887-4e46-86be-2df8eda596db": {
+    "overall_goal": "Fetch water with a bucket from a tap and deliver it to the car’s fluid containers (pouring into car reservoirs such as a container and the windshield-washer tank), while checking the car.",
+    "sub_events": [
+      {
+        "name": "Prepare and initial pour/check",
+        "description": "Pick up the bucket, go to the tap and position it, then use the bucket to pour water into a car container and inspect the car/container for leaks.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Refill bucket and top up washer tank",
+        "description": "Collect the bucket again, take it to the tap, fill it with water, carry it to the car and pour water into the windshield-washer tank, then set the bucket down.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Repeat filling and delivering more water",
+        "description": "Pick up the bucket again, walk to the tap, place and fill the bucket, then carry it back toward the car to deliver additional water.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "303505b9-2cf3-488d-ae5f-d72d3bf73585": {
+    "overall_goal": "Prepare a cardboard piece, cover it with cloth, attach and secure it onto a model train, and finish it by painting.",
+    "sub_events": [
+      {
+        "name": "Cutting and trimming the cardboard",
+        "description": "Retrieve the cardboard, place it on the workspace, and use scissors to cut and trim the piece (including removing excess cloth/edges).",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Initial placement and adjustment on the model train",
+        "description": "Lift the prepared cardboard and place it onto the model train, adjusting its position for fit.",
+        "action_indices": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Glue cloth to cardboard and press",
+        "description": "Apply glue to the cardboard, place the cloth onto the glued surface, and press the cloth onto the cardboard to adhere.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final alignment and securing to the train",
+        "description": "Pick up and align the cloth-covered cardboard on the train, add more glue as needed, and press to firmly secure it in place.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      {
+        "name": "Inspection and painting",
+        "description": "Examine the assembled craft and paint the cardboard component while it is on the train.",
+        "action_indices": [
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    ]
+  },
+  "92af2e29-8b4c-4a37-bb48-f3b3e4d1901a": {
+    "overall_goal": "Remove a car floor mat, clean it (spray, scrub, rinse, dry, remove loose dirt, vacuum) and reinstall it in the car.",
+    "sub_events": [
+      {
+        "name": "Remove mat from car",
+        "description": "Open the car door, take the floor mat out and set it on the ground to prepare for cleaning.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Apply cleaning solution",
+        "description": "Pick up and use a cleaner to spray the mat while holding it steady.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Scrub and rinse",
+        "description": "Scrub the mat with a brush, then rinse it with a water hose and put the tools down.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Dry and remove loose dirt",
+        "description": "Dry the mat with a towel, then shake and beat it to remove remaining loose dirt.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Vacuum and reinstall mat",
+        "description": "Vacuum the mat for final cleaning, then carry it back to the car, place it inside and straighten it.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      }
+    ]
+  },
+  "e03004cc-80ce-4d82-9d09-f50fc82b6456": {
+    "overall_goal": "Prepare paint and apply it to a piece of wood placed on a workbench.",
+    "sub_events": [
+      {
+        "name": "Workspace setup",
+        "description": "Place protective cardboard on the workbench and position the wood on it.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Mix paint",
+        "description": "Prepare the paint by inserting a stirring stick into the can, stirring thoroughly, then removing the stick.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Open/access paint and load brush",
+        "description": "Use a screwdriver to access the paint can, manage the lid and tools, pick up the brush and dip it into the paint.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Apply paint to wood",
+        "description": "Hold the wood steady and apply paint with the loaded brush in multiple strokes/coats.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    ]
+  },
+  "e08c9103-d6a0-4a43-8276-c8f5e7cfe57f": {
+    "overall_goal": "Prepare a bench grinder and sharpen a chisel by installing and securing the grinding wheel, starting the grinder, and filing the chisel against the rotating wheel.",
+    "sub_events": [
+      {
+        "name": "Unlock/prepare grinder",
+        "description": "Retrieve the key and unlock or enable the grinder; steady the machine.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare chisel on rest",
+        "description": "Pick up the chisel and place it onto the grinding rest to position it for sharpening.",
+        "action_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Install and secure grinding wheel",
+        "description": "Pick up, place and align the grinding wheel on the grinder, then tighten it with a wrench and set the wrench aside.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Enable/start grinder (key operation)",
+        "description": "Use the key to enable/start the grinder (insert, turn, remove the key), then set the key down.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Operate grinder and sharpen chisel",
+        "description": "Turn the handle to run the grinder, hold the chisel against the rotating wheel, and file the chisel to sharpen it.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    ]
+  },
+  "d84b8c76-d6b9-4e27-ae66-b010bce5ed1e": {
+    "overall_goal": "Smooth (iron) a piece of fabric to remove wrinkles, then fold it and move it to the table.",
+    "sub_events": [
+      {
+        "name": "Prepare and position fabric",
+        "description": "Fold, adjust and place the fabric onto the ironing board to get it aligned and smooth for ironing.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "First ironing pass",
+        "description": "Pick up the iron and press/move it over the fabric to remove wrinkles, then set the iron down and release the fabric.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Reposition fabric for further ironing",
+        "description": "Pick up and re-place/adjust the fabric on the board to expose remaining areas that need ironing.",
+        "action_indices": [
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Second ironing pass",
+        "description": "Bring the iron again and iron the fabric a second time to further smooth it, then put the iron back down.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "name": "Final check, fold and move",
+        "description": "Make final adjustments, feel the fabric to check smoothness, fold the fabric and carry it to the table.",
+        "action_indices": [
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    ]
+  },
+  "1fdbef9f-8aa7-46b1-8063-d1435577608a": {
+    "overall_goal": "Prepare, iron, and fold garments (a shirt and a pair of shorts).",
+    "sub_events": [
+      {
+        "name": "Prepare garments on the ironing board",
+        "description": "Pick up garments, lay them out flat on the ironing board and adjust/spread them for ironing or folding.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Stow iron and fold garments",
+        "description": "Temporarily move the iron to storage, then fold the shirt and the shorts and place the folded items on the board.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Retrieve iron and set up the shirt",
+        "description": "Bring the iron back to the work area, pick up and lay the shirt on the board, spread and adjust it to prepare for ironing.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Iron the shorts",
+        "description": "Use the iron to press and move across the shorts in repeated passes, lifting and resting the iron as needed, with final adjustments.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "name": "Iron the shirt (final pressing)",
+        "description": "Pick up the iron and perform repeated pressing and ironing passes across the shirt to finish smoothing it out.",
+        "action_indices": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      }
+    ]
+  },
+  "e252c493-e587-403d-bd01-22713a1d5a57": {
+    "overall_goal": "Press (iron) a shirt, tidy it on the board, then fold it for storage.",
+    "sub_events": [
+      {
+        "name": "Initial ironing and positioning",
+        "description": "Pick up the iron, hold and iron the shirt, then set the iron down and adjust the shirt on the board.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Power down and store iron",
+        "description": "Turn the iron off, pick it up, move it to the cabinet and place it away.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Second ironing pass",
+        "description": "Pick the iron up again, continue ironing the shirt and return the iron to the board.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Reposition shirt for final smoothing",
+        "description": "Pick the shirt from the table, carry and place it on the board and adjust it for finishing.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Pack up: pick up and fold shirt",
+        "description": "Pick the shirt from the board and fold it.",
+        "action_indices": [
+          18,
+          19
+        ]
+      }
+    ]
+  },
+  "ea87324e-d129-425f-b247-e6bcc4ff332c": {
+    "overall_goal": "Apply paint to a piece of wood, including preparing the surface and accessing the paint supply.",
+    "sub_events": [
+      {
+        "name": "Painting",
+        "description": "Pick up the paintbrush, repeatedly dip it into the paint can and paint the held piece of wood, then put down the brush and release the wood.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Surface preparation (sanding and wiping)",
+        "description": "Pick up sandpaper and hold the wood to sand its surface, set the sandpaper down, pick up a cloth and wipe the wood clean, then release the wood.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Access paint supply / tool use",
+        "description": "Pick up a screwdriver and the paint can, then use the screwdriver to open the can.",
+        "action_indices": [
+          19,
+          20,
+          21
+        ]
+      }
+    ]
+  },
+  "7da432dc-690a-49da-8f44-312c84494c75": {
+    "overall_goal": "Paint a rail with a paintbrush (reload as needed) and then clean and put away the brush and paint can.",
+    "sub_events": [
+      {
+        "name": "Paint the rail",
+        "description": "Apply paint to the rail using the paintbrush in a sequence of strokes, moving the brush along the rail and reloading the brush from the paint as needed.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Handle paint can / reload brush",
+        "description": "Pick up and position the paint can, open/close it and dip the brush to reload paint; place the brush and can back down and secure the can.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      {
+        "name": "Clean and store the brush",
+        "description": "Clean the brush in a water bucket, remove and shake off water, wipe it with a cloth, and place the brush on the workbench.",
+        "action_indices": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      }
+    ]
+  },
+  "e8cf9894-0cc7-4480-b490-885308bfb513": {
+    "overall_goal": "Prepare shaped dough pieces, arrange them on a tray, apply an egg wash, and bake them in the oven.",
+    "sub_events": [
+      {
+        "name": "Shape and arrange dough pieces",
+        "description": "Pick up individual dough pieces, shape them, and place them onto a baking tray.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Prepare dough and clean workspace",
+        "description": "Handle the bulk dough (move it to the table) and clean the work surface with a cloth.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Retrieve and ready tray/oven",
+        "description": "Open the oven, take a tray and place it on the table, and turn off the oven as part of preparing tools/surface.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Cut dough into pieces",
+        "description": "Pick up a cutter, hold the dough, and cut the dough into pieces; then set the cutter down and release the dough.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Load oven, set timer, and apply egg wash",
+        "description": "Open the oven, pick up the tray and place it into the oven, close and set the timer; then pick up a brush, dip it in egg, hold the tray, apply egg wash to the dough pieces, and put the brush down.",
+        "action_indices": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    ]
+  },
+  "e43f5b38-213a-4d42-afaa-32c3b77f4da6": {
+    "overall_goal": "Prepare, season, roll and bake dough pieces on a tray, then finish them with toppings and sauce.",
+    "sub_events": [
+      {
+        "name": "Assemble dough on tray",
+        "description": "Pick up dough pieces and a tray, place dough onto the tray and position everything on the countertop in preparation for processing.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Dusting and rolling",
+        "description": "Use a cutter to scoop and sprinkle flour onto the dough, then pick up a roller and roll the dough to flatten it; put tools down afterwards.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Load and start baking",
+        "description": "Open the oven, pick up the prepared tray, carry and place it into the oven, then close the oven to begin baking.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Seasoning and oiling",
+        "description": "Retrieve seasonings and oil, sprinkle spice and pour oil onto the dough, then put the containers back down.",
+        "action_indices": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      {
+        "name": "Prepare and spread sauce",
+        "description": "Get a pot and spoon, scoop sauce from the pot and repeatedly spread the sauce onto the dough to finish the items.",
+        "action_indices": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      }
+    ]
+  },
+  "c7cc9fbf-e47a-4bc7-9f08-7ff6954a787a": {
+    "overall_goal": "Prepare and process dough by measuring and combining flour and water, kneading, and running the dough through a machine.",
+    "sub_events": [
+      {
+        "name": "Retrieve and open flour",
+        "description": "Get the bag of flour and open it for use.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Combine and knead ingredients to form dough",
+        "description": "Handle the bowl, add/ mix ingredients (flour and water), and knead the mixture into dough.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Load dough into machine and start it",
+        "description": "Carry the formed dough to the machine, place it inside, close the door, and press the start button.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Measure and add additional flour",
+        "description": "Use a scoop to measure flour from the bag and pour it into the bowl (repeated scooping/pouring).",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "3121a918-44a3-446a-b809-95e1b5766cb0": {
+    "overall_goal": "Clean, rinse, dry and organize dishes and kitchen utensils, placing them on a drying rack or tray and storing items as needed.",
+    "sub_events": [
+      {
+        "name": "Store tray and prepare cleaned items",
+        "description": "Put the tray away, pick up a cloth to dry previously cleaned items, set the cloth down, then bring the tray out and arrange the dried items on it.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Rinse and rack the grater",
+        "description": "Pick up the grater, thoroughly rinse it under the tap multiple times, then place the clean grater on the drying rack.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Wash and rack a plate",
+        "description": "Retrieve a plate from the rack, hold the soapy sponge and scrub the plate, set the sponge down, rinse the plate under the tap, and place the clean plate back on the rack.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Prepare sponge/soap and wash a cup",
+        "description": "Handle the sponge (pick up, wet under tap, apply soap), pick up a cup from the tray, scrub the cup with the soapy sponge, set the sponge down, rinse the cup, and place the clean cup on the rack.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "name": "Wash and rack a bowl",
+        "description": "Take a bowl from the rack, pick up the soapy sponge, scrub the bowl multiple times, set the sponge down, then rinse the bowl under the tap.",
+        "action_indices": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    ]
+  },
+  "312da1d0-9e56-4f5e-bb12-9cb67e8bc674": {
+    "overall_goal": "Prepare and operate a generator and use its hose to water plants.",
+    "sub_events": [
+      {
+        "name": "Start and check equipment",
+        "description": "Activate the machine and verify the generator is functioning/ready.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Access and manipulate tank/lid",
+        "description": "Handle the tank lid—pick up, place, open/close and remove—to access the tank.",
+        "action_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Attach and adjust connections",
+        "description": "Pick up and connect the hose and wire to the generator, then adjust/remove as needed.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Prepare for operation (inspect & fuel)",
+        "description": "Inspect plants, clean hands, prepare fuel (shake bottle) and pour fuel into the generator.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Water plants and shut off",
+        "description": "Reposition the hose, spray water onto the plants multiple times, then turn off the water.",
+        "action_indices": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "1f757b4c-032e-4012-a0f9-bb7c1a437612": {
+    "overall_goal": "Attach and securely fasten a wire around a hose by wrapping, tying and tightening it, then verifying and finalizing the connection.",
+    "sub_events": [
+      {
+        "name": "Inspect and gather materials",
+        "description": "Locate and inspect the hose, move to the storage/work area and pick up the hose and wires needed for fastening.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Wrap and initially fasten the wire",
+        "description": "Wrap the wire around the hose, hold and tie it, then tighten the tie and temporarily place the wire on the workbench.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Tool-assisted tightening",
+        "description": "Pick up pliers, grip and twist the wire with the pliers to increase tightness, then put the tool down.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Reposition, inspect and finalize",
+        "description": "Re-grasp the hose and wire, place the wire for inspection, check tightness, make adjustments as needed, and secure the wire finally.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    ]
+  },
+  "4fcddb9e-38ad-4948-acf6-dd76e87f7eb3": {
+    "overall_goal": "Install and secure a bicycle wheel onto the bike, ensure it is aligned, functioning, and clean.",
+    "sub_events": [
+      {
+        "name": "Tool preparation and wheel screw tightening",
+        "description": "Retrieve tools (screwdriver, wrench) and tighten screws on the bicycle wheel to prepare it for installation.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Inspect and stage the wheel",
+        "description": "Pick up and inspect the bicycle wheel for damage and place it where it can be worked on/installed.",
+        "action_indices": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Attach and secure wheel to bike",
+        "description": "Use the wrench to tighten bolts, align and attach the wheel to the bike, then check alignment and wheel movement.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Clean and final adjustments",
+        "description": "Wipe off grease, perform final installation inspection, and make last adjustments to the bolt if necessary.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "39865b55-0b68-4cf9-a9fa-d55cfbc5909b": {
+    "overall_goal": "Inspect, reassemble, and secure an engine by installing a cover, aligning parts, and tightening all fasteners.",
+    "sub_events": [
+      {
+        "name": "Initial inspection",
+        "description": "Illuminate and inspect the engine to identify issues, then set the torch aside.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Cover installation",
+        "description": "Place the engine cover and use a screwdriver to fasten it in place.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Alignment and bolt tightening",
+        "description": "Check alignment of engine parts, make adjustments, then pick up a wrench to tighten loose bolts.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Examine and attach nuts",
+        "description": "Examine the engine for remaining issues, pick nuts from parts, attach them and tighten with a wrench.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final fastening and finishing",
+        "description": "Remove hands from fasteners, perform final tightening of screws and other metal fasteners, and put tools down.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "4ad40842-5cee-49c2-a382-211fd7a4872b": {
+    "overall_goal": "Remove baked bread from the oven and transfer it to a basket, tidy the workspace, and arrange the bread for serving.",
+    "sub_events": [
+      {
+        "name": "Prepare workspace and remove tray",
+        "description": "Take the hot tray out of the oven and set it on the table; position a basket on the table for receiving bread.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Retrieve bread from oven and transfer to basket",
+        "description": "Open the oven, use a paddle to scoop bread out of the oven, and transfer the bread into the basket; set the paddle down.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Clean up and reset oven/tray",
+        "description": "Brush crumbs off the table, then pick the tray back up and place it into the oven and close it to reset the oven.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Final arrangement",
+        "description": "Use a spatula to arrange the bread neatly in the basket and put the spatula down on the table.",
+        "action_indices": [
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "72d27890-983d-48f8-8eed-7ca937424ca2": {
+    "overall_goal": "Remove plants/weeds from the ground using a rope to secure and pull them, then tidy up the rope.",
+    "sub_events": [
+      {
+        "name": "Secure plant with rope",
+        "description": "Pick up a rope and tie it around the plant, tightening and holding it to prepare for extraction.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Loosen soil and extract plant",
+        "description": "Loosen soil around the plant, pull it out of the ground by applying force through the rope/hands, and place the removed plant on the ground.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Untie and stow rope",
+        "description": "Pick up and release the rope, untie it from the plant, coil the rope, and place it into a toolbox.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Reuse rope to pull another plant",
+        "description": "Pick the rope up again, hold and pull another plant (extracting it), then release both the plant and the rope.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Manually remove weed",
+        "description": "Grip a weed with both hands and uproot it by hand.",
+        "action_indices": [
+          20,
+          21
+        ]
+      }
+    ]
+  },
+  "a814274f-898a-4bc4-ad93-f764844bf03c": {
+    "overall_goal": "Prepare and assemble a wooden piece by cutting it to size, drilling holes, measuring and marking locations, and fastening screws.",
+    "sub_events": [
+      {
+        "name": "Cutting and initial inspection",
+        "description": "Pick up a saw, cut the wood on the workbench, put the saw down and inspect the cut piece.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Drilling holes",
+        "description": "Pick up the drill, drill holes into the wood while it is on the workbench, then set the drill down.",
+        "action_indices": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Measuring and marking",
+        "description": "Pick up a ruler to measure the wood, hold the piece steady, put the ruler down, pick up a pencil and mark locations, then put the pencil down.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Inserting and fastening screws",
+        "description": "Pick up a screw and insert it into the wood, pick up a screwdriver and tighten the screw, then put the screwdriver down.",
+        "action_indices": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final positioning and cleanup",
+        "description": "Release and pick up the wood, place and hold it on the workbench, remove tape from the wood and put the tape down.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "82dc7a9e-a0a4-4611-8e49-960d6c77b326": {
+    "overall_goal": "Prepare, secure, and finish a railing on a table by painting it, fastening it with a bolt, cleaning off debris, and inspecting the result.",
+    "sub_events": [
+      {
+        "name": "Apply paint",
+        "description": "Pick up a paintbrush, load it with paint and paint the railing surface.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Reposition workspace",
+        "description": "Move and place a chair to adjust the working position or access the railing.",
+        "action_indices": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Fasten railing",
+        "description": "Pick up a screwdriver, hold the bolt on the railing and tighten it to secure the railing, then set the tool down.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Brush off debris",
+        "description": "Use a brush to clean and remove dust from the railing, moving the brush along the surface and releasing the railing when done.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final wipe and inspection",
+        "description": "Wipe the railing with a cloth to finish and inspect the railing for quality.",
+        "action_indices": [
+          19,
+          20,
+          21
+        ]
+      }
+    ]
+  },
+  "7070897e-556f-421a-b662-551fe2ab7fb5": {
+    "overall_goal": "Prepare and seal a container by cleaning it, placing and aligning the lid, then applying tape around the lid edge to secure it.",
+    "sub_events": [
+      {
+        "name": "Gather parts and tools",
+        "description": "Pick up the container, lid, and cleaning cloth to have the required items ready.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Clean and position container",
+        "description": "Wipe the container surface, then place the cloth and set the container on a work surface for assembly.",
+        "action_indices": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Place and secure lid",
+        "description": "Align, lower, press, check, and release the lid onto the container to seat it properly.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Prepare tape and cutting tool",
+        "description": "Pick up tape and scissors, cut a piece of tape, and place the tools/tape ready for application.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Apply and inspect tape seal",
+        "description": "Apply the tape around the lid edge, smooth it down, and check the attached tape for proper sealing.",
+        "action_indices": [
+          17,
+          18,
+          19
+        ]
+      }
+    ]
+  },
+  "3619f6fe-9722-4e98-ac1a-372821f1ec78": {
+    "overall_goal": "Load and organize personal belongings into the car and its storage areas (trunk, interior, glove box).",
+    "sub_events": [
+      {
+        "name": "Load main luggage into trunk",
+        "description": "Open the trunk and place a large bag inside.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Stow additional personal items in vehicle interior",
+        "description": "Pick up and place smaller items (pack, purse, jacket) into appropriate interior locations (cargo net, shelf, inside car).",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Place documents and small accessories",
+        "description": "Put the manual into the glove compartment, arrange the key on the dashboard, and store the umbrella in a compartment.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Finalize glove-box organization",
+        "description": "Retrieve a holder from the windshield, open the glove box, place the holder inside, and close the glove box.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "3db79f36-a611-42f6-bfb7-76cf7720a00a": {
+    "overall_goal": "Sew a seam on fabric and finish it by securing, trimming excess thread, and smoothing the workpiece.",
+    "sub_events": [
+      {
+        "name": "Make initial stitches",
+        "description": "Pick up the needle and perform sewing actions to create stitches in the fabric, including pulling thread through and tightening initial stitches.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Secure and arrange thread",
+        "description": "Put down tools, arrange and cut or tension the thread, and manipulate the thread (holding/pulling) to secure the stitch and prepare for inspection.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Re-thread needle and inspect/adjust seam",
+        "description": "Pick up needle and thread to re-thread/passage through the needle if needed, then examine and adjust the sewn fabric on the workbench.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Final trim and finishing",
+        "description": "Trim excess thread with scissors, put tools away, and smoothen the fabric to complete the finishing touches.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "39653b45-9792-4ef2-bc6b-945431870ce3": {
+    "overall_goal": "Create a knitted fabric by casting on stitches, trimming the yarn tail, and knitting subsequent stitches while managing tension.",
+    "sub_events": [
+      {
+        "name": "Setup and cast on",
+        "description": "Prepare materials and create the initial loop/stitch: pick up yarn and needle, insert the needle, wrap and pull yarn to form and tighten the first loop.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Secure tail and inspect",
+        "description": "Put the needle down briefly to free a hand, release and trim the yarn tail with scissors, then inspect the work before continuing.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Knit stitches with tension control",
+        "description": "Perform repeated knitting actions to build the fabric while pulling, tightening, checking tension, holding yarn/needle, and making small adjustments.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      }
+    ]
+  },
+  "0da6e15a-d33b-4a61-bfce-1fb28d893637": {
+    "overall_goal": "Use yarn and a crochet hook to form and tighten crochet stitches (crocheting).",
+    "sub_events": [
+      {
+        "name": "Setup and begin",
+        "description": "Pick up yarn and crochet hook and perform initial crochet motions to start the work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Form initial stitch and tension setup",
+        "description": "Loop and pull yarn through to create the first stitch(s), checking and adjusting yarn tension and tightening the loop as needed.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Main stitch repetition",
+        "description": "Perform repeated crochet cycles: pick up hook, wrap or loop yarn around the hook, pull through loops, place the hook, hold and tighten stitches to build rows of fabric.",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      {
+        "name": "Continue wrapping/pulling and final tension adjustments",
+        "description": "Continue wrapping and pulling yarn through loops for additional stitches, place the hook down, and make final loosen/tighten adjustments to even out stitches.",
+        "action_indices": [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    ]
+  },
+  "f8442573-f48f-4f2b-9f22-b208f916aa63": {
+    "overall_goal": "Clean and tidy a hose: remove debris, clean the hose, coil it, and hang it neatly on a hanger.",
+    "sub_events": [
+      {
+        "name": "Prepare and clean hose",
+        "description": "Stabilize the hose, pick up a rag and clean the hose surface, then put the rag down and store it.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Clear debris",
+        "description": "Pick up debris from the ground and dispose of it into a bin to tidy the area.",
+        "action_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Gather, coil and hang hose",
+        "description": "Pick up the hose, untangle and stretch it, arrange and roll it, carry it to the hanger, place it on the hanger and make final adjustments.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "49374bc5-0999-49dc-88bd-c42c0d54365f": {
+    "overall_goal": "Clean a car by scrubbing off dirt and soap, rinsing with water, and drying it.",
+    "sub_events": [
+      {
+        "name": "Initial spot cleaning",
+        "description": "Pick up a rag and wipe remaining small spots to remove loose dirt before wet washing.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Wet washing with rag",
+        "description": "Dip the rag in the bucket, repeatedly wipe the car to scrub away dirt/soap, rinse and wring the rag as needed, then set the rag down.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Initial rinse and check",
+        "description": "Pick up the hose and spray to remove loosened soap, then inspect the car for missed spots and prepare/refill the bucket for further rinsing.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Thorough rinsing with hose",
+        "description": "Use the hose to thoroughly spray and rinse the car (multiple passes) to remove soap and residue, including a focused rinse pass.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      {
+        "name": "Final drying",
+        "description": "Pick up the rag one last time and dry the car to remove remaining water and achieve a finished look.",
+        "action_indices": [
+          31,
+          32
+        ]
+      }
+    ]
+  },
+  "9f9f42f0-b9fc-4247-8dad-3ef0ff36e402": {
+    "overall_goal": "Prepare and finish a wooden surface by cleaning/debrushing it, applying oil, sanding, and performing a final wipe.",
+    "sub_events": [
+      {
+        "name": "Initial brushing and securing workpiece",
+        "description": "Pick up a brush and hold the wood while brushing its surface to remove loose debris.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Clean small debris (leaf) with brush",
+        "description": "Re-grasp the brush, pick up and brush a leaf (removing debris from/inspecting it), then put the brush down and release the leaf.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Apply finishing oil",
+        "description": "Pick up oil and apply it to the wood surface, then set the oil down.",
+        "action_indices": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Sanding the wood",
+        "description": "Pick up sandpaper and sand the wood to smooth the surface, then put the sandpaper down.",
+        "action_indices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Final wipe",
+        "description": "Pick up a cloth and wipe the wood surface to remove residue and finish the preparation.",
+        "action_indices": [
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  },
+  "6f082d5d-5f31-4358-b2dc-16d320312ab3": {
+    "overall_goal": "Prepare, cook, and plate dough strips (from dough preparation through cooking and cleanup).",
+    "sub_events": [
+      {
+        "name": "Roll out dough",
+        "description": "Pick up and use the rolling pin to flatten the dough, then put the rolling pin back down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Prepare pan and heat stove",
+        "description": "Pick up the pan, place it on the stove, and turn the stove on to get ready for cooking.",
+        "action_indices": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Cook dough strips",
+        "description": "Place dough strips into the heated pan, use a spatula to flip and remove cooked strips, plate the cooked strips, put spatula down, and turn off the stove.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Knead and re-prep dough",
+        "description": "Retrieve dough from the table, knead it repeatedly to work it, place it back on the table, then pick up flour and sprinkle it on the dough.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "name": "Finish shaping and clean up",
+        "description": "Clean the work surface, put away tools, cut the dough into pieces, separate the dough strips with a scraper, and return tools to the table or storage.",
+        "action_indices": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    ]
+  },
+  "6287465a-ef00-49db-b730-1e1c22e77790": {
+    "overall_goal": "Clean the floor by sweeping up dust with a broom and dustpan and disposing the collected debris into a bin.",
+    "sub_events": [
+      {
+        "name": "Organize/Store tools",
+        "description": "Pick up and place the broom and dustpan into the storage area to organize tools before starting.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Empty previous debris",
+        "description": "Retrieve the dustpan, carry it to the trash can and empty out previously collected debris.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Sweep and collect debris",
+        "description": "Pick up the broom, sweep the floor to gather dust, and use the dustpan to collect the swept dust.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Dispose collected dust",
+        "description": "Pick up the dustpan holding the collected dust, move to the trash can, empty it, and place the dustpan back.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Final sweeping and collection",
+        "description": "Perform additional sweeping passes to remove remaining dust and collect the final dust into the dustpan.",
+        "action_indices": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "1695475c-e527-43e6-b70e-69fd33023148": {
+    "overall_goal": "Route and connect wiring to a socket, secure and insulate the connections, trim/prepare wires, and attach the cable to the socket.",
+    "sub_events": [
+      {
+        "name": "Route wire through socket",
+        "description": "Pick up required tools and feed the wire through the socket to position it for connection.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Secure connections (screws and bolts)",
+        "description": "Use screwdriver and wrench to tighten screws and bolts that fasten the wire/socket assembly.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Insulate the connection",
+        "description": "Apply insulation tape around the wire connection to protect and insulate it.",
+        "action_indices": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Trim and prepare wires",
+        "description": "Use the wire-cutter to cut and prepare wire ends for final connection and placement.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Attach cable and assemble socket",
+        "description": "Pick up the cable and socket and insert the cable into the socket to complete the connection.",
+        "action_indices": [
+          21,
+          22,
+          23
+        ]
+      }
+    ]
+  },
+  "d6de6eee-b844-49c9-81d4-325fb9697ef6": {
+    "overall_goal": "Prepare nut-filled cracker sandwiches by peeling nuts, assembling them between crackers, pressing them together, and arranging them on a plate.",
+    "sub_events": [
+      {
+        "name": "Prepare serving area",
+        "description": "Arrange crackers and set up the plate for finished sandwiches.",
+        "action_indices": [
+          0
+        ]
+      },
+      {
+        "name": "Prepare nuts (peeling and staging)",
+        "description": "Pick up knife and nuts from the bowl, peel the nuts (repeating as needed), and move/place the bowl to the worktop for continued work.",
+        "action_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Assemble and plate first sandwich",
+        "description": "Pick up a cracker, place a peeled nut on it, top with another cracker, press the crackers together, and put the assembled sandwich on the plate.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "name": "Assemble additional sandwich(es)",
+        "description": "Repeat the pick-place-top-press sequence to create another nut-filled cracker sandwich.",
+        "action_indices": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "e435eea1-e4f7-4eef-970e-227152032a08": {
+    "overall_goal": "Prepare and clean a keg: add and pour water, rinse it inside and out, move it between locations, and handle its lid.",
+    "sub_events": [
+      {
+        "name": "Add water to keg",
+        "description": "Pick up a cup, fill it from the faucet, and pour the water into the keg (prime/introduce water).",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Prepare faucet and rinse keg",
+        "description": "Secure the faucet, fetch and use a hose to rinse the inside and outside of the keg, then close and release the faucet and put the hose down.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Move keg to shelf",
+        "description": "Lift the keg, carry it to a shelf, and place it there for storage or staging.",
+        "action_indices": [
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "name": "Return keg to work area",
+        "description": "Pick the keg up again, carry it back to the faucet/work area, and set it down on the ground.",
+        "action_indices": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "Handle the keg lid",
+        "description": "Pick up the lid, place and tighten it on the keg, then later unscrew and remove the lid (inspection or access).",
+        "action_indices": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      }
+    ]
+  },
+  "aa2975d0-9339-4ebf-8f3a-bbdf91bf82ed": {
+    "overall_goal": "Scoop and mix soil into a container to make a soil mixture, inspect it, then reseal and finalize the container.",
+    "sub_events": [
+      {
+        "name": "Prepare tools and container",
+        "description": "Pick up the trowel and hold the container to get ready for transferring soil.",
+        "action_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Scoop, pour and mix soil",
+        "description": "Collect soil with the trowel from a bucket, pour it into the container repeatedly, and stir the contents to form a uniform soil mixture.",
+        "action_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Set tools aside and position container",
+        "description": "Put down the trowel, release the grip, pick up the container, and place it on the ground for inspection.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Open and inspect mixture",
+        "description": "Remove the lid, set it aside, hold and inspect the soil mixture inside the container, then put the container down.",
+        "action_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Reseal and finalize container",
+        "description": "Replace the lid, close the container, then pick it up and shake it to finish.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ]
+  },
+  "fdb68b7b-f09f-4a71-a85c-b02e728e9566": {
+    "overall_goal": "Mount, secure and fit a wheel and tire onto a bicycle (installing bolts, applying adhesive/patch), then later remove the wheel and dismount the tire.",
+    "sub_events": [
+      {
+        "name": "Prepare bicycle at workbench",
+        "description": "Bring the bicycle to the workspace and position it for work.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Install wheel and fit tire / apply patch",
+        "description": "Attach the wheel to the bike, insert bolts, apply glue and a patch to the tire, then mount and fit the tire onto the wheel.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "name": "Secure bolts",
+        "description": "Use a wrench to tighten the bolts holding the wheel in place.",
+        "action_indices": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      {
+        "name": "Loosen and remove wheel from bicycle",
+        "description": "Retrieve tools, loosen and remove bolts, detach the wheel and place it on the workbench.",
+        "action_indices": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      {
+        "name": "Dismount tire from wheel",
+        "description": "Use a screwdriver to loosen the tire from the wheel, then remove the tire from the wheel.",
+        "action_indices": [
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      }
+    ]
+  },
+  "19ed57bf-e23d-425b-a396-30daa1d5e750": {
+    "overall_goal": "Perform maintenance on a motorcycle and scooter: remove and refit a tyre, inspect and clean, and tighten/loosen fasteners as needed.",
+    "sub_events": [
+      {
+        "name": "Remove tyre from motorcycle",
+        "description": "Pick up and remove the motorcycle tyre and place it aside.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Refit tyre to motorcycle",
+        "description": "Pick up the tyre again and fit it back onto the motorcycle.",
+        "action_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Secure fasteners (tightening)",
+        "description": "Check for loose screws, then pick up tools to tighten screws on the scooter and bolts on the motorcycle, returning tools to the workbench.",
+        "action_indices": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Inspect and clean motorcycle",
+        "description": "Inspect the motorcycle for loose parts and wipe off grease, then place the cloth back on the workbench.",
+        "action_indices": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Remove fasteners (loosening/disassembly)",
+        "description": "Pick up tools to unscrew and loosen screws and bolts from the motorcycle and scooter, remove and set aside the fasteners, and put tools back.",
+        "action_indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    ]
+  },
+  "d4346ac0-ef62-405b-9086-4ee0085af9ab": {
+    "overall_goal": "Install ceiling holders/brackets in two locations using a screwdriver and a ladder.",
+    "sub_events": [
+      {
+        "name": "Prepare and install first holder",
+        "description": "Retrieve screwdriver and holder from pockets, hold the holder against the ceiling and fasten it with the screwdriver, then stow the tool and climb down.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Relocate and set up ladder",
+        "description": "Pick up and carry the ladder to a new location, place it down and adjust/position it for the next installation.",
+        "action_indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Prepare and ascend for second installation",
+        "description": "Pick up the second holder and stow it in a pocket, get tools/organize gear and climb the ladder to the work position.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "name": "Install second holder and store tools",
+        "description": "Take out screwdriver and holder, hold the holder against the ceiling and fix it with the screwdriver, then release the holder and put the screwdriver back into the pocket.",
+        "action_indices": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    ]
+  },
+  "c9f5958f-ea3f-452e-913d-4f6ede7decea": {
+    "overall_goal": "Prune and remove vine growth, dispose of the cut material, and secure/tie the plant using rope.",
+    "sub_events": [
+      {
+        "name": "Gather tools",
+        "description": "Retrieve pruning tool(s) and rope from pack/waist to prepare for work.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Cut and remove vine",
+        "description": "Hold and cut the vine with pruners, pull it out, and carry it to the bin for disposal; stow used rope/ tools as needed.",
+        "action_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "name": "Trim plant",
+        "description": "Hold the plant and perform a cutting/pruning action on the plant, then set pruners down.",
+        "action_indices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Tie and finalize",
+        "description": "Pick up rope and tie the plant (using both hands and the rope), then hold and pull the plant as needed to finish.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "f643d88a-92cc-456d-bed7-c010275637e8": {
+    "overall_goal": "Perform routine garden maintenance: remove and dispose of weeds, trim vines, tidy the area, and water plants.",
+    "sub_events": [
+      {
+        "name": "Initial weeding",
+        "description": "Pull a weed out and set it aside on the ground.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Vine trimming (first pass)",
+        "description": "Retrieve shears, hold and cut a vine, then stow the shears and release the vine.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Weed collection and plant removal",
+        "description": "Pick up the weed, move it toward disposal, put it down, then hold and uproot a plant.",
+        "action_indices": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Raking and watering",
+        "description": "Pick up a rake to collect grass/debris, put the rake down, then pick up a hose to water the plant and set the hose aside.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Vine trimming (final pass)",
+        "description": "Retrieve shears again, hold and cut another vine, and return the shears to the pocket.",
+        "action_indices": [
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    ]
+  },
+  "99158929-5e0b-4fa5-948c-9791c25cf0ac": {
+    "overall_goal": "Organize and lay out papers and pages on the table, including extracting pages from a booklet and preparing the booklet for inspection.",
+    "sub_events": [
+      {
+        "name": "Collecting and arranging loose papers",
+        "description": "Repeatedly pick up individual loose papers, straighten/adjust them by hand, place them back on the table, and then arrange them into a group.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "name": "Removing pages from the booklet and laying them out",
+        "description": "Pull pages out of a booklet one by one and place each extracted page onto the table.",
+        "action_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Positioning and opening the booklet",
+        "description": "Put the booklet down on the table, then pick it up and open it with both hands for further inspection.",
+        "action_indices": [
+          16,
+          17,
+          18
+        ]
+      }
+    ]
+  },
+  "f0beca54-3ef3-4c5f-a3e3-c10478e624b5": {
+    "overall_goal": "Remove, service and re-install a bicycle pedal, then secure its fasteners.",
+    "sub_events": [
+      {
+        "name": "Approach and test pedal",
+        "description": "Person checks and manipulates the pedal and moves toward the bicycle to begin work.",
+        "action_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Loosen and remove pedal",
+        "description": "Person picks up a spanner, holds the pedal, loosens and removes the pedal from the bicycle, then places pedal and spanner on the workbench.",
+        "action_indices": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Reposition and tighten pedal",
+        "description": "Person picks up the pedal, brings it back to the bicycle, positions it, tightens it with the spanner and puts the spanner down.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "name": "Adjust fastener and final inspection",
+        "description": "Person uses pliers to remove and reattach a nut on the pedal, inspects the pedal, tightens the nut, and puts tools down.",
+        "action_indices": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    ]
+  },
+  "1cddd647-6aaf-49ed-b09d-922d729453a8": {
+    "overall_goal": "Organize a pile of books by picking each up, inspecting it, and placing it on the bookshelf, using the table as a staging area when needed.",
+    "sub_events": [
+      {
+        "name": "Direct inspection and shelving",
+        "description": "Pick individual books from the heap or table, examine them, and place them directly on the bookshelf.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "Staging books from heap to table",
+        "description": "Move multiple books from the heap onto the table to stage them for later inspection and shelving.",
+        "action_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "name": "Inspect staged books and shelve",
+        "description": "Pick up staged books from the table, examine them, and place them onto the bookshelf.",
+        "action_indices": [
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "name": "Final inspection and shelving from heap",
+        "description": "Handle remaining books from the heap: pick them up, examine them, and put them on the bookshelf.",
+        "action_indices": [
+          19,
+          20,
+          21
+        ]
+      }
+    ]
+  },
+  "d19faa97-b823-4c1d-b00b-e9839f1a2391": {
+    "overall_goal": "Prepare a guitar and the music book so the person can play: tune the instrument and set the book on a stand for reading/playing.",
+    "sub_events": [
+      {
+        "name": "Retrieve and inspect music book",
+        "description": "Pick up the book, open and flip through pages, mark and read it to check or prepare the music/content.",
+        "action_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Pick up and tune the guitar",
+        "description": "Pick up the guitar, release/hold appropriately, adjust and tighten strings, test and hold the instrument ready to play.",
+        "action_indices": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "name": "Place book on stand and finalize setup",
+        "description": "Place the music book on a stand, adjust the stand and book for proper positioning, then read the book from the stand.",
+        "action_indices": [
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    ]
+  }
+}
