@@ -1,0 +1,2627 @@
+{
+  "19cc4e42-39bb-41f9-b9de-9f2940eed6a2": {
+    "overall_goal": "Clean the car interior and manage the cleaning tools (mop and cloth), including fetching and storing them.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Clean and Store Tools",
+        "description": "The person picks up a mop, sweeps the floor inside the car, closes a door, places the mop down, opens a door, and puts a cloth inside the car.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "sweep",
+            "close",
+            "place",
+            "open",
+            "put"
+          ],
+          "primary_objects": [
+            "mop-stick",
+            "floor",
+            "door",
+            "cloth"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "mop-stick"
+          ],
+          "source_locations": [
+            "floor"
+          ],
+          "target_locations": [
+            "car",
+            "floor"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start_index": 0,
+          "end_index": 5,
+          "duration": 6
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "mop-stick",
+          "floor",
+          "door",
+          "cloth",
+          "car"
+        ],
+        "salience_score": 0.547
+      },
+      {
+        "episode_id": 1,
+        "name": "Fetch Cloth",
+        "description": "The person moves to a cabinet, opens it, picks up a cloth, and moves toward the wall while holding the cloth.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "move",
+            "open",
+            "pick-up"
+          ],
+          "primary_objects": [
+            "cabinet",
+            "cloth"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "cabinet",
+            "wall",
+            "cloth"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "start_index": 6,
+          "end_index": 9,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "wall",
+          "cloth",
+          "cabinet",
+          "move",
+          "open"
+        ],
+        "salience_score": 0.402
+      },
+      {
+        "episode_id": 2,
+        "name": "Retrieve Mop",
+        "description": "The person picks the mop-stick from the wall using hand2.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick"
+          ],
+          "primary_objects": [
+            "mop-stick"
+          ],
+          "instruments": [
+            "hand2"
+          ],
+          "source_locations": [
+            "wall"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            10
+          ],
+          "start_index": 10,
+          "end_index": 10,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "mop-stick",
+          "wall",
+          "from",
+          "hand2",
+          "with"
+        ],
+        "salience_score": 0.374
+      }
+    ]
+  },
+  "fbf4150a-27d2-48a4-956f-b4f85ecde465": {
+    "overall_goal": "Prepare and use a laptop workstation by powering and positioning the laptop, connecting the charger, arranging peripherals (keyboard and mouse), and interacting with the keyboard and mouse.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Laptop interactions",
+        "description": "The person presses keys and a laptop button, then closes, unplugs, puts away, picks up, places, and opens the laptop.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "press",
+            "close",
+            "unplug",
+            "put-away",
+            "pick-up",
+            "place",
+            "open"
+          ],
+          "primary_objects": [
+            "keys",
+            "button",
+            "laptop",
+            "charger"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": [
+            "laptop"
+          ],
+          "target_locations": [
+            "laptop",
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "start_index": 0,
+          "end_index": 11,
+          "duration": 12
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "laptop",
+          "keys",
+          "press",
+          "charger",
+          "hand2"
+        ],
+        "salience_score": 0.67
+      },
+      {
+        "episode_id": 1,
+        "name": "Connect charger",
+        "description": "The person picks up the charger and inserts it into the laptop and the plug into the socket.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "insert"
+          ],
+          "primary_objects": [
+            "charger",
+            "plug"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "laptop",
+            "socket"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            12,
+            13,
+            14
+          ],
+          "start_index": 12,
+          "end_index": 14,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "laptop",
+          "charger",
+          "insert",
+          "into",
+          "pick-up"
+        ],
+        "salience_score": 0.402
+      },
+      {
+        "episode_id": 2,
+        "name": "Place keyboard",
+        "description": "The person picks up the keyboard and places it on the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "place"
+          ],
+          "primary_objects": [
+            "keyboard"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            15,
+            16
+          ],
+          "start_index": 15,
+          "end_index": 16,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "keyboard",
+          "hand2",
+          "table",
+          "on",
+          "place"
+        ],
+        "salience_score": 0.217
+      },
+      {
+        "episode_id": 3,
+        "name": "Keyboard use",
+        "description": "The person presses keys on the keyboard.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "press"
+          ],
+          "primary_objects": [
+            "keys"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            17
+          ],
+          "start_index": 17,
+          "end_index": 17,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "keys",
+          "press",
+          "hand2",
+          "hand1",
+          "with"
+        ],
+        "salience_score": 0.392
+      },
+      {
+        "episode_id": 4,
+        "name": "Mouse setup & use",
+        "description": "The person picks up the mouse, places it on the table, holds and moves it, then presses the mouse button.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "place",
+            "hold",
+            "move",
+            "press"
+          ],
+          "primary_objects": [
+            "mouse",
+            "mouse-button"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "start_index": 18,
+          "end_index": 22,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "discriminative_terms": [
+          "press",
+          "mouse",
+          "table",
+          "on",
+          "place"
+        ],
+        "salience_score": 0.394
+      }
+    ]
+  },
+  "954c2f61-64ad-4c89-a26f-ec4547a65fab": {
+    "overall_goal": "Prepare and cook an onion (wash, cut, place in pot, and start cooking).",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Start water",
+        "description": "The person turns on the tap to begin a water flow.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "turn-on"
+          ],
+          "primary_objects": [
+            "tap"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            0
+          ],
+          "start_index": 0,
+          "end_index": 0,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "tap",
+          "turn-on",
+          "hand1",
+          "with",
+          "dobj"
+        ],
+        "salience_score": 0.174
+      },
+      {
+        "episode_id": 1,
+        "name": "Wash onion",
+        "description": "The person washes the onion under water.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "wash"
+          ],
+          "primary_objects": [
+            "onion"
+          ],
+          "instruments": [],
+          "source_locations": null,
+          "target_locations": [
+            "hand2"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            1
+          ],
+          "start_index": 1,
+          "end_index": 1,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "onion",
+          "in",
+          "under",
+          "water",
+          "hand2"
+        ],
+        "salience_score": 0.372
+      },
+      {
+        "episode_id": 2,
+        "name": "Prepare pot & slice",
+        "description": "The person manipulates the pot and tap, transfers the onion into the pot, fills the pot with water, then places and slices the onion on the board and puts the knife down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "turn-off",
+            "pick-up",
+            "transfer",
+            "place",
+            "turn-on",
+            "fill",
+            "hold",
+            "slice",
+            "put-down"
+          ],
+          "primary_objects": [
+            "tap",
+            "pot",
+            "onion",
+            "knife"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "water",
+            "knife"
+          ],
+          "source_locations": [
+            "board"
+          ],
+          "target_locations": [
+            "pot",
+            "hand1",
+            "board"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "start_index": 2,
+          "end_index": 12,
+          "duration": 11
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "onion",
+          "board",
+          "pot",
+          "knife",
+          "tap"
+        ],
+        "salience_score": 0.61
+      },
+      {
+        "episode_id": 3,
+        "name": "Release onion",
+        "description": "The person releases the onion from their hand.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "release"
+          ],
+          "primary_objects": [
+            "onion"
+          ],
+          "instruments": [],
+          "source_locations": [
+            "hand2"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            13
+          ],
+          "start_index": 13,
+          "end_index": 13,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "onion",
+          "from",
+          "hand2",
+          "dobj",
+          "verb"
+        ],
+        "salience_score": 0.261
+      },
+      {
+        "episode_id": 4,
+        "name": "Cook setup & peel",
+        "description": "The person places the pot on the cooker, turns the cooker on, picks up the knife, holds the onion, and peels it.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "place",
+            "turn-on",
+            "pick-up",
+            "hold",
+            "peel"
+          ],
+          "primary_objects": [
+            "pot",
+            "cooker",
+            "knife",
+            "onion"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "knife"
+          ],
+          "source_locations": [
+            "board"
+          ],
+          "target_locations": [
+            "cooker",
+            "hand1"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "start_index": 14,
+          "end_index": 18,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "discriminative_terms": [
+          "onion",
+          "board",
+          "pot",
+          "knife",
+          "turn-on"
+        ],
+        "salience_score": 0.601
+      }
+    ]
+  },
+  "277b18de-4ad9-4c09-970b-91fcea05097d": {
+    "overall_goal": "Organize and use tools to remove a wheel and tighten/loosen fasteners: gather and stow tools, tighten a bolt, then bring, remove and adjust the wheel while tightening nuts.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Collect and Box Tools",
+        "description": "The person picks up various tools (wrench, plier, spanner), handles them and places them into a box, covers the box with a lid and performs a tightening action with a wrench.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick",
+            "place",
+            "hold",
+            "put",
+            "put-down",
+            "cover",
+            "tighten"
+          ],
+          "primary_objects": [
+            "wrench",
+            "plier",
+            "spanner",
+            "lid",
+            "nut"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": [
+            "box"
+          ],
+          "target_locations": [
+            "box"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "start_index": 0,
+          "end_index": 17,
+          "duration": 18
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "wrench",
+          "spanner",
+          "plier",
+          "box",
+          "pick"
+        ],
+        "salience_score": 0.769
+      },
+      {
+        "episode_id": 1,
+        "name": "Bolt Tightening",
+        "description": "The person puts a wrench down, picks up a spanner, positions it onto a bolt, holds it and rotates the spanner to tighten the bolt, and places a wrench on the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down",
+            "pick-up",
+            "position",
+            "hold",
+            "rotate"
+          ],
+          "primary_objects": [
+            "wrench",
+            "spanner",
+            "bolt"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table",
+            "bolt",
+            "tighten"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "start_index": 18,
+          "end_index": 22,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "wrench",
+          "spanner",
+          "hold",
+          "tighten",
+          "put-down"
+        ],
+        "salience_score": 0.596
+      },
+      {
+        "episode_id": 2,
+        "name": "Remove Wheel",
+        "description": "The person brings and adjusts the wheel, takes the wheel off, holds a wrench and tightens a nut (likely related to wheel removal/installation).",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "place"
+          ],
+          "primary_objects": [
+            "wrench"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            23
+          ],
+          "start_index": 23,
+          "end_index": 23,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "wrench",
+          "place",
+          "table",
+          "hand1",
+          "on"
+        ],
+        "salience_score": 0.335
+      },
+      {
+        "episode_id": 3,
+        "name": "Episode 3",
+        "description": "Actions: bring, adjust, take-off, hold, tighten",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "bring",
+            "adjust",
+            "take-off",
+            "hold",
+            "tighten"
+          ],
+          "primary_objects": [
+            "wheel",
+            "wrench",
+            "nut"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "start_index": 24,
+          "end_index": 28,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "wrench",
+          "hold",
+          "wheel",
+          "tighten",
+          "nut"
+        ],
+        "salience_score": 0.503
+      }
+    ]
+  },
+  "e9be1118-a5cf-4431-b2e8-e3edcfa9f949": {
+    "overall_goal": "Assemble and fasten wooden parts by clamping, drilling, and screwing components together.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Fasten screw",
+        "description": "The person picks up a screwdriver and a screw, positions the screw into the wood, screws it in, and then releases/puts down the screwdriver and screw.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "position",
+            "screw",
+            "put-down"
+          ],
+          "primary_objects": [
+            "screwdriver",
+            "screw"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "screwdriver"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": [
+            "wood"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start_index": 0,
+          "end_index": 4,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "wood",
+          "screw",
+          "position",
+          "pick-up",
+          "screwdriver"
+        ],
+        "salience_score": 0.491
+      },
+      {
+        "episode_id": 1,
+        "name": "Prepare & clamp",
+        "description": "The person picks up and positions clamps, tightens/loosens them, removes a clamp, picks up and places a piece of wood on the workbench, aligns a wood-piece, and re-clamps it (ending by picking up the drill).",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "release"
+          ],
+          "primary_objects": [
+            "screw"
+          ],
+          "instruments": [],
+          "source_locations": [
+            "hand2"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            5
+          ],
+          "start_index": 5,
+          "end_index": 5,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "screw",
+          "from",
+          "hand2",
+          "release",
+          "dobj"
+        ],
+        "salience_score": 0.271
+      },
+      {
+        "episode_id": 2,
+        "name": "Drill holes",
+        "description": "The person holds the workpiece, picks up and uses the drill to make holes (drill/withdraw), puts the drill down between uses, and finally releases the held wood-piece.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "position",
+            "tighten",
+            "loosen",
+            "remove",
+            "place",
+            "align"
+          ],
+          "primary_objects": [
+            "clamp",
+            "wood",
+            "wood-piece",
+            "drill"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": [
+            "wood"
+          ],
+          "target_locations": [
+            "wood",
+            "workbench",
+            "wood-piece"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "start_index": 6,
+          "end_index": 18,
+          "duration": 13
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "clamp",
+          "drill",
+          "wood-piece",
+          "wood",
+          "position"
+        ],
+        "salience_score": 0.814
+      },
+      {
+        "episode_id": 3,
+        "name": "Final screw placement",
+        "description": "The person picks up the screwdriver and a screw and positions the screw on the wood-piece for fastening.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "hold",
+            "drill",
+            "withdraw",
+            "put-down",
+            "pick-up"
+          ],
+          "primary_objects": [
+            "wood",
+            "drill"
+          ],
+          "instruments": [
+            "hand2",
+            "drill",
+            "hand1"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "start_index": 19,
+          "end_index": 23,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "drill",
+          "wood",
+          "withdraw",
+          "pick-up",
+          "from"
+        ],
+        "salience_score": 0.532
+      },
+      {
+        "episode_id": 4,
+        "name": "Episode 4",
+        "description": "Actions: hold",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "hold"
+          ],
+          "primary_objects": [
+            "wood-piece"
+          ],
+          "instruments": [
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            24
+          ],
+          "start_index": 24,
+          "end_index": 24,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            5,
+            6,
+            7
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "discriminative_terms": [
+          "wood-piece",
+          "hand2",
+          "hold",
+          "with",
+          "dobj"
+        ],
+        "salience_score": 0.257
+      },
+      {
+        "episode_id": 5,
+        "name": "Episode 5",
+        "description": "Actions: drill, withdraw, put-down",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "drill",
+            "withdraw",
+            "put-down"
+          ],
+          "primary_objects": [
+            "wood",
+            "drill"
+          ],
+          "instruments": [
+            "drill",
+            "hand1"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            25,
+            26,
+            27
+          ],
+          "start_index": 25,
+          "end_index": 27,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            6,
+            7
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "discriminative_terms": [
+          "drill",
+          "wood",
+          "withdraw",
+          "from",
+          "put-down"
+        ],
+        "salience_score": 0.506
+      },
+      {
+        "episode_id": 6,
+        "name": "Episode 6",
+        "description": "Actions: release",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "release"
+          ],
+          "primary_objects": [
+            "wood-piece"
+          ],
+          "instruments": [],
+          "source_locations": [
+            "hand2"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            28
+          ],
+          "start_index": 28,
+          "end_index": 28,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            7
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "discriminative_terms": [
+          "wood-piece",
+          "from",
+          "hand2",
+          "release",
+          "dobj"
+        ],
+        "salience_score": 0.322
+      },
+      {
+        "episode_id": 7,
+        "name": "Episode 7",
+        "description": "Actions: pick-up, position",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "position"
+          ],
+          "primary_objects": [
+            "screwdriver",
+            "screw"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "wood-piece"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            29,
+            30,
+            31
+          ],
+          "start_index": 29,
+          "end_index": 31,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "discriminative_terms": [
+          "wood-piece",
+          "screw",
+          "position",
+          "pick-up",
+          "screwdriver"
+        ],
+        "salience_score": 0.511
+      }
+    ]
+  },
+  "f5c27b88-a3eb-4290-9102-0307c2809241": {
+    "overall_goal": "Clean and organize books and the bookshelf (remove dust, wipe surfaces, and reshelve books)",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Arrange & Place Book",
+        "description": "The person arranges a book and places or aligns it on different surfaces, then takes it off.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "arrange",
+            "put",
+            "align",
+            "take-off"
+          ],
+          "primary_objects": [
+            "book"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "floor",
+            "bookshelf"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start_index": 0,
+          "end_index": 4,
+          "duration": 5
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "book",
+          "bookshelf",
+          "floor",
+          "take-off",
+          "put"
+        ],
+        "salience_score": 0.56
+      },
+      {
+        "episode_id": 1,
+        "name": "Brush Dust Removal",
+        "description": "The person picks up a brush from the floor, removes dust with it, and then puts the brush back down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "remove",
+            "put-down"
+          ],
+          "primary_objects": [
+            "brush",
+            "dust"
+          ],
+          "instruments": [
+            "hand1",
+            "brush"
+          ],
+          "source_locations": [
+            "floor"
+          ],
+          "target_locations": [
+            "floor"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            5,
+            6,
+            7
+          ],
+          "start_index": 5,
+          "end_index": 7,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "floor",
+          "brush",
+          "on",
+          "put-down",
+          "from"
+        ],
+        "salience_score": 0.298
+      },
+      {
+        "episode_id": 2,
+        "name": "Wipe with Rag",
+        "description": "The person holds a rag, wipes the bookshelf with it, and then puts the rag down on the floor.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "hold",
+            "wipe"
+          ],
+          "primary_objects": [
+            "rag",
+            "bookshelf"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            8,
+            9
+          ],
+          "start_index": 8,
+          "end_index": 9,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3,
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "bookshelf",
+          "rag",
+          "hold",
+          "hand1",
+          "with"
+        ],
+        "salience_score": 0.202
+      },
+      {
+        "episode_id": 3,
+        "name": "Reshelve & Inspect Books",
+        "description": "The person takes and moves books between shelf and floor, picks and places books on the shelf, checks them, and takes a book off.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down"
+          ],
+          "primary_objects": [
+            "rag"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "floor"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            10
+          ],
+          "start_index": 10,
+          "end_index": 10,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            4
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "floor",
+          "on",
+          "rag",
+          "put-down",
+          "hand1"
+        ],
+        "salience_score": 0.262
+      },
+      {
+        "episode_id": 4,
+        "name": "Episode 4",
+        "description": "Actions: hold, take, put-down, pick, put, check, take-off",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "hold",
+            "take",
+            "put-down",
+            "pick",
+            "put",
+            "check",
+            "take-off"
+          ],
+          "primary_objects": [
+            "book"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": [
+            "shelf",
+            "bookshelf"
+          ],
+          "target_locations": [
+            "floor",
+            "shelf"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "start_index": 11,
+          "end_index": 17,
+          "duration": 7
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "discriminative_terms": [
+          "book",
+          "bookshelf",
+          "floor",
+          "take-off",
+          "put"
+        ],
+        "salience_score": 0.56
+      }
+    ]
+  },
+  "97ad4e58-c64f-47e3-8d84-6aad38bdfbc8": {
+    "overall_goal": "Attach and tighten a bolt onto the machine using hand tools",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Initial placement & tighten",
+        "description": "The person picks up and uses a hammer, then picks and positions a bolt on the machine and tightens it with a screwdriver.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "hold",
+            "hit",
+            "place",
+            "position",
+            "release",
+            "tighten"
+          ],
+          "primary_objects": [
+            "hammer",
+            "machine",
+            "bolt",
+            "screwdriver"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "hammer",
+            "screwdriver"
+          ],
+          "source_locations": [
+            "hand1",
+            "hand2"
+          ],
+          "target_locations": [
+            "table",
+            "machine"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "start_index": 0,
+          "end_index": 10,
+          "duration": 11
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "verbs",
+          "bolt",
+          "machine",
+          "screwdriver",
+          "release"
+        ],
+        "salience_score": 0.466
+      },
+      {
+        "episode_id": 1,
+        "name": "Repeat installation & final tighten",
+        "description": "The person places the screwdriver aside, re-picks the bolt, positions it on the machine, and then uses the screwdriver to tighten the bolt again.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "place",
+            "pick-up",
+            "position",
+            "release",
+            "hold",
+            "tighten"
+          ],
+          "primary_objects": [
+            "screwdriver",
+            "bolt"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "screwdriver"
+          ],
+          "source_locations": [
+            "hand1",
+            "hand2"
+          ],
+          "target_locations": [
+            "table",
+            "machine"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "start_index": 11,
+          "end_index": 18,
+          "duration": 8
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "verbs",
+          "bolt",
+          "machine",
+          "screwdriver",
+          "release"
+        ],
+        "salience_score": 0.466
+      }
+    ]
+  },
+  "a20c2c22-cc2c-487e-8041-f0b33f4845ca": {
+    "overall_goal": "Attach and shape fabric onto furniture using cutting, gluing, and nailing",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Cut and Prepare Fabric",
+        "description": "The person picks up scissors and holds the fabric while cutting it, then puts the scissors down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "hold",
+            "cut",
+            "put-down"
+          ],
+          "primary_objects": [
+            "scissors",
+            "fabric"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "scissors"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start_index": 0,
+          "end_index": 3,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "fabric",
+          "scissors",
+          "put-down",
+          "from",
+          "pick-up"
+        ],
+        "salience_score": 0.579
+      },
+      {
+        "episode_id": 1,
+        "name": "Glue Fabric",
+        "description": "The person releases the fabric, picks up glue, applies it to the fabric, and smoothens the fabric.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "release",
+            "pick-up",
+            "apply",
+            "smoothen"
+          ],
+          "primary_objects": [
+            "fabric",
+            "glue"
+          ],
+          "instruments": [
+            "hand2",
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "fabric"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "start_index": 4,
+          "end_index": 7,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "fabric",
+          "glue",
+          "pick-up",
+          "hand2",
+          "hand1"
+        ],
+        "salience_score": 0.424
+      },
+      {
+        "episode_id": 2,
+        "name": "Prepare Fasteners",
+        "description": "The person puts down the glue, picks up a hammer and a nail, then drives the nail into the furniture.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down",
+            "pick-up",
+            "drive"
+          ],
+          "primary_objects": [
+            "glue",
+            "hammer",
+            "nail"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "hammer"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": [
+            "furniture"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "start_index": 8,
+          "end_index": 11,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "nail",
+          "hammer",
+          "glue",
+          "drive",
+          "furniture"
+        ],
+        "salience_score": 0.644
+      },
+      {
+        "episode_id": 3,
+        "name": "Attach and Trim Fabric",
+        "description": "The person adjusts the fabric, picks up nails and continues driving them into the furniture, sets down the hammer, then picks up scissors to trim the fabric and puts the scissors away.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "adjust",
+            "pick-up",
+            "drive",
+            "put-down",
+            "trim"
+          ],
+          "primary_objects": [
+            "fabric",
+            "nail",
+            "hammer",
+            "scissors"
+          ],
+          "instruments": [
+            "hand2",
+            "hammer",
+            "hand1",
+            "scissors"
+          ],
+          "source_locations": [
+            "hand1"
+          ],
+          "target_locations": [
+            "furniture"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "start_index": 12,
+          "end_index": 18,
+          "duration": 7
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "fabric",
+          "scissors",
+          "nail",
+          "hammer",
+          "drive"
+        ],
+        "salience_score": 0.818
+      }
+    ]
+  },
+  "860980fb-f992-4bb1-8a46-b644f58090e2": {
+    "overall_goal": "Assemble and affix materials onto paper by folding, attaching, and applying glue using hands and a brush.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Arrange and Attach",
+        "description": "The person manipulates a metal board, folds and positions paper, and attaches/presses cardboard onto the paper, placing items on the desk or paper as needed.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "place",
+            "adjust",
+            "fold",
+            "put-down",
+            "hold",
+            "attach",
+            "press"
+          ],
+          "primary_objects": [
+            "metal-board",
+            "paper",
+            "cardboard"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": [
+            "desk"
+          ],
+          "target_locations": [
+            "paper",
+            "desk"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "start_index": 0,
+          "end_index": 13,
+          "duration": 14
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "paper",
+          "desk",
+          "onto",
+          "metal-board",
+          "cardboard"
+        ],
+        "salience_score": 0.58
+      },
+      {
+        "episode_id": 1,
+        "name": "Prepare Brush",
+        "description": "The person picks up a brush from the desk and dips it into glue to prepare adhesive.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "dip"
+          ],
+          "primary_objects": [
+            "brush"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": [
+            "desk"
+          ],
+          "target_locations": [
+            "glue"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            14,
+            15
+          ],
+          "start_index": 14,
+          "end_index": 15,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "desk",
+          "brush",
+          "glue",
+          "from",
+          "pick-up"
+        ],
+        "salience_score": 0.307
+      },
+      {
+        "episode_id": 2,
+        "name": "Apply Glue",
+        "description": "The person holds the paper and applies glue (with the brush) onto the paper to affix components.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "hold",
+            "apply"
+          ],
+          "primary_objects": [
+            "paper",
+            "glue"
+          ],
+          "instruments": [
+            "hand2",
+            "brush",
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "paper"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            16,
+            17
+          ],
+          "start_index": 16,
+          "end_index": 17,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "paper",
+          "onto",
+          "brush",
+          "glue",
+          "hand2"
+        ],
+        "salience_score": 0.412
+      }
+    ]
+  },
+  "15d4a2c1-1cb8-4b76-a66a-adb20b7e96cb": {
+    "overall_goal": "Person inspects and manipulates a card on a table by touching/tapping, picking it up to check it, and putting it back.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Initial touch/tap",
+        "description": "The person repeatedly touches and taps the card while it lies on the table, likely to inspect or orient it.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "touch",
+            "tap"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start_index": 0,
+          "end_index": 3,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "card",
+          "table",
+          "touch",
+          "on",
+          "tap"
+        ],
+        "salience_score": 0.411
+      },
+      {
+        "episode_id": 1,
+        "name": "Pick up and check",
+        "description": "The person picks the card up using hand1 and checks or inspects it while holding it.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "check"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            4,
+            5
+          ],
+          "start_index": 4,
+          "end_index": 5,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "check",
+          "pick-up",
+          "hand1",
+          "with"
+        ],
+        "salience_score": 0.276
+      },
+      {
+        "episode_id": 2,
+        "name": "Put down and tap",
+        "description": "The person puts the card down on the table and then taps it while it is on the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down",
+            "tap"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            6,
+            7
+          ],
+          "start_index": 6,
+          "end_index": 7,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "table",
+          "on",
+          "tap",
+          "put-down"
+        ],
+        "salience_score": 0.385
+      },
+      {
+        "episode_id": 3,
+        "name": "Second pickup/check",
+        "description": "The person again picks the card up with hand1 and checks it while holding it.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "check"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            8,
+            9
+          ],
+          "start_index": 8,
+          "end_index": 9,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            4,
+            5,
+            6
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "check",
+          "pick-up",
+          "hand1",
+          "with"
+        ],
+        "salience_score": 0.276
+      },
+      {
+        "episode_id": 4,
+        "name": "Second put-down",
+        "description": "The person places the card back down onto the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            10
+          ],
+          "start_index": 10,
+          "end_index": 10,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            5,
+            6
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "table",
+          "on",
+          "put-down",
+          "hand1"
+        ],
+        "salience_score": 0.354
+      },
+      {
+        "episode_id": 5,
+        "name": "Third pickup/check",
+        "description": "The person picks the card up again with hand1 and inspects it.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "check"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            11,
+            12
+          ],
+          "start_index": 11,
+          "end_index": 12,
+          "duration": 2
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            6
+          ],
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "check",
+          "pick-up",
+          "hand1",
+          "with"
+        ],
+        "salience_score": 0.276
+      },
+      {
+        "episode_id": 6,
+        "name": "Final put-down",
+        "description": "The person places the card down on the table to finish the sequence.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "put-down"
+          ],
+          "primary_objects": [
+            "card"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            13
+          ],
+          "start_index": 13,
+          "end_index": 13,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "discriminative_terms": [
+          "card",
+          "table",
+          "on",
+          "put-down",
+          "hand1"
+        ],
+        "salience_score": 0.354
+      }
+    ]
+  }
+}

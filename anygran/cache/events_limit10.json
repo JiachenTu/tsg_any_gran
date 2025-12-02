@@ -1,18 +1,18 @@
 {
   "19cc4e42-39bb-41f9-b9de-9f2940eed6a2": {
-    "overall_goal": "Clean the car interior using a mop and cloth while managing and retrieving cleaning supplies.",
+    "overall_goal": "Clean the car interior using a mop and manage/organize the cleaning supplies.",
     "sub_events": [
       {
-        "name": "Pick up mop and sweep car interior",
-        "description": "Grab the mop and use it to sweep the car floor.",
+        "name": "Prepare and pick up mop",
+        "description": "Grab the mop-stick from the floor to begin cleaning.",
         "action_indices": [
           0,
           1
         ]
       },
       {
-        "name": "Secure/stow tools and place cloth in car",
-        "description": "Close the door briefly, set the mop down, reopen the door, and put a cloth inside the car to prepare/organize items.",
+        "name": "Clean and temporarily stow items in car",
+        "description": "Sweep the car interior, handle the door, and place or put cleaning items inside/on the car.",
         "action_indices": [
           2,
           3,
@@ -22,7 +22,7 @@
       },
       {
         "name": "Retrieve cloth from storage",
-        "description": "Move to the cabinet, open it, and pick up a cloth from inside.",
+        "description": "Move to a cabinet, open it, and pick up the cloth.",
         "action_indices": [
           6,
           7,
@@ -30,8 +30,8 @@
         ]
       },
       {
-        "name": "Move to wall and collect mop-stick",
-        "description": "Carry the cloth to the wall location and pick the mop-stick from the wall.",
+        "name": "Move to wall and get mop-stick",
+        "description": "Go to the wall with the cloth and pick the mop-stick from the wall.",
         "action_indices": [
           9,
           10
@@ -40,26 +40,32 @@
     ]
   },
   "fbf4150a-27d2-48a4-956f-b4f85ecde465": {
-    "overall_goal": "Put away a laptop after use, then set it back up on a table with power and peripherals and interact with it using keyboard and mouse.",
+    "overall_goal": "Temporarily shut down and stow a laptop, then bring it back, reconnect power and peripherals, and resume using it.",
     "sub_events": [
       {
-        "name": "Finish session and stow laptop",
-        "description": "Type/press keys, power/close the laptop, unplug the charger and put the laptop away.",
+        "name": "Finish work and power down",
+        "description": "Type to complete tasks or enter input, then press the laptop's power/button to initiate shutdown.",
         "action_indices": [
           0,
           1,
           2,
           3,
           4,
-          5,
+          5
+        ]
+      },
+      {
+        "name": "Close and stow laptop",
+        "description": "Close the laptop, unplug the charger, and put the laptop away for storage.",
+        "action_indices": [
           6,
           7,
           8
         ]
       },
       {
-        "name": "Retrieve and open laptop",
-        "description": "Pick the laptop back up, place it on the table, and open it.",
+        "name": "Retrieve and position laptop",
+        "description": "Pick the laptop up, place it on the table, and open it to prepare for use.",
         "action_indices": [
           9,
           10,
@@ -67,8 +73,8 @@
         ]
       },
       {
-        "name": "Connect power and set out keyboard",
-        "description": "Pick up and insert the charger into the laptop and socket, then pick up and place the keyboard on the table.",
+        "name": "Reconnect power and set up peripherals",
+        "description": "Pick up and insert the charger into the laptop and socket, then pick up and place the external keyboard on the table.",
         "action_indices": [
           12,
           13,
@@ -78,8 +84,8 @@
         ]
       },
       {
-        "name": "Interact using keyboard and mouse",
-        "description": "Use the keyboard (press keys) and set up and operate the mouse (pick up, place, move, click).",
+        "name": "Resume work and interact with mouse",
+        "description": "Type on the keyboard, set up the mouse, move it, and click to interact with the system.",
         "action_indices": [
           17,
           18,
@@ -92,21 +98,15 @@
     ]
   },
   "954c2f61-64ad-4c89-a26f-ec4547a65fab": {
-    "overall_goal": "Prepare an onion and start cooking it by washing the onion, placing it in a water-filled pot, cutting/peeling the onion, and putting the pot on the cooker to heat.",
+    "overall_goal": "Prepare an onion and get a pot of water heating on the cooker (preparing to cook the onion).",
     "sub_events": [
       {
-        "name": "Wash onion",
-        "description": "Turn on the tap and wash the onion under running water, then turn the tap off.",
+        "name": "Wash and prepare pot",
+        "description": "Turn on water, wash the onion, handle the pot and fill it with water under the tap.",
         "action_indices": [
           0,
           1,
-          2
-        ]
-      },
-      {
-        "name": "Prepare pot and add onion",
-        "description": "Pick up the pot, transfer the washed onion into it, place the pot under the tap, fill the pot with water, and turn the tap off.",
-        "action_indices": [
+          2,
           3,
           4,
           5,
@@ -116,8 +116,8 @@
         ]
       },
       {
-        "name": "Cut the onion on the board",
-        "description": "Place and hold the onion on the cutting board, slice the onion with the knife, then set the knife down and release the onion.",
+        "name": "Position and slice the onion",
+        "description": "Place the onion on the cutting board, hold and slice it with the knife, then set the knife down and release the onion.",
         "action_indices": [
           9,
           10,
@@ -127,11 +127,17 @@
         ]
       },
       {
-        "name": "Start cooking and finish prep",
-        "description": "Place the pot on the cooker and turn the cooker on, then pick up the knife, hold the onion, and peel it as final preparation while heating begins.",
+        "name": "Set pot on cooker and start heating",
+        "description": "Place the filled pot on the cooker and turn the cooker on to begin heating.",
         "action_indices": [
           14,
-          15,
+          15
+        ]
+      },
+      {
+        "name": "Final onion handling (peel/cut)",
+        "description": "Pick up the knife again, hold the onion, and peel it (final preparation steps).",
+        "action_indices": [
           16,
           17,
           18
@@ -140,11 +146,11 @@
     ]
   },
   "277b18de-4ad9-4c09-970b-91fcea05097d": {
-    "overall_goal": "Perform mechanical maintenance: prepare and stow tools, tighten fasteners (nuts/bolts), and remove a wheel.",
+    "overall_goal": "Manage tools and perform maintenance on a wheel/bolt assembly — preparing/handling tools, tightening bolts, and removing the wheel.",
     "sub_events": [
       {
-        "name": "Prepare tools on the workspace",
-        "description": "Pick up and place out the required tools (wrench, plier, spanner) to set up the workspace.",
+        "name": "Gather and arrange tools",
+        "description": "Select and place individual tools (wrench, plier, spanner) for use or staging.",
         "action_indices": [
           0,
           1,
@@ -155,8 +161,8 @@
         ]
       },
       {
-        "name": "Collect and store tools",
-        "description": "Hold tools and place them into a box, then cover the box with its lid (stowing/packing tools).",
+        "name": "Pack tools into box and close",
+        "description": "Hold tools and put them into a box, set them down, and cover the box with a lid.",
         "action_indices": [
           6,
           7,
@@ -171,8 +177,8 @@
         ]
       },
       {
-        "name": "Tighten nuts and bolts",
-        "description": "Use wrench and spanner to hold, position, rotate, and tighten nuts and bolts, then set tools down.",
+        "name": "Tighten bolt(s) with wrench/spanner",
+        "description": "Use the wrench and spanner to position and tighten nuts/bolts, then set tools down on the table.",
         "action_indices": [
           16,
           17,
@@ -185,8 +191,8 @@
         ]
       },
       {
-        "name": "Wheel handling and final fastening",
-        "description": "Bring and adjust the wheel, take it off, and perform related holding/tightening actions.",
+        "name": "Handle wheel and finalize fastening",
+        "description": "Bring and adjust the wheel, take it off, and perform final tightening of nuts with the wrench.",
         "action_indices": [
           24,
           25,
@@ -198,10 +204,10 @@
     ]
   },
   "e9be1118-a5cf-4431-b2e8-e3edcfa9f949": {
-    "overall_goal": "Attach a wood-piece to a wooden board by positioning, clamping, drilling pilot holes, and fastening with screws.",
+    "overall_goal": "Assemble and fasten a wood piece to a wood panel by positioning parts, clamping, drilling pilot holes, and inserting screws.",
     "sub_events": [
       {
-        "name": "Insert initial screw into wood",
+        "name": "Initial screw fastening",
         "description": "Pick up a screwdriver and screw, position the screw on the wood and drive it in, then set the screwdriver down and release the screw.",
         "action_indices": [
           0,
@@ -213,8 +219,8 @@
         ]
       },
       {
-        "name": "Apply and remove clamp on board",
-        "description": "Pick up a clamp, position it on the wood, tighten (then test/adjust) and remove the clamp from the board.",
+        "name": "Clamp placement and removal",
+        "description": "Pick up a clamp, position and tighten it on the wood, then loosen and remove the clamp.",
         "action_indices": [
           6,
           7,
@@ -224,8 +230,8 @@
         ]
       },
       {
-        "name": "Position workpieces and secure wood-piece",
-        "description": "Move the wood to the workbench, pick up and align the wood-piece, then pick up and position a clamp on the wood-piece and tighten it to hold parts in place.",
+        "name": "Position parts and secure with clamp",
+        "description": "Move the wood to the workbench, pick up and align the wood piece, then pick up and position a clamp on the wood piece and tighten it to hold parts together.",
         "action_indices": [
           11,
           12,
@@ -237,8 +243,8 @@
         ]
       },
       {
-        "name": "Drill pilot holes in board and wood-piece",
-        "description": "Pick up the drill, hold the pieces with the other hand and perform two drilling operations (drill and withdraw each time), putting the drill down between operations and finally release the held piece.",
+        "name": "Drill pilot holes",
+        "description": "Pick up the drill, hold the workpieces with the other hand and drill holes (repeat as needed), then withdraw and set the drill down and release the held piece.",
         "action_indices": [
           18,
           19,
@@ -254,8 +260,8 @@
         ]
       },
       {
-        "name": "Begin fastening wood-piece with screws",
-        "description": "Pick up the screwdriver and a screw, and position the screw on the wood-piece to prepare for driving it in.",
+        "name": "Final screw preparation",
+        "description": "Pick up the screwdriver and another screw, and position the screw on the wood piece in preparation for final fastening.",
         "action_indices": [
           29,
           30,
@@ -265,11 +271,11 @@
     ]
   },
   "f5c27b88-a3eb-4290-9102-0307c2809241": {
-    "overall_goal": "Clean the bookshelf and reorganize the books on it.",
+    "overall_goal": "Organize and clean books on a bookshelf, including removing dust and inspecting/reshelving individual books",
     "sub_events": [
       {
-        "name": "Initial arranging and placement",
-        "description": "Arrange and place a book on the shelf, adjusting its position.",
+        "name": "Arrange and place book",
+        "description": "Prepare a book and position it on the shelf (arranging, placing and aligning)",
         "action_indices": [
           0,
           1,
@@ -278,8 +284,8 @@
         ]
       },
       {
-        "name": "Prepare and clean the shelf",
-        "description": "Remove a book, pick up cleaning tools (brush and rag), remove dust and wipe the bookshelf.",
+        "name": "Remove and clean shelf",
+        "description": "Take a book off the shelf and clean the bookshelf surface using a brush and rag",
         "action_indices": [
           4,
           5,
@@ -291,8 +297,8 @@
         ]
       },
       {
-        "name": "Re-shelve and inspect books",
-        "description": "Handle books—take them from the shelf or floor, place them back, and check/adjust their placement.",
+        "name": "Inspect and reshelve books",
+        "description": "Handle, inspect, move and reshelve books (moving between shelf and floor, checking, and removing covers/items)",
         "action_indices": [
           11,
           12,
@@ -306,11 +312,11 @@
     ]
   },
   "97ad4e58-c64f-47e3-8d84-6aad38bdfbc8": {
-    "overall_goal": "Secure components on a machine by striking to adjust alignment and installing/tightening bolts with a screwdriver.",
+    "overall_goal": "Secure bolts on a machine by first adjusting/seating the machine with a hammer, then positioning and tightening bolts with a screwdriver.",
     "sub_events": [
       {
-        "name": "Adjust/seat machine with hammer",
-        "description": "Pick up a hammer, hold/steady the machine, strike it with the hammer to adjust or seat parts, then set the hammer down.",
+        "name": "Seat/adjust machine with hammer",
+        "description": "Pick up the hammer, steady the machine, strike the machine to seat/adjust it, and set the hammer down.",
         "action_indices": [
           0,
           1,
@@ -320,7 +326,7 @@
       },
       {
         "name": "Install and tighten first bolt",
-        "description": "Pick up a bolt, position it on the machine, release it into place, pick up a screwdriver, hold the bolt with the other hand, tighten the bolt with the screwdriver, release the bolt, and put the screwdriver down.",
+        "description": "Pick up a bolt, position it on the machine and release it, pick up a screwdriver, hold the bolt with the other hand, tighten the bolt with the screwdriver, release the hand and place the screwdriver down.",
         "action_indices": [
           4,
           5,
@@ -334,7 +340,7 @@
       },
       {
         "name": "Install and tighten second bolt",
-        "description": "Repeat the bolt installation: pick up a bolt, position it on the machine, release it, pick up the screwdriver, hold the bolt with the other hand, tighten the bolt with the screwdriver, and release the bolt.",
+        "description": "Repeat the bolt installation: pick up and position the bolt, release it, pick up the screwdriver, hold the bolt with the other hand, tighten the bolt with the screwdriver, and release the bolt.",
         "action_indices": [
           12,
           13,
@@ -348,11 +354,11 @@
     ]
   },
   "a20c2c22-cc2c-487e-8041-f0b33f4845ca": {
-    "overall_goal": "Attach and secure a cut piece of fabric to furniture (cover/upholster) using glue and nails.",
+    "overall_goal": "Attach and secure a piece of fabric onto furniture by cutting it to size, applying glue, fastening with nails, and trimming the excess.",
     "sub_events": [
       {
-        "name": "Cut and prepare fabric",
-        "description": "Pick up scissors, hold the fabric and cut it to the needed shape/size, then set the scissors down and release the fabric.",
+        "name": "Prepare and cut fabric",
+        "description": "Pick up tools and hold the fabric, then cut the fabric to the required size.",
         "action_indices": [
           0,
           1,
@@ -362,8 +368,8 @@
         ]
       },
       {
-        "name": "Apply adhesive to fabric",
-        "description": "Pick up glue, apply it to the fabric and smooth the fabric to ensure adhesion, then put the glue away.",
+        "name": "Apply adhesive",
+        "description": "Pick up and apply glue to the fabric and smooth it to ensure adhesion.",
         "action_indices": [
           5,
           6,
@@ -372,8 +378,8 @@
         ]
       },
       {
-        "name": "Attach fabric to furniture with nails",
-        "description": "Pick up hammer and nails, drive nails into the furniture to secure the fabric (adjusting the fabric between drives), and then put the hammer down.",
+        "name": "Fasten fabric to furniture",
+        "description": "Pick up hammer and nails and drive nails into the furniture to secure the fabric, adjusting as needed.",
         "action_indices": [
           9,
           10,
@@ -385,8 +391,8 @@
         ]
       },
       {
-        "name": "Trim excess fabric",
-        "description": "Pick up scissors, trim away excess fabric for a clean finish, and put the scissors down.",
+        "name": "Final trimming",
+        "description": "Use scissors to trim away excess fabric and put tools away.",
         "action_indices": [
           16,
           17,
@@ -396,11 +402,11 @@
     ]
   },
   "860980fb-f992-4bb1-8a46-b644f58090e2": {
-    "overall_goal": "Prepare and assemble a paper–cardboard piece by aligning a metal board on the paper, folding the paper, attaching the cardboard, and applying glue to secure it.",
+    "overall_goal": "Prepare and assemble a folded paper piece by aligning a metal board, folding the paper, attaching cardboard, and applying glue with a brush.",
     "sub_events": [
       {
-        "name": "Positioning/alignment",
-        "description": "Pick up and place a metal board onto the paper and adjust it to the correct position for subsequent work.",
+        "name": "Positioning template/weight",
+        "description": "Place and align a metal board onto the paper to serve as a template or stabilizing weight.",
         "action_indices": [
           0,
           1,
@@ -408,8 +414,8 @@
         ]
       },
       {
-        "name": "Paper preparation (folding)",
-        "description": "Pick up the paper, perform one or more folds and adjustments, and set it down—preparing the paper shape for attachment.",
+        "name": "Paper preparation and folding",
+        "description": "Pick up the paper, perform one or more folds with adjustments, and set it back down in the desired configuration.",
         "action_indices": [
           3,
           4,
@@ -423,7 +429,7 @@
       },
       {
         "name": "Attach and secure cardboard",
-        "description": "Pick up the cardboard, place it onto the prepared paper, and press it down to attach and secure it.",
+        "description": "Pick up a piece of cardboard, place and attach it onto the prepared paper, then press it to ensure contact.",
         "action_indices": [
           11,
           12,
@@ -431,8 +437,8 @@
         ]
       },
       {
-        "name": "Glue application",
-        "description": "Pick up a brush, dip it into glue, hold the paper steady, and apply glue to the paper/cardboard assembly.",
+        "name": "Apply adhesive",
+        "description": "Pick up a brush, dip it into glue, hold the paper steady, and apply glue onto the paper/cardboard assembly.",
         "action_indices": [
           14,
           15,
@@ -443,11 +449,11 @@
     ]
   },
   "15d4a2c1-1cb8-4b76-a66a-adb20b7e96cb": {
-    "overall_goal": "Repeatedly inspecting a card on a table by interacting with it (touching/tapping), picking it up to check it, and putting it back.",
+    "overall_goal": "Examine and inspect a card on a table by tapping and repeatedly picking it up to check it, then putting it back.",
     "sub_events": [
       {
-        "name": "Initial tactile interactions",
-        "description": "Person probes and taps the card while it remains on the table, likely to locate or orient it.",
+        "name": "Initial probing",
+        "description": "Person taps and touches the card while it lies on the table to interact with or orient it before handling.",
         "action_indices": [
           0,
           1,
@@ -456,8 +462,8 @@
         ]
       },
       {
-        "name": "First pick-up and inspection",
-        "description": "Person picks the card up with hand1, checks it closely, then places it back on the table.",
+        "name": "First pick-up and check",
+        "description": "Person picks the card up with one hand, inspects or checks it, then puts it back on the table.",
         "action_indices": [
           4,
           5,
@@ -465,8 +471,8 @@
         ]
       },
       {
-        "name": "Re-engage then second inspection",
-        "description": "Person taps the card on the table, then picks it up again to check it and returns it to the table.",
+        "name": "Second pick-up and check (repeat)",
+        "description": "After another tap on the table, the person again picks the card up, examines it, and returns it to the table.",
         "action_indices": [
           7,
           8,
@@ -475,8 +481,8 @@
         ]
       },
       {
-        "name": "Final pick-up and check",
-        "description": "Person picks the card up once more, inspects it, and puts it down on the table.",
+        "name": "Third pick-up and check (repeat)",
+        "description": "A final pick-up, inspection, and put-down of the card is performed.",
         "action_indices": [
           11,
           12,

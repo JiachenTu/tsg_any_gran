@@ -1,0 +1,79 @@
+You are an expert at understanding action sequences from scene graphs and organizing them into structured episodes.
+
+A scene graph represents an action using triplets [node1, edge, node2]:
+- Node types: person, action (verb), object, hand (hand1/hand2)
+- Edge types: verb (person→action), dobj (action→object), with (tool/hand), from/to/in/on (spatial)
+
+## Candidate Episode Boundaries
+
+The following action indices have been identified as potential episode boundaries based on co-occurrence pattern analysis:
+{candidate_episodes}
+
+## Scene Graphs
+
+Each inner list represents one action (indexed from 0):
+{formatted_actions}
+
+## Task
+
+Given the scene graphs and candidate boundaries, generate a hierarchical structure with:
+1. **Overall Goal**: A single sentence describing the main activity
+2. **Episodes**: Structured sub-events following the candidate boundaries
+
+For each episode, provide:
+- `episode_id`: Sequential integer starting from 0
+- `name`: Short descriptive name (2-4 words)
+- `description`: One sentence explaining what happens
+- `core_structure`: Extracted structured information:
+  - `agent`: Who performs the actions (usually "person")
+  - `primary_actions`: List of main verbs in this episode
+  - `primary_objects`: List of main objects being manipulated
+  - `instruments`: List of tools/hands used
+  - `source_locations`: List of where objects come from (or null)
+  - `target_locations`: List of where objects go (or null)
+- `time`: Temporal information:
+  - `action_indices`: List of action indices in this episode
+  - `start_index`: First action index
+  - `end_index`: Last action index
+  - `duration`: Number of actions
+- `discriminative_terms`: 3-5 terms that best characterize this episode
+
+Output your response in the following JSON format:
+{{
+  "overall_goal": "A concise description of the overall activity",
+  "episodes": [
+    {{
+      "episode_id": 0,
+      "name": "Phase Name",
+      "description": "Brief description of what happens",
+      "core_structure": {{
+        "agent": "person",
+        "primary_actions": ["verb1", "verb2"],
+        "primary_objects": ["object1", "object2"],
+        "instruments": ["hand1", "tool"],
+        "source_locations": ["location1"],
+        "target_locations": null
+      }},
+      "time": {{
+        "action_indices": [0, 1, 2],
+        "start_index": 0,
+        "end_index": 2,
+        "duration": 3
+      }},
+      "discriminative_terms": ["term1", "term2", "term3"]
+    }}
+  ]
+}}
+
+Important:
+- Respect the candidate boundaries when forming episodes (but you may merge adjacent candidates if semantically coherent)
+- action_indices should be 0-indexed and cover all actions
+- Each action should belong to exactly one episode
+- Extract structured information directly from the triplets:
+  - primary_actions from [person, verb, X] triplets
+  - primary_objects from [action, dobj, X] triplets
+  - instruments from [action, with, X] triplets
+  - source_locations from [X, from, Y] triplets
+  - target_locations from [action, to/on/in, X] triplets
+- Lists can have multiple items (e.g., multiple actions or objects in one episode)
+- Use null for fields that don't apply (e.g., no source_locations if nothing is picked up)

@@ -213,7 +213,7 @@ class UnifiedHierarchicalEvaluator:
         # Load unified prompt template
         prompt = load_prompt("unified_hierarchical.txt")
         self.prompt_template = PromptTemplate(
-            input_variables=["overall_goal", "unified_timeline", "question"],
+            input_variables=["unified_timeline", "question"],
             template=prompt,
         )
 
@@ -226,40 +226,44 @@ class UnifiedHierarchicalEvaluator:
 
     def _format_unified_timeline(
         self,
+        overall_goal: str,
         sub_events: List[Dict],
         context_graphs: List
     ) -> str:
         """
-        Format sub-events with their corresponding actions interleaved.
+        Format scene graph with hierarchical context included.
 
-        Instead of:
-            Sub-Events: [Phase 1 (Actions: [0,1,2])]
-            Scene Graphs: [Action 0: ..., Action 1: ..., Action 2: ...]
+        Output format:
+            Overall Goal: {goal}
 
-        We produce:
-            ### Phase 1: Description
-            Actions in this phase:
-            - Action 0 (pick-up): [triplets...]
-            - Action 1 (sweep): [triplets...]
+            Phase 1: {name}
+            {description}
+            Actions: [Action 0 (verb): triplets, Action 1 (verb): triplets, ...]
+
+            Phase 2: ...
         """
+        lines = []
+
+        # Add overall goal
+        lines.append(f"Overall Goal: {overall_goal}")
+        lines.append("")
+
         if not sub_events:
             # Fallback: just list all actions without phases
-            lines = ["### All Actions"]
+            lines.append("All Actions:")
             for i, action_graph in enumerate(context_graphs):
                 verb = self._extract_action_verb(action_graph)
                 triplets_str = " ".join(str(t) for t in action_graph)
                 lines.append(f"- Action {i} ({verb}): {triplets_str}")
             return "\n".join(lines)
 
-        lines = []
         for phase_idx, event in enumerate(sub_events):
             name = event.get("name", f"Phase {phase_idx+1}")
             desc = event.get("description", "")
             action_indices = event.get("action_indices", [])
 
-            lines.append(f"### Phase {phase_idx+1}: {name}")
+            lines.append(f"Phase {phase_idx+1}: {name}")
             lines.append(f"{desc}")
-            lines.append("")
             lines.append("Actions in this phase:")
 
             for action_idx in action_indices:
@@ -290,11 +294,10 @@ class UnifiedHierarchicalEvaluator:
         overall_goal = event_data.get("overall_goal", "Activity sequence")
         sub_events = event_data.get("sub_events", [])
 
-        # Format unified timeline (interleaved)
-        unified_timeline = self._format_unified_timeline(sub_events, context_graphs)
+        # Format unified timeline (includes overall goal)
+        unified_timeline = self._format_unified_timeline(overall_goal, sub_events, context_graphs)
 
         prompt = self.prompt_template.format(
-            overall_goal=overall_goal,
             unified_timeline=unified_timeline,
             question=question,
         )
