@@ -238,6 +238,25 @@ def main():
         action="store_true",
         help="Don't use LLM for episode name/description generation"
     )
+    parser.add_argument(
+        "--gen-model",
+        type=str,
+        choices=["gpt5-mini", "gpt5"],
+        default="gpt5-mini",
+        help="Model for episode name/description generation (default: gpt5-mini)"
+    )
+    parser.add_argument(
+        "--min-freq",
+        type=int,
+        default=2,
+        help="Minimum term frequency for salience calculation (default: 2)"
+    )
+    parser.add_argument(
+        "--top-k",
+        type=int,
+        default=None,
+        help="Limit on number of key terms for co-occurrence (default: None = all)"
+    )
 
     args = parser.parse_args()
 
@@ -257,6 +276,13 @@ def main():
         model = GPT5Mini()
     print(f"Using model for QA: {model.__class__.__name__}")
 
+    # Initialize model for episode generation
+    if args.gen_model == "gpt5":
+        gen_model = GPT5()
+    else:
+        gen_model = GPT5Mini()
+    print(f"Using model for episode gen: {gen_model.__class__.__name__}")
+
     # Step 1: Build background dataset
     print("\nBuilding background dataset from all SGQA actions...")
     background = build_background_dataset(str(SGQA_PATH))
@@ -264,7 +290,7 @@ def main():
 
     # Step 2: Initialize EpiMine analyzer
     print("Initializing EpiMine analyzer...")
-    analyzer = EpiMineActionAnalyzer(background_dataset=background)
+    analyzer = EpiMineActionAnalyzer(background_dataset=background, min_freq=args.min_freq)
 
     # Step 3: Generate or load episode hierarchies
     if args.cache_path and Path(args.cache_path).exists():
@@ -272,8 +298,10 @@ def main():
         episodes_cache = load_episodes_cache(args.cache_path)
     else:
         print("\nGenerating EpiMine episode hierarchies...")
-        generator = EpiMineEpisodeGenerator(model=GPT5Mini())
-        cache_filename = f"epimine_episodes_limit{args.limit or 'all'}.json"
+        generator = EpiMineEpisodeGenerator(model=gen_model)
+        topk_str = str(args.top_k) if args.top_k else "all"
+        gen_str = "gen5" if args.gen_model == "gpt5" else "gen5m"
+        cache_filename = f"epimine_episodes_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_{gen_str}_limit{args.limit or 'all'}.json"
         cache_path = Path(__file__).parent / "cache" / cache_filename
 
         episodes_cache = generator.batch_generate(
@@ -282,6 +310,7 @@ def main():
             output_path=str(cache_path),
             use_llm=not args.no_llm,
             threshold_std=args.cooccur_threshold,
+            top_k=args.top_k,
         )
 
     # Print episode statistics
@@ -310,7 +339,9 @@ def main():
 
     if not args.no_save:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        save_results(epimine_results, f"epimine_{args.model}_limit{args.limit or 'all'}_{timestamp}.json")
+        topk_str = str(args.top_k) if args.top_k else "all"
+        gen_str = "gen5" if args.gen_model == "gpt5" else "gen5m"
+        save_results(epimine_results, f"epimine_{args.model}_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_{gen_str}_limit{args.limit or 'all'}_{timestamp}.json")
 
     # Step 6: Print comparison
     if baseline_results:

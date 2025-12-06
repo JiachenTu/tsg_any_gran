@@ -1,0 +1,80 @@
+{
+  "task": "EpiMine-SGQA-Hard-10",
+  "timestamp": "2025-12-05T05:02:59.481669",
+  "model": "EpiMine-GPT5",
+  "total_cases": 10,
+  "correct": 4,
+  "accuracy_percent": 40.0,
+  "results": [
+    {
+      "data_id": "860980fb-f992-4bb1-8a46-b644f58090e2",
+      "question": "Which object required both hands for its first manipulation after being picked up?",
+      "ground_truth": "metal-board",
+      "prediction": "paper",
+      "exact_match": false
+    },
+    {
+      "data_id": "41b8254c-ca1e-464c-9323-55301fb5f0e8",
+      "question": "Which object was handled by both hands during the drink preparation sequence?",
+      "ground_truth": "bottle",
+      "prediction": "bottle",
+      "exact_match": true
+    },
+    {
+      "data_id": "312da1d0-9e56-4f5e-bb12-9cb67e8bc674",
+      "question": "What was the last tool used before the final water spray sequence began?",
+      "ground_truth": "bottle",
+      "prediction": "hose",
+      "exact_match": false
+    },
+    {
+      "data_id": "3db79f36-a611-42f6-bfb7-76cf7720a00a",
+      "question": "Which object was manipulated immediately after the first sewing sequence completed?",
+      "ground_truth": "scissors",
+      "prediction": "scissors",
+      "exact_match": true
+    },
+    {
+      "data_id": "3ea57fa2-fd76-48c1-923e-e90b14373c7e",
+      "question": "Which tool was used after all dough kneading and adjusting sequences were completed?",
+      "ground_truth": "knife",
+      "prediction": "knife",
+      "exact_match": true
+    },
+    {
+      "data_id": "82dc7a9e-a0a4-4611-8e49-960d6c77b326",
+      "question": "What tool was used immediately before the bolt tightening sequence began?",
+      "ground_truth": "paintbrush",
+      "prediction": "screwdriver",
+      "exact_match": false
+    },
+    {
+      "data_id": "a0d6bd8e-c477-442b-bab3-731775b44b43",
+      "question": "What tool was used immediately after the first water-filling action completed?",
+      "ground_truth": "hose",
+      "prediction": "bucket",
+      "exact_match": false
+    },
+    {
+      "data_id": "f643d88a-92cc-456d-bed7-c010275637e8",
+      "question": "What object was manipulated between the two vine-cutting sequences?",
+      "ground_truth": "plant",
+      "prediction": "plant",
+      "exact_match": true
+    },
+    {
+      "data_id": "1695475c-e527-43e6-b70e-69fd33023148",
+      "question": "Which object was manipulated immediately after the second wire-cutting operation?",
+      "ground_truth": "cable",
+      "prediction": "wire-cutter",
+      "exact_match": false
+    },
+    {
+      "data_id": "312da1d0-9e56-4f5e-bb12-9cb67e8bc674",
+      "question": "Which action was performed on the generator immediately after fuel was added?",
+      "ground_truth": "check",
+      "prediction": "pick-up",
+      "exact_match": false
+    }
+  ]
+}

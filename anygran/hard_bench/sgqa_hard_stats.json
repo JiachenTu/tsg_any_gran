@@ -1,0 +1,29 @@
+{
+  "total_hard_cases": 88,
+  "by_difficulty": {
+    "easy": 43,
+    "hard": 32,
+    "medium": 13
+  },
+  "by_category": {
+    "both_hands": 9,
+    "multi_step": 17,
+    "temporal_ordering": 57,
+    "other": 3,
+    "concurrent_state": 2
+  },
+  "model_performance": {
+    "epimine_v0": {
+      "total_errors": 54,
+      "unique_solved_in_hard": 34
+    },
+    "baseline_mini": {
+      "total_errors": 57,
+      "unique_solved_in_hard": 31
+    },
+    "baseline_gpt5": {
+      "total_errors": 54,
+      "unique_solved_in_hard": 34
+    }
+  }
+}

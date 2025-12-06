@@ -369,7 +369,8 @@ class EpiMineActionAnalyzer:
     def analyze_sample(
         self,
         action_sequence: List[List[List[str]]],
-        threshold_std: float = 1.0
+        threshold_std: float = 1.0,
+        top_k: int = None
     ) -> Dict:
         """
         Full analysis of an action sequence.
@@ -377,11 +378,12 @@ class EpiMineActionAnalyzer:
         Args:
             action_sequence: List of action graphs
             threshold_std: Threshold for boundary detection
+            top_k: Optional limit on number of key terms
 
         Returns:
             Dict with key_terms, cooccurrence_matrix, and episode_boundaries
         """
-        key_terms_with_scores = self.get_key_terms(action_sequence)
+        key_terms_with_scores = self.get_key_terms(action_sequence, top_k=top_k)
         key_terms = [t for t, _ in key_terms_with_scores]
 
         cooccur_matrix = None
@@ -663,7 +665,8 @@ class EpiMineEpisodeGenerator:
         analyzer: 'EpiMineActionAnalyzer',
         output_path: Optional[str] = None,
         use_llm: bool = True,
-        threshold_std: float = 1.0
+        threshold_std: float = 1.0,
+        top_k: int = None
     ) -> Dict[str, Dict]:
         """
         Generate episode hierarchies for multiple samples.
@@ -674,6 +677,7 @@ class EpiMineEpisodeGenerator:
             output_path: Optional path to save results as JSON
             use_llm: Whether to use LLM for name/description generation
             threshold_std: Threshold for boundary detection
+            top_k: Optional limit on number of key terms
 
         Returns:
             Dict mapping data_id to episode hierarchy
@@ -698,7 +702,7 @@ class EpiMineEpisodeGenerator:
             print(f"\r[{i+1}/{total}] Processing {data_id[:20]}...", end="", flush=True)
 
             # Analyze with EpiMine
-            analysis = analyzer.analyze_sample(action_sequence, threshold_std)
+            analysis = analyzer.analyze_sample(action_sequence, threshold_std, top_k=top_k)
 
             # Generate structured episodes
             hierarchy = self.generate_episode_hierarchy(

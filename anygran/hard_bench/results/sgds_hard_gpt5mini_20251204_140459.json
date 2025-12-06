@@ -1,0 +1,1576 @@
+{
+  "task": "SGDS-Hard",
+  "model": "gpt5mini",
+  "timestamp": "20251204_140459",
+  "total_cases": 174,
+  "correct": 173,
+  "accuracy_percent": 99.43,
+  "results": [
+    {
+      "target_sentence": "the tyre was slackened off the rim using the driver.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 35
+    },
+    {
+      "target_sentence": "Finally, the strainer was mounted on the motorcycle with precision, using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 29
+    },
+    {
+      "target_sentence": "With precision, the yolk was coated over the dough portions using the applicator with hand1.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 28
+    },
+    {
+      "target_sentence": "Finally, the cord was linked to the end with both hands, completing the electrical modification.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 26
+    },
+    {
+      "target_sentence": "The spring was then attached to the brake shoe pack using both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The screw was then secured with a precise rotation of the tool.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "With the spanner in hand, the fasteners on the motorbike wheel were secured.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "It was then modified on the table with both hands for optimal alignment.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "Finally, the screw was driven into the wood pieces with precision.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 32
+    },
+    {
+      "target_sentence": "The dish was then washed under the faucet with both hands to remove any soap residue.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 45
+    },
+    {
+      "target_sentence": "The mug was then washed under the faucet with both hands to remove any soap residue.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 37
+    },
+    {
+      "target_sentence": "The tyre was detached from the rim using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 39
+    },
+    {
+      "target_sentence": "Finally, the batter strips were organized on the platter with both hands, ensuring even spacing for baking.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 31
+    },
+    {
+      "target_sentence": "With precision, the fastener was loosened using the tool,",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 33
+    },
+    {
+      "target_sentence": "Finally, it was carefully connected back onto the motorcycle with both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "A fastener on the seat was then secured using a wrench with hand1.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The platter was carefully transported with both hands to the dough machine area.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The lubricant was then spread to the batter with precision.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "It was then modified carefully to ensure a smooth surface for ironing.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "It was then transferred to the trash can while being held with both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "Finally, the details of the statue were verified thoroughly, using both hands to ensure every aspect was perfect.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 27
+    },
+    {
+      "target_sentence": "Using both hands, the tube was transported to the rack.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "The fastener was secured securely using the spanner.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "Finally, the volume was carefully modified on the support using both hands for optimal viewing.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "Liquid was decanted into the windshield washer tank using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 14
+    },
+    {
+      "target_sentence": "Finally, the motor was turned on to trial the wheel's performance.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 25
+    },
+    {
+      "target_sentence": "The fastener on the entry was then secured securely using the tool.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "The filled pail was transported back to the vehicle with both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "the paperboard was pushed firmly onto the locomotive using both hands to ensure a strong bond.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 24
+    },
+    {
+      "target_sentence": "It was then carefully fastened onto the sheet using both hands, ensuring precise alignment.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 12
+    },
+    {
+      "target_sentence": "The scrubber was then immersed in the pail containing liquid, ready for the next round of cleaning.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The foliage were then carefully cut using the shears.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The timber was carefully sculpted with the gouge, requiring the use of both hands for precision.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "Once satisfied with the steadiness, the instruments were put away in the kit, organized neatly with both hands.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "Finally, both the cloth and mop stick were carried to the car, ready for the cleaning task ahead.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "Finally, the carton was modified on the model to fit perfectly.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "The fastener was then tightened securely using the screwdriver.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "and the screw was tightened securely using the screwdriver.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "The assembled furniture was carefully reviewed for steadiness, ensuring it was secure and ready for use.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "The applicator was cleaned thoroughly using the fabric with both hands.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "The wheel was gently tapped using the hammer with hand1 to loosen it.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 10
+    },
+    {
+      "target_sentence": "The cover was then taken off with both hands to prepare for painting.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "The dish was washed under the faucet using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "Finally, the tension of the yarn was checked with both hands to maintain uniformity in the fabric.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "The mesh on the vehicle door was then slackened using the spanner.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 9
+    },
+    {
+      "target_sentence": "With the spanner in hand, the disc was secured firmly onto the sander.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 9
+    },
+    {
+      "target_sentence": "Finally, the flora's position was modified with both hands to optimize its exposure to sunlight.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 9
+    },
+    {
+      "target_sentence": "After handling the rope, hands were cleaned with a fabric using both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "The pail was filled with water using both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "Finally, the hose and wire connection was surveyed thoroughly with both hands to confirm stability.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "This step was repeated once more to ensure all the loaf was moved.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 8
+    },
+    {
+      "target_sentence": "Fluid was spilled from the flask onto the fabric.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 30
+    },
+    {
+      "target_sentence": "Fluid was spilled from the flask onto the fabric.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 30
+    },
+    {
+      "target_sentence": "the tyre was slackened off the rim using the driver.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 35
+    },
+    {
+      "target_sentence": "Finally, the earth was compressed firmly around the shrub using both hands to ensure stability.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The cover of the camera was then loosened with precision.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "Finally, the fabric was pushed firmly onto the carton with both hands to ensure a secure bond.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "the rubber was installed onto the circle using the tool.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The spring was carefully removed from the brake shoe pack using the pliers.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "Finally, the strainer was mounted on the motorcycle with precision, using both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 29
+    },
+    {
+      "target_sentence": "The fastener on the limb was then secured securely using the tool.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 6
+    },
+    {
+      "target_sentence": "With careful precision, the artwork was modified using the tool, held firmly with both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 6
+    },
+    {
+      "target_sentence": "The paste was then kneaded thoroughly using both hands to ensure a smooth consistency.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 6
+    },
+    {
+      "target_sentence": "Once there, the plank was carefully modified to ensure proper alignment.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 6
+    },
+    {
+      "target_sentence": "The disc was then hoisted away from the clamp using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "The dough was then expertly sliced into segments.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "Using the tongs, the bolt was carefully extracted from the footrest.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "With precision, the yolk was coated over the dough portions using the applicator with hand1.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 28
+    },
+    {
+      "target_sentence": "With precision, the fastener on the instrument was secured using the screwdriver.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 5
+    },
+    {
+      "target_sentence": "Finally, the shirt was adjusted on the board using both hands to ensure it was perfectly aligned.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 5
+    },
+    {
+      "target_sentence": "The fastener on the receptacle was then secured securely using the tool.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 5
+    },
+    {
+      "target_sentence": "It was then modified in the container with both hands to ensure stability and proper placement.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "Soap was spread on the sponge using both hands, ensuring it was ready for use.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "Finally, the top was covered using both hands to ensure everything was neatly packed away.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "After the inspection, palms were cleaned using a fabric, ensuring no residue remained.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|subtle_distractors|temporal_reasoning",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "Finally, the cord was linked to the end with both hands, completing the electrical modification.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 26
+    },
+    {
+      "target_sentence": "It was then aligned neatly on the shelf using both hands.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 3
+    },
+    {
+      "target_sentence": "The laundry process began by modifying the fabric in the container with both hands to ensure easy access.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 3
+    },
+    {
+      "target_sentence": "Adhesive was then used onto the fastener using an applicator held in one hand.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 14
+    },
+    {
+      "target_sentence": "The fastener was thrust into the upholstery, securing it firmly.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 14
+    },
+    {
+      "target_sentence": "It was then let go onto the earth, ready for washing.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 14
+    },
+    {
+      "target_sentence": "The soil mixture inside was examined carefully with both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 14
+    },
+    {
+      "target_sentence": "The ingredients were blended thoroughly in the basin using both hands, ensuring a well-combined dough.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "The rope was then pulled tight with both hands to ensure a firm grip.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "Finally, the water was transferred from the mug into the barrel, ensuring it was ready for use.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "The screw on the wheel was then tightened securely using the screwdriver.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "The lubricant was then spread to the batter with precision.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "To secure the attachment, the metal-panel was compressed against the sheet using both appendages, ensuring a firm bond.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "With both hands, the flour was shifted across the table to ensure even coverage.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "Finally, a thorough examination of the engine was conducted with both hands to identify any remaining issues.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "With both hands, the earth was fractured using the tool, breaking up the soil effectively.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 13
+    },
+    {
+      "target_sentence": "The screws on the bicycle wheel were then secured securely using the screwdriver.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "Once confirmed, the tube was shifted toward the storage area using both hands for careful placement.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|complex_verb",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The rim was then hoisted away from the motorcycle using both hands.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 12
+    },
+    {
+      "target_sentence": "The spring was then attached to the brake shoe pack using both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The nail was thrust into the furniture with precision.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "The rope was then reviewed thoroughly, using both hands, to ensure it was still connected to the flora.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 11
+    },
+    {
+      "target_sentence": "The screw was then secured with a precise rotation of the tool.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "Once relaxed, the fastener was detached from the timber using both hands, completing the disassembly process.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 10
+    },
+    {
+      "target_sentence": "With precision, the timber was pared using the tool, both hands working in unison to shape the wood.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 10
+    },
+    {
+      "target_sentence": "The nut was carefully peeled using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 10
+    },
+    {
+      "target_sentence": "The dough was then expertly sliced into strips using the scraper.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 9
+    },
+    {
+      "target_sentence": "Finally, the washed items were organized atop the platter using both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 9
+    },
+    {
+      "target_sentence": "With the spanner in hand, the fasteners on the motorbike wheel were secured.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "It was then modified on the table with both hands for optimal alignment.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "This step was repeated to achieve the desired consistency.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 8
+    },
+    {
+      "target_sentence": "The arrangement of the engine parts was carefully reviewed using both hands to ensure precision.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 8
+    },
+    {
+      "target_sentence": "Finally, the screw was driven into the wood pieces with precision.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 32
+    },
+    {
+      "target_sentence": "The mug was then washed under the faucet with both hands to remove any soap residue.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 37
+    },
+    {
+      "target_sentence": "The dish was then washed under the faucet with both hands to remove any soap residue.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 45
+    },
+    {
+      "target_sentence": "Finally, the batter strips were organized on the platter with both hands, ensuring even spacing for baking.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 31
+    },
+    {
+      "target_sentence": "The tyre was detached from the rim using both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 39
+    },
+    {
+      "target_sentence": "With precision, the fastener was loosened using the tool,",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 33
+    },
+    {
+      "target_sentence": "The fastener on the wheel was then unscrewed using the wrench with hand1.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 7
+    },
+    {
+      "target_sentence": "the vegetation was extracted from the earth using both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 7
+    },
+    {
+      "target_sentence": "A circle was then formed with the yarn using the knitting needle, continuing with the other hand.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 7
+    },
+    {
+      "target_sentence": "The platter was carefully transported with both hands to the dough machine area.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "Finally, it was carefully connected back onto the motorcycle with both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "A fastener on the seat was then secured using a wrench with hand1.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The soil was then thoroughly stirred in the container using the trowel.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 6
+    },
+    {
+      "target_sentence": "It was then modified carefully to ensure a smooth surface for ironing.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "It was then transferred to the trash can while being held with both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "The timber on the table was then drilled precisely.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 5
+    },
+    {
+      "target_sentence": "Finally, the details of the statue were verified thoroughly, using both hands to ensure every aspect was perfect.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 27
+    },
+    {
+      "target_sentence": "With precision, the screws on the wheel were unfastened using the tool.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "With precision, the screws were unfastened from the fence using the tool.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "With both hands, the cord on the shrub was then reviewed closely to assess its condition and placement.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "A careful inspection was then conducted to check for any missed spots, using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 19
+    },
+    {
+      "target_sentence": "The earth was shattered up using a cultivator, requiring the strength and coordination of both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 4
+    },
+    {
+      "target_sentence": "Using both hands, the tube was transported to the rack.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "Finally, the volume was carefully modified on the support using both hands for optimal viewing.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb|temporal_reasoning",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "The fastener was secured securely using the spanner.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|complex_verb",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "The vehicle was thoroughly inspected for any leaks, using both hands to ensure no detail was missed.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 3
+    },
+    {
+      "target_sentence": "The nut was then expertly stripped using the blade, requiring the coordination of both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 3
+    },
+    {
+      "target_sentence": "The timber on the table was carefully examined with both hands to ensure its quality and readiness for the next steps.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 3
+    },
+    {
+      "target_sentence": "Finally, the motor was turned on to trial the wheel's performance.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 25
+    },
+    {
+      "target_sentence": "The dish was also carefully arranged on the table with both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "It was then unsealed carefully with both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "The salt was carefully scooped from the jar using the spoon.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "the paperboard was pushed firmly onto the locomotive using both hands to ensure a strong bond.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 24
+    },
+    {
+      "target_sentence": "The car's interior was then cleaned thoroughly using the mop stick, ensuring every corner was reached.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The vehicle was then dehydrated meticulously with the cloth, using both hands to ensure no spot was left untouched.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "It was then carefully positioned onto the wheel, using both hands to ensure proper placement.",
+      "position": 0,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": false,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "With precision, the wood was carved using the chisel, both hands working in harmony to shape the material.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "After the inspection, it was positioned down gently.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The timber was then sliced on the workbench with precision.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The mug was then filled with water from the tap.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The washing process involved using both hands and water to clean the dog effectively.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 1
+    },
+    {
+      "target_sentence": "The scrubber was then immersed in the pail containing liquid, ready for the next round of cleaning.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The foliage were then carefully cut using the shears.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The timber was carefully sculpted with the gouge, requiring the use of both hands for precision.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "Once satisfied with the steadiness, the instruments were put away in the kit, organized neatly with both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 23
+    },
+    {
+      "target_sentence": "The plant was carefully reviewed for any damage, using both hands to ensure a thorough check.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 0
+    },
+    {
+      "target_sentence": "The biscuits were organized on the dish with both hands to create an inviting display.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors",
+      "context_length": 0
+    },
+    {
+      "target_sentence": "The assembled furniture was carefully reviewed for steadiness, ensuring it was secure and ready for use.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "The applicator was cleaned thoroughly using the fabric with both hands.",
+      "position": 2,
+      "prediction": 2,
+      "prediction_letter": "C",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 22
+    },
+    {
+      "target_sentence": "The cover was then taken off with both hands to prepare for painting.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "The dish was washed under the faucet using both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "Finally, the tension of the yarn was checked with both hands to maintain uniformity in the fabric.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 21
+    },
+    {
+      "target_sentence": "After handling the rope, hands were cleaned with a fabric using both hands.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "The pail was filled with water using both hands.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "Finally, the hose and wire connection was surveyed thoroughly with both hands to confirm stability.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 20
+    },
+    {
+      "target_sentence": "A careful inspection was then conducted to check for any missed spots, using both hands.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 19
+    },
+    {
+      "target_sentence": "Finally, the earth was compressed firmly around the shrub using both hands to ensure stability.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The cover of the camera was then loosened with precision.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "Finally, the fabric was pushed firmly onto the carton with both hands to ensure a secure bond.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "the rubber was installed onto the circle using the tool.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The spring was carefully removed from the brake shoe pack using the pliers.",
+      "position": 0,
+      "prediction": 0,
+      "prediction_letter": "A",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 18
+    },
+    {
+      "target_sentence": "The batter was then expertly turned out using the rolling pin, ensuring an even thickness throughout.",
+      "position": 4,
+      "prediction": 4,
+      "prediction_letter": "E",
+      "is_correct": true,
+      "hard_reason": "subtle_distractors|temporal_reasoning",
+      "context_length": 2
+    },
+    {
+      "target_sentence": "The disc was then hoisted away from the clamp using both hands.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "The dough was then expertly sliced into segments.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "Using the tongs, the bolt was carefully extracted from the footrest.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context",
+      "context_length": 17
+    },
+    {
+      "target_sentence": "Finally, the top was covered using both hands to ensure everything was neatly packed away.",
+      "position": 3,
+      "prediction": 3,
+      "prediction_letter": "D",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 15
+    },
+    {
+      "target_sentence": "After the inspection, palms were cleaned using a fabric, ensuring no residue remained.",
+      "position": 1,
+      "prediction": 1,
+      "prediction_letter": "B",
+      "is_correct": true,
+      "hard_reason": "long_context|temporal_reasoning",
+      "context_length": 15
+    }
+  ]
+}

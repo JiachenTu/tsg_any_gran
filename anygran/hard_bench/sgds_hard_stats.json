@@ -1,0 +1,21 @@
+{
+  "total_original": 250,
+  "total_hard": 174,
+  "selection_rate": 69.6,
+  "complexity_distribution": {
+    "very_hard": 24,
+    "hard": 71,
+    "moderate": 79
+  },
+  "by_reason": {
+    "long_context": 100,
+    "subtle_distractors": 122,
+    "complex_verb": 66,
+    "temporal_reasoning": 100
+  },
+  "context_length_stats": {
+    "min": 0,
+    "max": 45,
+    "mean": 15.7
+  }
+}

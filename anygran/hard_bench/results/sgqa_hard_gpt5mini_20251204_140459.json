@@ -1,0 +1,802 @@
+{
+  "task": "SGQA-Hard",
+  "model": "gpt5mini",
+  "timestamp": "20251204_140459",
+  "total_cases": 88,
+  "correct": 36,
+  "accuracy_percent": 40.91,
+  "results": [
+    {
+      "data_id": "860980fb-f992-4bb1-8a46-b644f58090e2",
+      "question": "Which object required both hands for its first manipulation after being picked up?",
+      "ground_truth": "metal-board",
+      "prediction": "paper",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "41b8254c-ca1e-464c-9323-55301fb5f0e8",
+      "question": "Which object was handled by both hands during the drink preparation sequence?",
+      "ground_truth": "bottle",
+      "prediction": "spoon",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "concurrent_state"
+    },
+    {
+      "data_id": "312da1d0-9e56-4f5e-bb12-9cb67e8bc674",
+      "question": "What was the last tool used before the final water spray sequence began?",
+      "ground_truth": "bottle",
+      "prediction": "hose",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "3db79f36-a611-42f6-bfb7-76cf7720a00a",
+      "question": "Which object was manipulated immediately after the first sewing sequence completed?",
+      "ground_truth": "scissors",
+      "prediction": "thread",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "3ea57fa2-fd76-48c1-923e-e90b14373c7e",
+      "question": "Which tool was used after all dough kneading and adjusting sequences were completed?",
+      "ground_truth": "knife",
+      "prediction": "pan",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "82dc7a9e-a0a4-4611-8e49-960d6c77b326",
+      "question": "What tool was used immediately before the bolt tightening sequence began?",
+      "ground_truth": "paintbrush",
+      "prediction": "screwdriver",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "a0d6bd8e-c477-442b-bab3-731775b44b43",
+      "question": "What tool was used immediately after the first water-filling action completed?",
+      "ground_truth": "hose",
+      "prediction": "bucket",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "f643d88a-92cc-456d-bed7-c010275637e8",
+      "question": "What object was manipulated between the two vine-cutting sequences?",
+      "ground_truth": "plant",
+      "prediction": "hose",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "1695475c-e527-43e6-b70e-69fd33023148",
+      "question": "Which object was manipulated immediately after the second wire-cutting operation?",
+      "ground_truth": "cable",
+      "prediction": "wire-cutter",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "312da1d0-9e56-4f5e-bb12-9cb67e8bc674",
+      "question": "Which action was performed on the generator immediately after fuel was added?",
+      "ground_truth": "check",
+      "prediction": "pick-up",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "312da1d0-9e56-4f5e-bb12-9cb67e8bc674",
+      "question": "Which object was manipulated after the tank was closed but before watering began?",
+      "ground_truth": "wire",
+      "prediction": "hose",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "41b8254c-ca1e-464c-9323-55301fb5f0e8",
+      "question": "What container was accessed last before adding ice-cubes to the cup?",
+      "ground_truth": "freezer",
+      "prediction": "tray",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "44ae604b-2e16-497d-a018-03495d8d5654",
+      "question": "What object was manipulated with hand2 before the sponge was dipped?",
+      "ground_truth": "wiper",
+      "prediction": "bucket",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "49374bc5-0999-49dc-88bd-c42c0d54365f",
+      "question": "Which tool was used immediately after putting down the rag for the first time?",
+      "ground_truth": "hose",
+      "prediction": "rag",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "6f082d5d-5f31-4358-b2dc-16d320312ab3",
+      "question": "What tool was used immediately before the dough was cut into strips?",
+      "ground_truth": "cutter",
+      "prediction": "scraper",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "6f082d5d-5f31-4358-b2dc-16d320312ab3",
+      "question": "Which tool was used last before the dough-strips were placed in the pan?",
+      "ground_truth": "rolling-pin",
+      "prediction": "stove",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "950f70a4-f90b-4a15-97a0-c14ad6960285",
+      "question": "What was the final item cleaned before the sink was washed?",
+      "ground_truth": "pan",
+      "prediction": "counter",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d19faa97-b823-4c1d-b00b-e9839f1a2391",
+      "question": "What was the last object modified before the final reading state?",
+      "ground_truth": "stand",
+      "prediction": "book",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d4fc1fd7-c725-454e-9d2b-0fbc774e81d6",
+      "question": "What tool was used immediately before cleaning the hand?",
+      "ground_truth": "wrench",
+      "prediction": "tissue",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d6de6eee-b844-49c9-81d4-325fb9697ef6",
+      "question": "What object was handled immediately before the first nut peeling action?",
+      "ground_truth": "knife",
+      "prediction": "nut",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d6de6eee-b844-49c9-81d4-325fb9697ef6",
+      "question": "What object was placed onto the cracker immediately before the final press action?",
+      "ground_truth": "nut",
+      "prediction": "cracker",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e08c9103-d6a0-4a43-8276-c8f5e7cfe57f",
+      "question": "What tool was picked up immediately before the grinding wheel was installed?",
+      "ground_truth": "chisel",
+      "prediction": "wrench",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e08c9103-d6a0-4a43-8276-c8f5e7cfe57f",
+      "question": "Which object was manipulated twice with hand1 before the final grinding operation?",
+      "ground_truth": "key",
+      "prediction": "wrench",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e43f5b38-213a-4d42-afaa-32c3b77f4da6",
+      "question": "Which tool was used last before the dough entered the oven?",
+      "ground_truth": "container",
+      "prediction": "roller",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e8cf9894-0cc7-4480-b490-885308bfb513",
+      "question": "Which object was manipulated immediately before applying egg to dough-pieces?",
+      "ground_truth": "brush",
+      "prediction": "brush",
+      "exact_match": true,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e9be1118-a5cf-4431-b2e8-e3edcfa9f949",
+      "question": "What was the last tool picked up before the final positioning action?",
+      "ground_truth": "screw",
+      "prediction": "screwdriver",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "ea87324e-d129-425f-b247-e6bcc4ff332c",
+      "question": "What tool was used immediately before the wood was wiped?",
+      "ground_truth": "sandpaper",
+      "prediction": "cloth",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "efa59c4e-71de-4184-9c82-f78efd4d4702",
+      "question": "Which tool was used in the first complete assembly cycle before the brake installation?",
+      "ground_truth": "screwdriver",
+      "prediction": "wrench",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "f643d88a-92cc-456d-bed7-c010275637e8",
+      "question": "Which gardening tool was used last after completing plant maintenance?",
+      "ground_truth": "hose",
+      "prediction": "shears",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "f646012d-baca-46a6-bc03-32047c83f5dc",
+      "question": "What object was manipulated immediately after the final screwdriver interaction?",
+      "ground_truth": "cover",
+      "prediction": "screwdriver",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "fbf4150a-27d2-48a4-956f-b4f85ecde465",
+      "question": "What was the first object the person interacted with after placing the laptop?",
+      "ground_truth": "charger",
+      "prediction": "laptop",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "fdb68b7b-f09f-4a71-a85c-b02e728e9566",
+      "question": "What object was picked up between releasing the bicycle and attaching the wheel?",
+      "ground_truth": "bolt",
+      "prediction": "wheel",
+      "exact_match": false,
+      "difficulty": "hard",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "44ae604b-2e16-497d-a018-03495d8d5654",
+      "question": "Which tool was used last before the car drying sequence began?",
+      "ground_truth": "water-hose",
+      "prediction": "towel",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "6f082d5d-5f31-4358-b2dc-16d320312ab3",
+      "question": "What item was handled after multiple kneading sequences but before cutting?",
+      "ground_truth": "flour",
+      "prediction": "dough",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "7070897e-556f-421a-b662-551fe2ab7fb5",
+      "question": "Which item was handled last in the sealing sequence?",
+      "ground_truth": "tape",
+      "prediction": "tape",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "203ee455-6f60-4e08-bd89-28e2ca3927da",
+      "question": "What was the first container placed on the countertop after ingredients were mixed?",
+      "ground_truth": "tray",
+      "prediction": "tray",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "5533ab65-7463-47a6-b040-c0c6d65b8cf5",
+      "question": "What tool was picked up immediately after putting down the screwdriver?",
+      "ground_truth": "pipe",
+      "prediction": "pipe",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "954c2f61-64ad-4c89-a26f-ec4547a65fab",
+      "question": "What object was first manipulated before water flow began?",
+      "ground_truth": "tap",
+      "prediction": "tap",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "954c2f61-64ad-4c89-a26f-ec4547a65fab",
+      "question": "Which object was interacted with between two water-related actions?",
+      "ground_truth": "pot",
+      "prediction": "pot",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "a0d6bd8e-c477-442b-bab3-731775b44b43",
+      "question": "Which tool was used for cleaning after the bucket was filled with water?",
+      "ground_truth": "hose",
+      "prediction": "sponge",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "a814274f-898a-4bc4-ad93-f764844bf03c",
+      "question": "What was the first tool used on the wood after it was placed on the workbench?",
+      "ground_truth": "saw",
+      "prediction": "saw",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "a814274f-898a-4bc4-ad93-f764844bf03c",
+      "question": "Which object was handled immediately before the screwdriver was used?",
+      "ground_truth": "screw",
+      "prediction": "screwdriver",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "c7cc9fbf-e47a-4bc7-9f08-7ff6954a787a",
+      "question": "What was the last tool used for handling flour before the machine operation?",
+      "ground_truth": "scoop",
+      "prediction": "scoop",
+      "exact_match": true,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d851b431-8551-492b-8332-bd46c3bfdaba",
+      "question": "What object was held immediately after the first plant placement?",
+      "ground_truth": "trowel",
+      "prediction": "bag",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "df0fa70d-600e-477b-aaea-275f86ff7010",
+      "question": "What tool was used immediately before the first gauge cleaning operation?",
+      "ground_truth": "screwdriver",
+      "prediction": "rag",
+      "exact_match": false,
+      "difficulty": "medium",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "1560b9ee-e2da-4dda-a875-52e5bae8d88a",
+      "question": "Which object was manipulated after being picked up with both hands in separate actions?",
+      "ground_truth": "plug",
+      "prediction": "plug",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "277b18de-4ad9-4c09-970b-91fcea05097d",
+      "question": "Which object required both hands to manipulate after all tools were stored?",
+      "ground_truth": "wheel",
+      "prediction": "wheel",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "352f1eea-606d-4cd7-906f-733affaf6823",
+      "question": "Which object required both hands for its final placement?",
+      "ground_truth": "tools",
+      "prediction": "fence-board",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "577f3941-c9f6-45d3-893e-3fd12cffcad1",
+      "question": "What object was handled with both hands immediately after examining the plant?",
+      "ground_truth": "plant",
+      "prediction": "plant",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "8be918b2-c819-4a84-98dc-5fe24835a4ac",
+      "question": "Which object required both hands for initial placement on the floor?",
+      "ground_truth": "plastic-wrap",
+      "prediction": "plastic-wrap",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "ab5f1a57-29b3-4c07-bc82-bed0b1c3d42f",
+      "question": "Which action was performed with both hands on all objects before placing them in the sink?",
+      "ground_truth": "carry",
+      "prediction": "carry",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "c7cc9fbf-e47a-4bc7-9f08-7ff6954a787a",
+      "question": "Which object was manipulated with both hands immediately after being picked up?",
+      "ground_truth": "bag",
+      "prediction": "dough",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "f643d88a-92cc-456d-bed7-c010275637e8",
+      "question": "Which object was handled with both hands after the plant was held?",
+      "ground_truth": "rake",
+      "prediction": "rake",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "both_hands"
+    },
+    {
+      "data_id": "9f9f42f0-b9fc-4247-8dad-3ef0ff36e402",
+      "question": "Which object was handled by hand2 during the brushing sequence?",
+      "ground_truth": "leaf",
+      "prediction": "wood",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "concurrent_state"
+    },
+    {
+      "data_id": "15d4a2c1-1cb8-4b76-a66a-adb20b7e96cb",
+      "question": "Which tool is used consistently across all interactions with the card?",
+      "ground_truth": "hand1",
+      "prediction": "hand1",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "1db339f1-f887-4e46-86be-2df8eda596db",
+      "question": "What object receives the water after the second fill-up sequence?",
+      "ground_truth": "windshield-washer-tank",
+      "prediction": "bucket",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "277b18de-4ad9-4c09-970b-91fcea05097d",
+      "question": "What tool was used immediately before the first bolt tightening sequence?",
+      "ground_truth": "spanner",
+      "prediction": "spanner",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "32e25924-9d92-4030-a328-11e2c4c7ac56",
+      "question": "Which tool was used after all dough shaping was completed?",
+      "ground_truth": "tray",
+      "prediction": "brush",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "4ad40842-5cee-49c2-a382-211fd7a4872b",
+      "question": "What container was first accessed before the bread transfer sequence began?",
+      "ground_truth": "oven",
+      "prediction": "oven",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "5ec85bbd-e6c4-46e3-8da5-28576730b35f",
+      "question": "Which action was performed on all tableware items before they were placed on the tray?",
+      "ground_truth": "pick-up",
+      "prediction": "pick-up",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "a61ec2b9-bc21-4e55-ac3f-9f52407633cc",
+      "question": "Which container was used in the final mixing sequence?",
+      "ground_truth": "jug",
+      "prediction": "jug",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "d84b8c76-d6b9-4e27-ae66-b010bce5ed1e",
+      "question": "Which tool was consistently used for single-handed pick-up actions throughout the sequence?",
+      "ground_truth": "hand1",
+      "prediction": "iron",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "multi_step"
+    },
+    {
+      "data_id": "1fdbef9f-8aa7-46b1-8063-d1435577608a",
+      "question": "Which object had the most sequential move actions performed on it?",
+      "ground_truth": "shirt",
+      "prediction": "iron",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "other"
+    },
+    {
+      "data_id": "c4d332b2-7fcc-4993-b9ea-26d6f794984f",
+      "question": "Which body part was primarily used for holding the cutting tool?",
+      "ground_truth": "hand1",
+      "prediction": "hand",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "other"
+    },
+    {
+      "data_id": "d19faa97-b823-4c1d-b00b-e9839f1a2391",
+      "question": "Which action was performed multiple times on different objects using hand1?",
+      "ground_truth": "adjust",
+      "prediction": "pick-up",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "other"
+    },
+    {
+      "data_id": "1695475c-e527-43e6-b70e-69fd33023148",
+      "question": "What tool was used immediately before the wire was inserted into the socket?",
+      "ground_truth": "wire-cutter",
+      "prediction": "wire-cutter",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "19ed57bf-e23d-425b-a396-30daa1d5e750",
+      "question": "What tool was used immediately before loosening the bolt on the motorcycle?",
+      "ground_truth": "spanner",
+      "prediction": "spanner",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "2ae97f2a-b16d-467b-b73a-721cb00996f1",
+      "question": "What was the first material interacted with before any dough manipulation began?",
+      "ground_truth": "contents",
+      "prediction": "spatula",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "3db79f36-a611-42f6-bfb7-76cf7720a00a",
+      "question": "Which tool was picked up again after the first thread placement on the workbench?",
+      "ground_truth": "needle",
+      "prediction": "needle",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "3ea57fa2-fd76-48c1-923e-e90b14373c7e",
+      "question": "What object was picked up between pouring water and kneading the dough?",
+      "ground_truth": "dough",
+      "prediction": "dough",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "4ad40842-5cee-49c2-a382-211fd7a4872b",
+      "question": "What was the final tool used to arrange items before being put on the table?",
+      "ground_truth": "spatula",
+      "prediction": "hand1",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "831a2da3-bf97-4a79-aa47-16bcdca9e3cd",
+      "question": "What was the first object picked up after putting down the laundry basket?",
+      "ground_truth": "cloth",
+      "prediction": "cloth",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "860980fb-f992-4bb1-8a46-b644f58090e2",
+      "question": "What object was handled immediately before the glue application?",
+      "ground_truth": "paper",
+      "prediction": "paper",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "950f70a4-f90b-4a15-97a0-c14ad6960285",
+      "question": "Which object was handled last before items were placed in the cupboard?",
+      "ground_truth": "pan",
+      "prediction": "pan",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "954c2f61-64ad-4c89-a26f-ec4547a65fab",
+      "question": "What object was handled immediately before being transferred to the cooking vessel?",
+      "ground_truth": "onion",
+      "prediction": "pot",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "9f9f42f0-b9fc-4247-8dad-3ef0ff36e402",
+      "question": "What tool was used immediately before applying oil to the wood?",
+      "ground_truth": "brush",
+      "prediction": "brush",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "a1f09ebf-619d-41fd-841d-56629d803003",
+      "question": "What tool was used in the final cleaning action before being put down?",
+      "ground_truth": "broom",
+      "prediction": "broom",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "a814274f-898a-4bc4-ad93-f764844bf03c",
+      "question": "What tool was used immediately after measuring the wood?",
+      "ground_truth": "pencil",
+      "prediction": "pencil",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "c7cc9fbf-e47a-4bc7-9f08-7ff6954a787a",
+      "question": "What object was being held when the first pouring action occurred?",
+      "ground_truth": "jug",
+      "prediction": "jug",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d19faa97-b823-4c1d-b00b-e9839f1a2391",
+      "question": "What object required concurrent hand actions after the guitar interaction?",
+      "ground_truth": "stand",
+      "prediction": "stand",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "d19faa97-b823-4c1d-b00b-e9839f1a2391",
+      "question": "Which action occurred between picking up the book and reading it?",
+      "ground_truth": "open",
+      "prediction": "open",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "dabf199a-bf55-440d-8aeb-77ead18097ae",
+      "question": "Which object was handled between the first fabric interaction and the bolt adjustment?",
+      "ground_truth": "screwdriver",
+      "prediction": "screwdriver",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "df0fa70d-600e-477b-aaea-275f86ff7010",
+      "question": "What tool was used for the final adjustment of the gauge before the motorcycle movement?",
+      "ground_truth": "hammer",
+      "prediction": "wrench",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e43f5b38-213a-4d42-afaa-32c3b77f4da6",
+      "question": "What tool was used immediately after flour was sprinkled on the dough?",
+      "ground_truth": "roller",
+      "prediction": "cutter",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e8cf9894-0cc7-4480-b490-885308bfb513",
+      "question": "What object was handled between the two oven opening events?",
+      "ground_truth": "tray",
+      "prediction": "tray",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "e9be1118-a5cf-4431-b2e8-e3edcfa9f949",
+      "question": "What tool was picked up immediately after the first clamp was removed?",
+      "ground_truth": "wood",
+      "prediction": "clamp",
+      "exact_match": false,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "f643d88a-92cc-456d-bed7-c010275637e8",
+      "question": "What tool was used immediately before the first vine cutting action?",
+      "ground_truth": "shears",
+      "prediction": "shears",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    },
+    {
+      "data_id": "fefb0892-7e1a-4a34-9418-ea1c96705edc",
+      "question": "What tool was used immediately before watering the plant?",
+      "ground_truth": "can",
+      "prediction": "can",
+      "exact_match": true,
+      "difficulty": "easy",
+      "error_category": "temporal_ordering"
+    }
+  ]
+}
