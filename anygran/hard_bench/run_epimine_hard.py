@@ -2,13 +2,20 @@
 """
 Run EpiMine Hierarchical SGQA on Hard Benchmark
 ================================================
-Applies EpiMine episode detection to the hard benchmark cases.
+Applies EpiMine episode detection to the hard benchmark cases (88 cases).
 
 Usage:
     python anygran/hard_bench/run_epimine_hard.py
     python anygran/hard_bench/run_epimine_hard.py --model gpt5
     python anygran/hard_bench/run_epimine_hard.py --skip-baseline
+
+    # Best config from grid search:
+    python anygran/hard_bench/run_epimine_hard.py --model gpt5-mini --cooccur-threshold 1.5 --min-freq 2 --top-k 10 --save-cache cache/epimine_episodes_best.json
 """
+
+# Suppress FutureWarning about TRANSFORMERS_CACHE deprecation
+import warnings
+warnings.filterwarnings("ignore", message=".*TRANSFORMERS_CACHE.*")
 
 import argparse
 import json
@@ -25,13 +32,17 @@ from anygran.epimine_hierarchical_sgqa import (
     EpiMineHierarchicalEvaluator,
     GPT5Mini,
     GPT5,
+    GPT5Pro,
+    GPT51,
     build_background_dataset,
+    load_episodes_cache,
 )
 
 # Paths
 HARD_BENCH_PATH = Path(__file__).parent / "sgqa_hard.json"
 SGQA_PATH = Path(__file__).parent.parent.parent / "resource" / "dataset" / "understanding" / "sgqa.jsonl"
 RESULTS_DIR = Path(__file__).parent / "results"
+CACHE_DIR = Path(__file__).parent / "cache"
 
 
 def load_hard_benchmark() -> list:
@@ -98,7 +109,7 @@ Question: {question}
     }
 
 
-def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 1.0) -> dict:
+def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 1.0, top_k: int = None, use_llm: bool = True, gen_model=None, cache_path: str = None, save_cache: str = None) -> dict:
     """Run EpiMine hierarchical evaluation."""
     # Convert hard benchmark format to expected format
     data = []
@@ -110,15 +121,23 @@ def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 
             "answer": case["ground_truth"],
         })
 
-    # Generate episode hierarchies
-    print("\nGenerating EpiMine episode hierarchies...")
-    generator = EpiMineEpisodeGenerator(model=GPT5Mini())
-    episodes_cache = generator.batch_generate(
-        data=data,
-        analyzer=analyzer,
-        use_llm=True,
-        threshold_std=threshold_std,
-    )
+    # Load or generate episode hierarchies
+    if cache_path and Path(cache_path).exists():
+        print(f"\nLoading cached episodes from: {cache_path}")
+        episodes_cache = load_episodes_cache(cache_path)
+    else:
+        print("\nGenerating EpiMine episode hierarchies...")
+        if gen_model is None:
+            gen_model = GPT5Mini()
+        generator = EpiMineEpisodeGenerator(model=gen_model)
+        episodes_cache = generator.batch_generate(
+            data=data,
+            analyzer=analyzer,
+            use_llm=use_llm,
+            threshold_std=threshold_std,
+            top_k=top_k,
+            output_path=save_cache,
+        )
 
     # Print episode stats
     total_episodes = sum(len(h.get("episodes", [])) for h in episodes_cache.values())
@@ -227,12 +246,23 @@ def save_results(results: dict, filename: str):
     return filepath
 
 
+def save_episodes_cache(episodes_cache: dict, filepath: str):
+    """Save episodes cache to JSON file."""
+    cache_path = Path(filepath)
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(episodes_cache, f, indent=2, ensure_ascii=False)
+
+    print(f"Saved episodes cache to: {cache_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="EpiMine SGQA Hard Benchmark Evaluation")
     parser.add_argument(
         "--model",
         type=str,
-        choices=["gpt5-mini", "gpt5"],
+        choices=["gpt5-mini", "gpt5", "gpt5-pro", "gpt5.1"],
         default="gpt5-mini",
         help="Model to use for QA evaluation (default: gpt5-mini)"
     )
@@ -247,6 +277,42 @@ def main():
         default=1.0,
         help="Standard deviations below mean for boundary detection (default: 1.0)"
     )
+    parser.add_argument(
+        "--min-freq",
+        type=int,
+        default=2,
+        help="Minimum term frequency for salience calculation (default: 2)"
+    )
+    parser.add_argument(
+        "--top-k",
+        type=int,
+        default=None,
+        help="Limit on number of key terms for co-occurrence (default: None = all)"
+    )
+    parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        help="Skip LLM for episode name/description generation"
+    )
+    parser.add_argument(
+        "--gen-model",
+        type=str,
+        choices=["gpt5-mini", "gpt5", "gpt5-pro", "gpt5.1"],
+        default="gpt5-mini",
+        help="Model for episode name/description generation (default: gpt5-mini, only used when --no-llm is NOT set)"
+    )
+    parser.add_argument(
+        "--cache-path",
+        type=str,
+        default=None,
+        help="Path to load cached episode hierarchies (skip generation if provided)"
+    )
+    parser.add_argument(
+        "--save-cache",
+        type=str,
+        default=None,
+        help="Path to save generated episode hierarchies for reuse"
+    )
 
     args = parser.parse_args()
 
@@ -255,12 +321,27 @@ def main():
     cases = load_hard_benchmark()
     print(f"Loaded {len(cases)} hard cases")
 
-    # Initialize model
+    # Initialize model for QA
     if args.model == "gpt5":
         model = GPT5()
+    elif args.model == "gpt5-pro":
+        model = GPT5Pro()
+    elif args.model == "gpt5.1":
+        model = GPT51()
     else:
         model = GPT5Mini()
-    print(f"Using model: {model.__class__.__name__}")
+    print(f"Using QA model: {model.__class__.__name__}")
+
+    # Initialize model for episode generation (only used when --no-llm is NOT set)
+    if args.gen_model == "gpt5":
+        gen_model = GPT5()
+    elif args.gen_model == "gpt5-pro":
+        gen_model = GPT5Pro()
+    elif args.gen_model == "gpt5.1":
+        gen_model = GPT51()
+    else:
+        gen_model = GPT5Mini()
+    print(f"Using gen model: {gen_model.__class__.__name__}")
 
     # Build background dataset
     print("\nBuilding background dataset from all SGQA actions...")
@@ -268,7 +349,7 @@ def main():
     print(f"Background dataset: {len(background)} action graphs")
 
     # Initialize analyzer
-    analyzer = EpiMineActionAnalyzer(background_dataset=background)
+    analyzer = EpiMineActionAnalyzer(background_dataset=background, min_freq=args.min_freq)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
@@ -279,11 +360,33 @@ def main():
         save_results(baseline_results, f"hard_baseline_{args.model}_{timestamp}.json")
 
     # Run EpiMine evaluation
+    use_llm = not args.no_llm
     epimine_results = run_epimine_evaluation(
         cases, model, analyzer,
-        threshold_std=args.cooccur_threshold
+        threshold_std=args.cooccur_threshold,
+        top_k=args.top_k,
+        use_llm=use_llm,
+        gen_model=gen_model,
+        cache_path=args.cache_path,
+        save_cache=args.save_cache,
     )
-    save_results(epimine_results, f"hard_epimine_{args.model}_{timestamp}.json")
+
+    # Build descriptive filename with all hyperparameters
+    topk_str = str(args.top_k) if args.top_k else "all"
+    llm_str = "1" if use_llm else "0"
+    if use_llm:
+        if args.gen_model == "gpt5":
+            gen_str = "gen5"
+        elif args.gen_model == "gpt5-pro":
+            gen_str = "gen5p"
+        elif args.gen_model == "gpt5.1":
+            gen_str = "gen51"
+        else:
+            gen_str = "gen5m"
+        filename = f"hard_epimine_{args.model}_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_llm{llm_str}_{gen_str}.json"
+    else:
+        filename = f"hard_epimine_{args.model}_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_llm{llm_str}.json"
+    save_results(epimine_results, filename)
 
     # Print comparison
     if baseline_results:

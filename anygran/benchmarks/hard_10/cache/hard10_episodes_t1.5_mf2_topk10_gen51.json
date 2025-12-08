@@ -1,0 +1,1369 @@
+{
+  "860980fb-f992-4bb1-8a46-b644f58090e2": {
+    "overall_goal": "Create a glued paper-cardboard assembly using a metal board, folding, and glue application.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Position Metal Board",
+        "description": "The person picks up a metal board and places it on the paper, then adjusts its position.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "place",
+            "adjust",
+            "fold",
+            "put-down",
+            "hold",
+            "attach",
+            "press",
+            "dip",
+            "apply"
+          ],
+          "primary_objects": [
+            "metal-board",
+            "paper",
+            "cardboard",
+            "brush",
+            "glue"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "brush"
+          ],
+          "source_locations": [
+            "desk"
+          ],
+          "target_locations": [
+            "paper",
+            "desk",
+            "glue"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "start_index": 0,
+          "end_index": 17,
+          "duration": 18
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": null,
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "paper",
+          "desk",
+          "onto",
+          "metal-board",
+          "cardboard"
+        ],
+        "salience_score": 0.58
+      }
+    ]
+  },
+  "41b8254c-ca1e-464c-9323-55301fb5f0e8": {
+    "overall_goal": "Prepare and customize a cold drink in a cup using ingredients from the fridge, freezer, drawer, tap, and countertop.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Retrieve Bottle",
+        "description": "The person opens the fridge, picks up a bottle, closes the fridge, and places the bottle on the counter.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "open",
+            "pick",
+            "close",
+            "place"
+          ],
+          "primary_objects": [
+            "fridge",
+            "bottle"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": [
+            "fridge"
+          ],
+          "target_locations": [
+            "counter"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start_index": 0,
+          "end_index": 3,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2,
+            3
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "counter",
+          "pick",
+          "bottle",
+          "open",
+          "fridge"
+        ],
+        "salience_score": 0.659
+      },
+      {
+        "episode_id": 1,
+        "name": "Prepare Spoon And Taste",
+        "description": "The person retrieves a spoon from the drawer, places it on the counter, briefly tastes the drink from a cup, and rinses and replaces the spoon.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "open",
+            "pick",
+            "place",
+            "close",
+            "taste",
+            "rinse",
+            "pick-up",
+            "stir"
+          ],
+          "primary_objects": [
+            "drawer",
+            "spoon",
+            "cup",
+            "drink",
+            "tap"
+          ],
+          "instruments": [
+            "hand2",
+            "hand1"
+          ],
+          "source_locations": [
+            "drawer"
+          ],
+          "target_locations": [
+            "countertop",
+            "counter",
+            "cup"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "start_index": 4,
+          "end_index": 17,
+          "duration": 14
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2,
+            3
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "counter",
+          "spoon",
+          "pick",
+          "cup",
+          "open"
+        ],
+        "salience_score": 0.708
+      },
+      {
+        "episode_id": 2,
+        "name": "Add Ice To Drink",
+        "description": "The person takes an ice tray from the freezer, closes the freezer, removes ice cubes from the tray, and adds them into the cup.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "open",
+            "pick",
+            "place",
+            "close",
+            "remove",
+            "add"
+          ],
+          "primary_objects": [
+            "freezer",
+            "ice-tray",
+            "ice-cubes"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": [
+            "freezer",
+            "tray"
+          ],
+          "target_locations": [
+            "counter",
+            "cup"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "start_index": 18,
+          "end_index": 23,
+          "duration": 6
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            3
+          ],
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "counter",
+          "pick",
+          "cup",
+          "open",
+          "freezer"
+        ],
+        "salience_score": 0.649
+      },
+      {
+        "episode_id": 3,
+        "name": "Pour Drink And Add Sugar",
+        "description": "The person pours liquid from the bottle into the cup, opens a jar on the counter, uses a spoon to scoop sugar from the jar, and adds the sugar to the cup before placing the spoon back.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick",
+            "open",
+            "pour",
+            "place",
+            "pick-up",
+            "use",
+            "add"
+          ],
+          "primary_objects": [
+            "bottle",
+            "liquid",
+            "jar",
+            "lid-of-the-jar",
+            "spoon",
+            "sugar"
+          ],
+          "instruments": [
+            "hand2",
+            "hand1"
+          ],
+          "source_locations": [
+            "counter",
+            "bottle",
+            "jar"
+          ],
+          "target_locations": [
+            "cup",
+            "counter"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "start_index": 24,
+          "end_index": 34,
+          "duration": 11
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1,
+            2
+          ]
+        },
+        "discriminative_terms": [
+          "counter",
+          "spoon",
+          "pick",
+          "bottle",
+          "cup"
+        ],
+        "salience_score": 0.731
+      }
+    ]
+  },
+  "312da1d0-9e56-4f5e-bb12-9cb67e8bc674": {
+    "overall_goal": "Operate a generator to fuel it and water the plants using a hose.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Prepare Generator And Hose",
+        "description": "The person activates the machine, manages the tank lid, and connects and adjusts the hose to the generator.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "push",
+            "check",
+            "pick-up",
+            "place",
+            "close",
+            "open",
+            "remove",
+            "connect",
+            "adjust"
+          ],
+          "primary_objects": [
+            "button",
+            "generator",
+            "lid",
+            "tank",
+            "hose",
+            "hand2"
+          ],
+          "instruments": [
+            "hand2",
+            "hand1"
+          ],
+          "source_locations": [
+            "ground",
+            "tank",
+            "hose"
+          ],
+          "target_locations": [
+            "machine",
+            "tank",
+            "ground",
+            "generator"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "start_index": 0,
+          "end_index": 11,
+          "duration": 12
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "generator",
+          "tank",
+          "hose",
+          "lid",
+          "ground"
+        ],
+        "salience_score": 0.749
+      },
+      {
+        "episode_id": 1,
+        "name": "Connect Wire And Inspect",
+        "description": "The person picks up a wire, connects it to the generator, and inspects the plants.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "connect",
+            "inspect",
+            "wipe",
+            "shake",
+            "pour",
+            "place",
+            "turn",
+            "spray",
+            "turn-off"
+          ],
+          "primary_objects": [
+            "wire",
+            "plants",
+            "hands",
+            "bottle",
+            "fuel",
+            "hose",
+            "water"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "cloth"
+          ],
+          "source_locations": [
+            "generator"
+          ],
+          "target_locations": [
+            "generator",
+            "ground",
+            "plants"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "start_index": 12,
+          "end_index": 25,
+          "duration": 14
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "plants",
+          "generator",
+          "hose",
+          "spray",
+          "ground"
+        ],
+        "salience_score": 0.774
+      }
+    ]
+  },
+  "3db79f36-a611-42f6-bfb7-76cf7720a00a": {
+    "overall_goal": "Sewing and finishing fabric using a needle, thread, and scissors on a workbench.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Initial Sewing Cycle",
+        "description": "The person threads the needle, sews through the fabric, tightens the thread, and then puts the needle and thread down on the workbench.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "sew",
+            "pull",
+            "tighten",
+            "put-down",
+            "place"
+          ],
+          "primary_objects": [
+            "needle",
+            "fabric",
+            "thread"
+          ],
+          "instruments": [
+            "hand1",
+            "needle",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "workbench"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "start_index": 0,
+          "end_index": 7,
+          "duration": 8
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "thread",
+          "needle",
+          "workbench",
+          "fabric",
+          "sew"
+        ],
+        "salience_score": 0.596
+      },
+      {
+        "episode_id": 1,
+        "name": "Trim Thread With Scissors",
+        "description": "The person picks up scissors, cuts the thread, and then returns both the scissors and thread to the workbench.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "cut",
+            "put-down",
+            "place",
+            "hold",
+            "pull",
+            "pass",
+            "examine",
+            "adjust",
+            "smoothen"
+          ],
+          "primary_objects": [
+            "scissors",
+            "thread",
+            "needle",
+            "sewn-fabric",
+            "fabric",
+            "excess-thread"
+          ],
+          "instruments": [
+            "hand1",
+            "scissors",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "workbench"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "start_index": 8,
+          "end_index": 24,
+          "duration": 17
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "thread",
+          "needle",
+          "scissors",
+          "workbench",
+          "fabric"
+        ],
+        "salience_score": 0.644
+      }
+    ]
+  },
+  "3ea57fa2-fd76-48c1-923e-e90b14373c7e": {
+    "overall_goal": "Prepare dough by adding ingredients to a mixer, processing it, shaping it, and cutting it on a table.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Add Flour To Mixer",
+        "description": "The person picks up flour from the shelf, carries it to the mixer, pours it into the mixer, and then places the flour container on the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "carry",
+            "pour",
+            "place"
+          ],
+          "primary_objects": [
+            "flour"
+          ],
+          "instruments": [
+            "hand1"
+          ],
+          "source_locations": [
+            "shelf"
+          ],
+          "target_locations": [
+            "mixer",
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start_index": 0,
+          "end_index": 3,
+          "duration": 4
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "mixer",
+          "table",
+          "flour",
+          "shelf"
+        ],
+        "salience_score": 0.589
+      },
+      {
+        "episode_id": 1,
+        "name": "Add Sugar To Mixer",
+        "description": "The person picks up sugar from the shelf, carries it towards the mixer, pours it into the mixer, and places the sugar container on the table.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "carry",
+            "pour",
+            "place",
+            "operate",
+            "take-out",
+            "knead",
+            "adjust",
+            "roll",
+            "cut"
+          ],
+          "primary_objects": [
+            "sugar",
+            "bottle",
+            "water",
+            "mixer",
+            "dough",
+            "pan",
+            "knife"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "knife"
+          ],
+          "source_locations": [
+            "shelf",
+            "bottle",
+            "mixer"
+          ],
+          "target_locations": [
+            "mixer",
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "start_index": 4,
+          "end_index": 32,
+          "duration": 29
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "mixer",
+          "dough",
+          "knead",
+          "knife",
+          "sugar"
+        ],
+        "salience_score": 0.76
+      }
+    ]
+  },
+  "82dc7a9e-a0a4-4611-8e49-960d6c77b326": {
+    "overall_goal": "The person prepares, secures, and cleans a railing placed on a table using different tools.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Paint Railing",
+        "description": "The person picks up a paintbrush, dips it into paint, paints the railing several times, and then puts the paintbrush down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "dip",
+            "paint",
+            "put-down",
+            "hold",
+            "move",
+            "place",
+            "tighten",
+            "clean",
+            "brush"
+          ],
+          "primary_objects": [
+            "paintbrush",
+            "railing",
+            "chair",
+            "screwdriver",
+            "bolt",
+            "brush",
+            "dust"
+          ],
+          "instruments": [
+            "hand1",
+            "paintbrush",
+            "both-hands",
+            "hand2",
+            "screwdriver",
+            "brush"
+          ],
+          "source_locations": [
+            "hand1",
+            "railing",
+            "hand2"
+          ],
+          "target_locations": [
+            "paint",
+            "railing",
+            "table"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "start_index": 0,
+          "end_index": 18,
+          "duration": 19
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "railing",
+          "paintbrush",
+          "paint",
+          "chair",
+          "brush"
+        ],
+        "salience_score": 0.469
+      },
+      {
+        "episode_id": 1,
+        "name": "Reposition Chair",
+        "description": "The person holds, moves, and places a chair using both hands.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "wipe",
+            "inspect"
+          ],
+          "primary_objects": [
+            "cloth",
+            "railing"
+          ],
+          "instruments": [
+            "hand1",
+            "cloth",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            19,
+            20,
+            21
+          ],
+          "start_index": 19,
+          "end_index": 21,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "railing"
+        ],
+        "salience_score": 1.0
+      }
+    ]
+  },
+  "a0d6bd8e-c477-442b-bab3-731775b44b43": {
+    "overall_goal": "A person washes a car using water, a bucket, a sponge, a hose, and by moving the wipers.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Initial Drying",
+        "description": "The person picks up a towel and dries the car, then puts the towel down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "dry",
+            "put-down",
+            "open",
+            "carry",
+            "hold",
+            "fill-up",
+            "close",
+            "spray",
+            "dip"
+          ],
+          "primary_objects": [
+            "towel",
+            "car",
+            "tap",
+            "bucket",
+            "hose",
+            "water",
+            "sponge"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "towel",
+            "water",
+            "hose"
+          ],
+          "source_locations": [
+            "tap"
+          ],
+          "target_locations": [
+            "tap",
+            "car",
+            "ground",
+            "bucket"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "start_index": 0,
+          "end_index": 16,
+          "duration": 17
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1,
+            2
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "car",
+          "bucket",
+          "sponge",
+          "tap",
+          "water"
+        ],
+        "salience_score": 0.791
+      },
+      {
+        "episode_id": 1,
+        "name": "Prepare Wash Water",
+        "description": "The person opens the tap, picks up and carries a bucket to the tap, fills it with water, carries it to the car, sets it down, and then closes the tap.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "raise",
+            "hold",
+            "wash",
+            "move",
+            "release",
+            "flip",
+            "dip"
+          ],
+          "primary_objects": [
+            "wiper",
+            "car",
+            "sponge"
+          ],
+          "instruments": [
+            "hand2",
+            "sponge",
+            "hand1",
+            "water"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "car",
+            "bucket"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "start_index": 17,
+          "end_index": 24,
+          "duration": 8
+        },
+        "temporal_context": {
+          "position": "middle",
+          "precedes_episodes": [
+            2
+          ],
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "car",
+          "bucket",
+          "sponge",
+          "water",
+          "wiper"
+        ],
+        "salience_score": 0.759
+      },
+      {
+        "episode_id": 2,
+        "name": "Rinse Car",
+        "description": "The person picks up a hose, sprays water onto the car, then puts the hose down.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "lower"
+          ],
+          "primary_objects": [
+            "wiper"
+          ],
+          "instruments": [
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": null
+        },
+        "time": {
+          "action_indices": [
+            25
+          ],
+          "start_index": 25,
+          "end_index": 25,
+          "duration": 1
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0,
+            1
+          ]
+        },
+        "discriminative_terms": [
+          "wiper",
+          "hand2"
+        ],
+        "salience_score": 0.378
+      }
+    ]
+  },
+  "f643d88a-92cc-456d-bed7-c010275637e8": {
+    "overall_goal": "The person tends a garden by removing weeds, trimming vines, raking grass, and watering plants using various tools.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Remove Weed",
+        "description": "The person pulls out a weed, holds it briefly, and places it on the ground.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pull-out",
+            "hold",
+            "place",
+            "pick-up",
+            "cut",
+            "put",
+            "release",
+            "move",
+            "put-down",
+            "uproot",
+            "collect",
+            "water"
+          ],
+          "primary_objects": [
+            "weed",
+            "shears",
+            "vine",
+            "plant",
+            "rake",
+            "grass",
+            "hose"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2",
+            "shears",
+            "rake"
+          ],
+          "source_locations": [
+            "pocket"
+          ],
+          "target_locations": [
+            "ground",
+            "hand1",
+            "pocket",
+            "bin"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "start_index": 0,
+          "end_index": 22,
+          "duration": 23
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": null,
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "shears",
+          "weed",
+          "vine",
+          "rake",
+          "pocket"
+        ],
+        "salience_score": 0.751
+      }
+    ]
+  },
+  "1695475c-e527-43e6-b70e-69fd33023148": {
+    "overall_goal": "Install and secure electrical wiring and components using hand tools.",
+    "episodes": [
+      {
+        "episode_id": 0,
+        "name": "Secure wire to socket",
+        "description": "The person cuts, routes, secures, insulates, and mechanically fastens a wire to a socket using various tools.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "pass",
+            "place",
+            "tighten",
+            "wrap",
+            "cut"
+          ],
+          "primary_objects": [
+            "wire-cutter",
+            "wire",
+            "screwdriver",
+            "screw",
+            "insulation-tape",
+            "tape",
+            "wrench",
+            "bolt"
+          ],
+          "instruments": [
+            "hand1",
+            "screwdriver",
+            "insulation",
+            "wrench",
+            "wire-cutter",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "socket",
+            "hand1"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "start_index": 0,
+          "end_index": 20,
+          "duration": 21
+        },
+        "temporal_context": {
+          "position": "beginning",
+          "precedes_episodes": [
+            1
+          ],
+          "follows_episodes": null
+        },
+        "discriminative_terms": [
+          "wire-cutter",
+          "wire",
+          "socket",
+          "insulation",
+          "place"
+        ],
+        "salience_score": 0.662
+      },
+      {
+        "episode_id": 1,
+        "name": "Connect cable to socket",
+        "description": "The person picks up a cable and a socket and then inserts the cable into the socket.",
+        "core_structure": {
+          "agent": "person",
+          "primary_actions": [
+            "pick-up",
+            "insert"
+          ],
+          "primary_objects": [
+            "cable",
+            "socket"
+          ],
+          "instruments": [
+            "hand1",
+            "hand2"
+          ],
+          "source_locations": null,
+          "target_locations": [
+            "socket"
+          ]
+        },
+        "time": {
+          "action_indices": [
+            21,
+            22,
+            23
+          ],
+          "start_index": 21,
+          "end_index": 23,
+          "duration": 3
+        },
+        "temporal_context": {
+          "position": "end",
+          "precedes_episodes": null,
+          "follows_episodes": [
+            0
+          ]
+        },
+        "discriminative_terms": [
+          "socket",
+          "pick-up",
+          "cable"
+        ],
+        "salience_score": 0.463
+      }
+    ]
+  }
+}

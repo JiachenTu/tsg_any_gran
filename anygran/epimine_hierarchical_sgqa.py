@@ -69,6 +69,39 @@ class GPT5:
         return response.content.strip()
 
 
+class GPT5Pro:
+    """GPT-5-pro model wrapper using OpenAI Responses API."""
+    def __init__(self, temperature=0.1):
+        from openai import OpenAI
+        config_path = get_config_file_path()
+        config = load_config(config_path)
+        self.client = OpenAI(api_key=config["openai"]["key"])
+        self.temperature = temperature
+
+    def invoke(self, message):
+        response = self.client.responses.create(
+            model="gpt-5-pro",
+            input=message,
+        )
+        return response.output_text.strip()
+
+
+class GPT51:
+    """GPT-5.1 model wrapper."""
+    def __init__(self, temperature=0.1):
+        config_path = get_config_file_path()
+        config = load_config(config_path)
+        self.openai = ChatOpenAI(
+            api_key=config["openai"]["key"],
+            model_name="gpt-5.1",
+            temperature=temperature,
+        )
+
+    def invoke(self, message):
+        response = self.openai.invoke(message)
+        return response.content.strip()
+
+
 def load_prompt(prompt_name: str) -> str:
     """Load prompt template from anygran/prompts directory."""
     prompt_path = Path(__file__).parent / "prompts" / prompt_name

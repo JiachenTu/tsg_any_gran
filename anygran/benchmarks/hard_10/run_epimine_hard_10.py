@@ -29,7 +29,10 @@ from anygran.epimine_hierarchical_sgqa import (
     EpiMineHierarchicalEvaluator,
     GPT5Mini,
     GPT5,
+    GPT5Pro,
+    GPT51,
     build_background_dataset,
+    load_episodes_cache,
 )
 
 # Paths
@@ -102,7 +105,7 @@ Question: {question}
     }
 
 
-def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 1.0, top_k: int = None, use_llm: bool = True, gen_model=None) -> dict:
+def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 1.0, top_k: int = None, use_llm: bool = True, gen_model=None, cache_path: str = None, save_cache: str = None) -> dict:
     """Run EpiMine hierarchical evaluation."""
     # Convert hard benchmark format to expected format
     data = []
@@ -114,18 +117,23 @@ def run_epimine_evaluation(cases: list, model, analyzer, threshold_std: float = 
             "answer": case["ground_truth"],
         })
 
-    # Generate episode hierarchies
-    print("\nGenerating EpiMine episode hierarchies...")
-    if gen_model is None:
-        gen_model = GPT5Mini()
-    generator = EpiMineEpisodeGenerator(model=gen_model)
-    episodes_cache = generator.batch_generate(
-        data=data,
-        analyzer=analyzer,
-        use_llm=use_llm,
-        threshold_std=threshold_std,
-        top_k=top_k,
-    )
+    # Load or generate episode hierarchies
+    if cache_path and Path(cache_path).exists():
+        print(f"\nLoading cached episodes from: {cache_path}")
+        episodes_cache = load_episodes_cache(cache_path)
+    else:
+        print("\nGenerating EpiMine episode hierarchies...")
+        if gen_model is None:
+            gen_model = GPT5Mini()
+        generator = EpiMineEpisodeGenerator(model=gen_model)
+        episodes_cache = generator.batch_generate(
+            data=data,
+            analyzer=analyzer,
+            use_llm=use_llm,
+            threshold_std=threshold_std,
+            top_k=top_k,
+            output_path=save_cache,
+        )
 
     # Print episode stats
     total_episodes = sum(len(h.get("episodes", [])) for h in episodes_cache.values())
@@ -239,7 +247,7 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        choices=["gpt5-mini", "gpt5"],
+        choices=["gpt5-mini", "gpt5", "gpt5-pro", "gpt5.1"],
         default="gpt5-mini",
         help="Model to use for QA evaluation (default: gpt5-mini)"
     )
@@ -274,9 +282,21 @@ def main():
     parser.add_argument(
         "--gen-model",
         type=str,
-        choices=["gpt5-mini", "gpt5"],
+        choices=["gpt5-mini", "gpt5", "gpt5-pro", "gpt5.1"],
         default="gpt5-mini",
         help="Model for episode name/description generation (default: gpt5-mini, only used when --no-llm is NOT set)"
+    )
+    parser.add_argument(
+        "--cache-path",
+        type=str,
+        default=None,
+        help="Path to load cached episode hierarchies (skip generation if provided)"
+    )
+    parser.add_argument(
+        "--save-cache",
+        type=str,
+        default=None,
+        help="Path to save generated episode hierarchies for reuse"
     )
 
     args = parser.parse_args()
@@ -289,6 +309,10 @@ def main():
     # Initialize model for QA
     if args.model == "gpt5":
         model = GPT5()
+    elif args.model == "gpt5-pro":
+        model = GPT5Pro()
+    elif args.model == "gpt5.1":
+        model = GPT51()
     else:
         model = GPT5Mini()
     print(f"Using QA model: {model.__class__.__name__}")
@@ -296,6 +320,10 @@ def main():
     # Initialize model for episode generation (only used when --no-llm is NOT set)
     if args.gen_model == "gpt5":
         gen_model = GPT5()
+    elif args.gen_model == "gpt5-pro":
+        gen_model = GPT5Pro()
+    elif args.gen_model == "gpt5.1":
+        gen_model = GPT51()
     else:
         gen_model = GPT5Mini()
     print(f"Using gen model: {gen_model.__class__.__name__}")
@@ -324,12 +352,21 @@ def main():
         top_k=args.top_k,
         use_llm=use_llm,
         gen_model=gen_model,
+        cache_path=args.cache_path,
+        save_cache=args.save_cache,
     )
     # Build descriptive filename with all hyperparameters
     topk_str = str(args.top_k) if args.top_k else "all"
     llm_str = "1" if use_llm else "0"
     if use_llm:
-        gen_str = "gen5" if args.gen_model == "gpt5" else "gen5m"
+        if args.gen_model == "gpt5":
+            gen_str = "gen5"
+        elif args.gen_model == "gpt5-pro":
+            gen_str = "gen5p"
+        elif args.gen_model == "gpt5.1":
+            gen_str = "gen51"
+        else:
+            gen_str = "gen5m"
         filename = f"hard10_epimine_{args.model}_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_llm{llm_str}_{gen_str}.json"
     else:
         filename = f"hard10_epimine_{args.model}_t{args.cooccur_threshold}_mf{args.min_freq}_topk{topk_str}_llm{llm_str}.json"
